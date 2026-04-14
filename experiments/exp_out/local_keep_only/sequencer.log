@@ -1,0 +1,412 @@
+INFO [04-09|11:02:26.447] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-09|11:02:26.448] resolved tx endorsement policy           txHash=a8a7b8..8a7052 txIndex=0 policyID=default threshold=2
+INFO [04-09|11:02:26.460] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-09|11:02:26.460] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=294 blockHash=14d1cd..55b35b
+INFO [04-09|11:02:26.460] ENDORSEMENT_DEBUG endorser wiring        hasEndorser=true hasPolicyConfig=true
+INFO [04-09|11:02:26.460] ENDORSEMENT_DEBUG calling endorsement manager l2Block=294 txCount=1 timeout=2s
+INFO [04-09|11:02:26.461] ENDORSEMENT_MOCK_DECISION                txHash=a8a7b8..8a7052 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=A reject=false reason=
+INFO [04-09|11:02:26.461] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=A requestID=c639e7..b4d15a decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:26.461] ENDORSEMENT_MOCK_DECISION                txHash=a8a7b8..8a7052 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=B reject=false reason=
+INFO [04-09|11:02:26.461] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=B requestID=c639e7..b4d15a decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:26.461] ENDORSEMENT_MOCK_DECISION                txHash=a8a7b8..8a7052 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=C reject=false reason=
+INFO [04-09|11:02:26.462] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=C requestID=c639e7..b4d15a decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:26.462] Candidate Block Endorsement Complete     AllSatisfied=true Mode=completed_all RebuildTxCount=0
+INFO [04-09|11:02:26.462] ENDORSEMENT_DEBUG endorsement manager returned l2Block=294 allSatisfied=true certCount=1
+INFO [04-09|11:02:26.462] candidate block endorsement satisfied    l2Block=294 certCount=1 commitmentRoot=d6a5a2..e8b406
+INFO [04-09|11:02:26.462] ENDORSEMENT_METADATA_BUILT               block=294 hash=14d1cd..55b35b metadataVersion=1 flags=3 timeboostLen=1 hasCommitmentRoot=true commitmentRoot=d6a5a2..e8b406 commitmentDataLen=118
+INFO [04-09|11:02:26.462] ENDORSEMENT_COMMITMENTDATA_PARSED        block=294 hash=14d1cd..55b35b certCount=1 commitmentRoot=d6a5a2..e8b406 recomputedRoot=d6a5a2..e8b406 rootMatch=true
+INFO [04-09|11:02:26.462] ENDORSEMENT_COMMITMENT_CERT_VERIFY_INPUT block=294 hash=14d1cd..55b35b blockTxCount=2 receiptCount=2 parsedCertCount=1
+INFO [04-09|11:02:26.462] ENDORSEMENT_COMMITMENT_CERT_VERIFY_OK    block=294 hash=14d1cd..55b35b certCount=1
+INFO [04-09|11:02:26.466] Submitted transaction                    hash=0xa8a7b85bcd72739de3d1adc8ea8e4a607d37211bf9a2090bdb0c7c86718a7052 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 nonce=20 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-09|11:02:27.950] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-09|11:02:27.950] resolved tx endorsement policy           txHash=27a02f..11a560 txIndex=0 policyID=default threshold=2
+INFO [04-09|11:02:27.958] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-09|11:02:27.958] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=295 blockHash=0e5062..14ec74
+INFO [04-09|11:02:27.959] ENDORSEMENT_DEBUG endorser wiring        hasEndorser=true hasPolicyConfig=true
+INFO [04-09|11:02:27.959] ENDORSEMENT_DEBUG calling endorsement manager l2Block=295 txCount=1 timeout=2s
+INFO [04-09|11:02:27.961] ENDORSEMENT_MOCK_DECISION                txHash=27a02f..11a560 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=A reject=false reason=
+INFO [04-09|11:02:27.961] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=A requestID=ee01e2..5ec14b decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:27.961] ENDORSEMENT_MOCK_DECISION                txHash=27a02f..11a560 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=B reject=false reason=
+INFO [04-09|11:02:27.961] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=B requestID=ee01e2..5ec14b decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:27.961] ENDORSEMENT_MOCK_DECISION                txHash=27a02f..11a560 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=C reject=false reason=
+INFO [04-09|11:02:27.961] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=C requestID=ee01e2..5ec14b decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:27.961] Candidate Block Endorsement Complete     AllSatisfied=true Mode=completed_all RebuildTxCount=0
+INFO [04-09|11:02:27.961] ENDORSEMENT_DEBUG endorsement manager returned l2Block=295 allSatisfied=true certCount=1
+INFO [04-09|11:02:27.962] candidate block endorsement satisfied    l2Block=295 certCount=1 commitmentRoot=d321c3..f03b35
+INFO [04-09|11:02:27.962] ENDORSEMENT_METADATA_BUILT               block=295 hash=0e5062..14ec74 metadataVersion=1 flags=3 timeboostLen=1 hasCommitmentRoot=true commitmentRoot=d321c3..f03b35 commitmentDataLen=118
+INFO [04-09|11:02:27.962] ENDORSEMENT_COMMITMENTDATA_PARSED        block=295 hash=0e5062..14ec74 certCount=1 commitmentRoot=d321c3..f03b35 recomputedRoot=d321c3..f03b35 rootMatch=true
+INFO [04-09|11:02:27.962] ENDORSEMENT_COMMITMENT_CERT_VERIFY_INPUT block=295 hash=0e5062..14ec74 blockTxCount=2 receiptCount=2 parsedCertCount=1
+INFO [04-09|11:02:27.962] ENDORSEMENT_COMMITMENT_CERT_VERIFY_OK    block=295 hash=0e5062..14ec74 certCount=1
+INFO [04-09|11:02:27.965] Submitted transaction                    hash=0x27a02ffc25b4bf51411716d896c6877eed19927e386477c9de24037a1911a560 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 nonce=21 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-09|11:02:29.540] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-09|11:02:29.540] resolved tx endorsement policy           txHash=e3b84e..e73838 txIndex=0 policyID=default threshold=2
+INFO [04-09|11:02:29.545] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-09|11:02:29.545] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=296 blockHash=9ff7ab..952c26
+INFO [04-09|11:02:29.545] ENDORSEMENT_DEBUG endorser wiring        hasEndorser=true hasPolicyConfig=true
+INFO [04-09|11:02:29.545] ENDORSEMENT_DEBUG calling endorsement manager l2Block=296 txCount=1 timeout=2s
+INFO [04-09|11:02:29.545] ENDORSEMENT_MOCK_DECISION                txHash=e3b84e..e73838 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=A reject=false reason=
+INFO [04-09|11:02:29.546] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=A requestID=27cb7b..0e0a51 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:29.545] ENDORSEMENT_MOCK_DECISION                txHash=e3b84e..e73838 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=B reject=false reason=
+INFO [04-09|11:02:29.546] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=B requestID=27cb7b..0e0a51 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:29.545] ENDORSEMENT_MOCK_DECISION                txHash=e3b84e..e73838 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=C reject=false reason=
+INFO [04-09|11:02:29.546] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=C requestID=27cb7b..0e0a51 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:29.546] Candidate Block Endorsement Complete     AllSatisfied=true Mode=completed_all RebuildTxCount=0
+INFO [04-09|11:02:29.547] ENDORSEMENT_DEBUG endorsement manager returned l2Block=296 allSatisfied=true certCount=1
+INFO [04-09|11:02:29.547] candidate block endorsement satisfied    l2Block=296 certCount=1 commitmentRoot=31f870..5ff89c
+INFO [04-09|11:02:29.547] ENDORSEMENT_METADATA_BUILT               block=296 hash=9ff7ab..952c26 metadataVersion=1 flags=3 timeboostLen=1 hasCommitmentRoot=true commitmentRoot=31f870..5ff89c commitmentDataLen=118
+INFO [04-09|11:02:29.547] ENDORSEMENT_COMMITMENTDATA_PARSED        block=296 hash=9ff7ab..952c26 certCount=1 commitmentRoot=31f870..5ff89c recomputedRoot=31f870..5ff89c rootMatch=true
+INFO [04-09|11:02:29.547] ENDORSEMENT_COMMITMENT_CERT_VERIFY_INPUT block=296 hash=9ff7ab..952c26 blockTxCount=2 receiptCount=2 parsedCertCount=1
+INFO [04-09|11:02:29.547] ENDORSEMENT_COMMITMENT_CERT_VERIFY_OK    block=296 hash=9ff7ab..952c26 certCount=1
+INFO [04-09|11:02:29.553] Submitted transaction                    hash=0xe3b84eaff9c64d78b7386e9aba1b97f8e32bde4a06a8c123ea7abc59cce73838 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 nonce=22 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-09|11:02:31.021] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-09|11:02:31.021] resolved tx endorsement policy           txHash=ed12ce..efc0e4 txIndex=0 policyID=default threshold=2
+INFO [04-09|11:02:31.027] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-09|11:02:31.027] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=297 blockHash=b7ace3..1b427b
+INFO [04-09|11:02:31.029] ENDORSEMENT_DEBUG endorser wiring        hasEndorser=true hasPolicyConfig=true
+INFO [04-09|11:02:31.029] ENDORSEMENT_DEBUG calling endorsement manager l2Block=297 txCount=1 timeout=2s
+INFO [04-09|11:02:31.029] ENDORSEMENT_MOCK_DECISION                txHash=ed12ce..efc0e4 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=B reject=false reason=
+INFO [04-09|11:02:31.029] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=B requestID=0b582e..63b3d1 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:31.030] ENDORSEMENT_MOCK_DECISION                txHash=ed12ce..efc0e4 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=C reject=false reason=
+INFO [04-09|11:02:31.030] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=C requestID=0b582e..63b3d1 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:31.031] ENDORSEMENT_MOCK_DECISION                txHash=ed12ce..efc0e4 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=A reject=false reason=
+INFO [04-09|11:02:31.031] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=A requestID=0b582e..63b3d1 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:31.031] Candidate Block Endorsement Complete     AllSatisfied=true Mode=completed_all RebuildTxCount=0
+INFO [04-09|11:02:31.031] ENDORSEMENT_DEBUG endorsement manager returned l2Block=297 allSatisfied=true certCount=1
+INFO [04-09|11:02:31.031] candidate block endorsement satisfied    l2Block=297 certCount=1 commitmentRoot=66bdff..71c942
+INFO [04-09|11:02:31.031] ENDORSEMENT_METADATA_BUILT               block=297 hash=b7ace3..1b427b metadataVersion=1 flags=3 timeboostLen=1 hasCommitmentRoot=true commitmentRoot=66bdff..71c942 commitmentDataLen=118
+INFO [04-09|11:02:31.031] ENDORSEMENT_COMMITMENTDATA_PARSED        block=297 hash=b7ace3..1b427b certCount=1 commitmentRoot=66bdff..71c942 recomputedRoot=66bdff..71c942 rootMatch=true
+INFO [04-09|11:02:31.031] ENDORSEMENT_COMMITMENT_CERT_VERIFY_INPUT block=297 hash=b7ace3..1b427b blockTxCount=2 receiptCount=2 parsedCertCount=1
+INFO [04-09|11:02:31.031] ENDORSEMENT_COMMITMENT_CERT_VERIFY_OK    block=297 hash=b7ace3..1b427b certCount=1
+INFO [04-09|11:02:31.035] Submitted transaction                    hash=0xed12cee2188117893a53991b3b145dd2cb166225211dae8b40642bf3b4efc0e4 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 nonce=23 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-09|11:02:32.403] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-09|11:02:32.404] resolved tx endorsement policy           txHash=37848a..a1355c txIndex=0 policyID=default threshold=2
+INFO [04-09|11:02:32.410] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-09|11:02:32.410] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=298 blockHash=c7e43e..821ad9
+INFO [04-09|11:02:32.410] ENDORSEMENT_DEBUG endorser wiring        hasEndorser=true hasPolicyConfig=true
+INFO [04-09|11:02:32.410] ENDORSEMENT_DEBUG calling endorsement manager l2Block=298 txCount=1 timeout=2s
+INFO [04-09|11:02:32.410] ENDORSEMENT_MOCK_DECISION                txHash=37848a..a1355c txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=A reject=false reason=
+INFO [04-09|11:02:32.411] ENDORSEMENT_MOCK_DECISION                txHash=37848a..a1355c txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=B reject=false reason=
+INFO [04-09|11:02:32.411] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=B requestID=b27798..1541b3 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:32.411] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=A requestID=b27798..1541b3 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:32.411] ENDORSEMENT_MOCK_DECISION                txHash=37848a..a1355c txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=C reject=false reason=
+INFO [04-09|11:02:32.411] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=C requestID=b27798..1541b3 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:32.411] Candidate Block Endorsement Complete     AllSatisfied=true Mode=completed_all RebuildTxCount=0
+INFO [04-09|11:02:32.411] ENDORSEMENT_DEBUG endorsement manager returned l2Block=298 allSatisfied=true certCount=1
+INFO [04-09|11:02:32.411] candidate block endorsement satisfied    l2Block=298 certCount=1 commitmentRoot=848289..1cf364
+INFO [04-09|11:02:32.411] ENDORSEMENT_METADATA_BUILT               block=298 hash=c7e43e..821ad9 metadataVersion=1 flags=3 timeboostLen=1 hasCommitmentRoot=true commitmentRoot=848289..1cf364 commitmentDataLen=118
+INFO [04-09|11:02:32.411] ENDORSEMENT_COMMITMENTDATA_PARSED        block=298 hash=c7e43e..821ad9 certCount=1 commitmentRoot=848289..1cf364 recomputedRoot=848289..1cf364 rootMatch=true
+INFO [04-09|11:02:32.411] ENDORSEMENT_COMMITMENT_CERT_VERIFY_INPUT block=298 hash=c7e43e..821ad9 blockTxCount=2 receiptCount=2 parsedCertCount=1
+INFO [04-09|11:02:32.411] ENDORSEMENT_COMMITMENT_CERT_VERIFY_OK    block=298 hash=c7e43e..821ad9 certCount=1
+INFO [04-09|11:02:32.413] Submitted transaction                    hash=0x37848a9ea3b5d74d7304111090bd55487e46cefb6e84a593edc9e19642a1355c from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 nonce=24 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-09|11:02:33.596] Waiting for more batches to post next assertion latestStakedAssertionBatchCount=18 latestStakedAssertionBlockHash=0x610143dc
+INFO [04-09|11:02:33.614] Latest confirmed assertion               assertionAfterState="&{GlobalState:{BlockHash:0x0ad0f5c233696347a8f5af04652af53d3e07e27084e74c212bbefe44cf0bc720 SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:16 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0x6da43636f4afbeaf20fa33c8ab9f3edbef17cc463e6221d78403b64c7d67e01e}"
+INFO [04-09|11:02:33.641] DataPoster sent transaction              nonce=33 hash=eda354..b66533 feeCap=12,000,000,070 tipCap=1,200,000,000 blobFeeCap=<nil> gas=153,960
+INFO [04-09|11:02:33.642] rpc response                             method=eth_estimateGas logId=331 err="execution reverted"           result="\"0x0\"" attempt=0 args="[{\"from\":\"0xc8e5d0c6919d4da7d48ffb7d406d83ed1ea38132\",\"input\":\"0x097da1f8000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000008c2005559c23b0cf55f545103eaf0460641f9609000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001e410b98a35d8d054c0a6b19e59cf9fd154eaa8b4b95360fa3ea96a6679a06f5b3bb2bc6c9ac9dda6730ce559d25bd7543db0d873c8a87b898576b9cd5089082a7527c821dc610143dc52a9396420a72c38651d93a2746472e6470879334d49032ccb3b139600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017cf1deeade408cb3f03bdda3297d7d1a361c88bd84f688ef332051d54505a4680000000000000000000000000000000000000000000000000000000000000000c2c02df561d4afaf9a1d6785f70098ec3874765c638e3cb6dbe8d3c83333e14c000000000000000000000000000000000000000000000000000000000000000800000000000000000000000043679e89a6fea7df648350f5a7fdcd0bb4a501e9000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000116edb263d7b1ba3714d92832c21be88cfd05d0138a4942064ddda91237191212500000000000000000000000000000000000000000000000000000000\",\"to\":\"0xc8e5d0c6919d4da7d48ffb7d406d83ed1ea38132\",\"value\":\"0x0\"}]" errorData="\"0xf26aea8b000000000000000000000000c8e5d0c6919d4da7d48ffb7d406d83ed1ea38132\""
+WARN [04-09|11:02:33.643] Could not confirm assertion              err="gas estimation errored for tx with hash 0xeda3542b: execution reverted" assertionHash=d8d054..bc6c9a
+INFO [04-09|11:02:33.817] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-09|11:02:33.818] resolved tx endorsement policy           txHash=76c03f..e7b6be txIndex=0 policyID=default threshold=2
+INFO [04-09|11:02:33.823] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-09|11:02:33.823] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=299 blockHash=c6e539..452fbd
+INFO [04-09|11:02:33.824] ENDORSEMENT_DEBUG endorser wiring        hasEndorser=true hasPolicyConfig=true
+INFO [04-09|11:02:33.824] ENDORSEMENT_DEBUG calling endorsement manager l2Block=299 txCount=1 timeout=2s
+INFO [04-09|11:02:33.824] ENDORSEMENT_MOCK_DECISION                txHash=76c03f..e7b6be txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=B reject=false reason=
+INFO [04-09|11:02:33.825] ENDORSEMENT_MOCK_DECISION                txHash=76c03f..e7b6be txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=A reject=false reason=
+INFO [04-09|11:02:33.825] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=A requestID=658e56..172e9f decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:33.825] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=B requestID=658e56..172e9f decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:33.824] ENDORSEMENT_MOCK_DECISION                txHash=76c03f..e7b6be txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=C reject=false reason=
+INFO [04-09|11:02:33.825] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=C requestID=658e56..172e9f decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:33.825] Candidate Block Endorsement Complete     AllSatisfied=true Mode=completed_all RebuildTxCount=0
+INFO [04-09|11:02:33.825] ENDORSEMENT_DEBUG endorsement manager returned l2Block=299 allSatisfied=true certCount=1
+INFO [04-09|11:02:33.825] candidate block endorsement satisfied    l2Block=299 certCount=1 commitmentRoot=e35cee..9665b8
+INFO [04-09|11:02:33.825] ENDORSEMENT_METADATA_BUILT               block=299 hash=c6e539..452fbd metadataVersion=1 flags=3 timeboostLen=1 hasCommitmentRoot=true commitmentRoot=e35cee..9665b8 commitmentDataLen=118
+INFO [04-09|11:02:33.825] ENDORSEMENT_COMMITMENTDATA_PARSED        block=299 hash=c6e539..452fbd certCount=1 commitmentRoot=e35cee..9665b8 recomputedRoot=e35cee..9665b8 rootMatch=true
+INFO [04-09|11:02:33.825] ENDORSEMENT_COMMITMENT_CERT_VERIFY_INPUT block=299 hash=c6e539..452fbd blockTxCount=2 receiptCount=2 parsedCertCount=1
+INFO [04-09|11:02:33.825] ENDORSEMENT_COMMITMENT_CERT_VERIFY_OK    block=299 hash=c6e539..452fbd certCount=1
+INFO [04-09|11:02:33.827] Submitted transaction                    hash=0x76c03fd50e2b94afe47f94f7ccd470a6362e926372269a3a15a0a0325ce7b6be from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 nonce=25 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-09|11:02:35.263] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-09|11:02:35.263] resolved tx endorsement policy           txHash=b8b6bf..3a1811 txIndex=0 policyID=default threshold=2
+INFO [04-09|11:02:35.266] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-09|11:02:35.267] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=300 blockHash=fdadbf..2f4c1c
+INFO [04-09|11:02:35.267] ENDORSEMENT_DEBUG endorser wiring        hasEndorser=true hasPolicyConfig=true
+INFO [04-09|11:02:35.267] ENDORSEMENT_DEBUG calling endorsement manager l2Block=300 txCount=1 timeout=2s
+INFO [04-09|11:02:35.267] ENDORSEMENT_MOCK_DECISION                txHash=b8b6bf..3a1811 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=A reject=false reason=
+INFO [04-09|11:02:35.267] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=A requestID=640581..f90b86 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:35.267] ENDORSEMENT_MOCK_DECISION                txHash=b8b6bf..3a1811 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=B reject=false reason=
+INFO [04-09|11:02:35.267] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=B requestID=640581..f90b86 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:35.268] ENDORSEMENT_MOCK_DECISION                txHash=b8b6bf..3a1811 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=C reject=false reason=
+INFO [04-09|11:02:35.268] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=C requestID=640581..f90b86 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:35.268] Candidate Block Endorsement Complete     AllSatisfied=true Mode=completed_all RebuildTxCount=0
+INFO [04-09|11:02:35.269] ENDORSEMENT_DEBUG endorsement manager returned l2Block=300 allSatisfied=true certCount=1
+INFO [04-09|11:02:35.269] candidate block endorsement satisfied    l2Block=300 certCount=1 commitmentRoot=4c3f04..5bc4d8
+INFO [04-09|11:02:35.269] ENDORSEMENT_METADATA_BUILT               block=300 hash=fdadbf..2f4c1c metadataVersion=1 flags=3 timeboostLen=1 hasCommitmentRoot=true commitmentRoot=4c3f04..5bc4d8 commitmentDataLen=118
+INFO [04-09|11:02:35.269] ENDORSEMENT_COMMITMENTDATA_PARSED        block=300 hash=fdadbf..2f4c1c certCount=1 commitmentRoot=4c3f04..5bc4d8 recomputedRoot=4c3f04..5bc4d8 rootMatch=true
+INFO [04-09|11:02:35.269] ENDORSEMENT_COMMITMENT_CERT_VERIFY_INPUT block=300 hash=fdadbf..2f4c1c blockTxCount=2 receiptCount=2 parsedCertCount=1
+INFO [04-09|11:02:35.269] ENDORSEMENT_COMMITMENT_CERT_VERIFY_OK    block=300 hash=fdadbf..2f4c1c certCount=1
+INFO [04-09|11:02:35.273] Submitted transaction                    hash=0xb8b6bf9a22eeb12fb12e35f76e5aab8f85125f6ba0ffec665dbedb39a33a1811 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 nonce=26 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-09|11:02:36.683] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-09|11:02:36.683] resolved tx endorsement policy           txHash=b764ca..3a75d7 txIndex=0 policyID=default threshold=2
+INFO [04-09|11:02:36.688] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-09|11:02:36.688] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=301 blockHash=c373a0..0727e1
+INFO [04-09|11:02:36.689] ENDORSEMENT_DEBUG endorser wiring        hasEndorser=true hasPolicyConfig=true
+INFO [04-09|11:02:36.689] ENDORSEMENT_DEBUG calling endorsement manager l2Block=301 txCount=1 timeout=2s
+INFO [04-09|11:02:36.689] ENDORSEMENT_MOCK_DECISION                txHash=b764ca..3a75d7 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=A reject=false reason=
+INFO [04-09|11:02:36.689] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=A requestID=aab5bd..c569ed decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:36.689] ENDORSEMENT_MOCK_DECISION                txHash=b764ca..3a75d7 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=B reject=false reason=
+INFO [04-09|11:02:36.689] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=B requestID=aab5bd..c569ed decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:36.689] ENDORSEMENT_MOCK_DECISION                txHash=b764ca..3a75d7 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=C reject=false reason=
+INFO [04-09|11:02:36.690] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=C requestID=aab5bd..c569ed decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:36.690] Candidate Block Endorsement Complete     AllSatisfied=true Mode=completed_all RebuildTxCount=0
+INFO [04-09|11:02:36.690] ENDORSEMENT_DEBUG endorsement manager returned l2Block=301 allSatisfied=true certCount=1
+INFO [04-09|11:02:36.691] candidate block endorsement satisfied    l2Block=301 certCount=1 commitmentRoot=d5e77b..1013a1
+INFO [04-09|11:02:36.691] ENDORSEMENT_METADATA_BUILT               block=301 hash=c373a0..0727e1 metadataVersion=1 flags=3 timeboostLen=1 hasCommitmentRoot=true commitmentRoot=d5e77b..1013a1 commitmentDataLen=118
+INFO [04-09|11:02:36.691] ENDORSEMENT_COMMITMENTDATA_PARSED        block=301 hash=c373a0..0727e1 certCount=1 commitmentRoot=d5e77b..1013a1 recomputedRoot=d5e77b..1013a1 rootMatch=true
+INFO [04-09|11:02:36.691] ENDORSEMENT_COMMITMENT_CERT_VERIFY_INPUT block=301 hash=c373a0..0727e1 blockTxCount=2 receiptCount=2 parsedCertCount=1
+INFO [04-09|11:02:36.691] ENDORSEMENT_COMMITMENT_CERT_VERIFY_OK    block=301 hash=c373a0..0727e1 certCount=1
+INFO [04-09|11:02:36.696] Submitted transaction                    hash=0xb764ca95975bf0d71300d5aae68f3a8d5d4c2c8a96ebcbb9c8e4dd4cdf3a75d7 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 nonce=27 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-09|11:02:38.024] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-09|11:02:38.024] resolved tx endorsement policy           txHash=92ca69..26e7bd txIndex=0 policyID=default threshold=2
+INFO [04-09|11:02:38.030] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-09|11:02:38.030] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=302 blockHash=b0acdb..e1bfa7
+INFO [04-09|11:02:38.030] ENDORSEMENT_DEBUG endorser wiring        hasEndorser=true hasPolicyConfig=true
+INFO [04-09|11:02:38.030] ENDORSEMENT_DEBUG calling endorsement manager l2Block=302 txCount=1 timeout=2s
+INFO [04-09|11:02:38.031] ENDORSEMENT_MOCK_DECISION                txHash=92ca69..26e7bd txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=B reject=false reason=
+INFO [04-09|11:02:38.031] ENDORSEMENT_MOCK_DECISION                txHash=92ca69..26e7bd txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=C reject=false reason=
+INFO [04-09|11:02:38.031] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=C requestID=7168e6..4834eb decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:38.030] ENDORSEMENT_MOCK_DECISION                txHash=92ca69..26e7bd txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=A reject=false reason=
+INFO [04-09|11:02:38.031] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=A requestID=7168e6..4834eb decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:38.031] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=B requestID=7168e6..4834eb decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:38.032] Candidate Block Endorsement Complete     AllSatisfied=true Mode=completed_all RebuildTxCount=0
+INFO [04-09|11:02:38.032] ENDORSEMENT_DEBUG endorsement manager returned l2Block=302 allSatisfied=true certCount=1
+INFO [04-09|11:02:38.032] candidate block endorsement satisfied    l2Block=302 certCount=1 commitmentRoot=e7e3c3..23851a
+INFO [04-09|11:02:38.032] ENDORSEMENT_METADATA_BUILT               block=302 hash=b0acdb..e1bfa7 metadataVersion=1 flags=3 timeboostLen=1 hasCommitmentRoot=true commitmentRoot=e7e3c3..23851a commitmentDataLen=118
+INFO [04-09|11:02:38.032] ENDORSEMENT_COMMITMENTDATA_PARSED        block=302 hash=b0acdb..e1bfa7 certCount=1 commitmentRoot=e7e3c3..23851a recomputedRoot=e7e3c3..23851a rootMatch=true
+INFO [04-09|11:02:38.032] ENDORSEMENT_COMMITMENT_CERT_VERIFY_INPUT block=302 hash=b0acdb..e1bfa7 blockTxCount=2 receiptCount=2 parsedCertCount=1
+INFO [04-09|11:02:38.032] ENDORSEMENT_COMMITMENT_CERT_VERIFY_OK    block=302 hash=b0acdb..e1bfa7 certCount=1
+INFO [04-09|11:02:38.039] Submitted transaction                    hash=0x92ca6964622d1eadc6ad17ad5353f6c1b3bf345f2447e3f0b7938d632c26e7bd from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 nonce=28 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-09|11:02:38.095] InboxTracker                             sequencerBatchCount=18 messageCount=294 l1Block=1322 l1Timestamp=2026-04-09T11:02:10+0000
+INFO [04-09|11:02:38.855] ExecutionEngine: Added DelayedMessages   msgIdx=303 delayedMsgIdx=26 block-header="&{ParentHash:0xb0acdb4eea6c421c3e48efeefba9b85cb341bb4d5c623c695b356d8a6ae1bfa7 UncleHash:0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347 Coinbase:0xe2148eE53c0755215Df69b2616E552154EdC584f Root:0xbb43adec622cab8a91ccd5771efeee9ba48d34523bb103059f6803e2f649fa62 TxHash:0x0d725e14db6a546d103141cafad0bd911e67dd3c0cace8fd6532b023a5edb8c8 ReceiptHash:0xf08cf5553e1dae52e3df19b356b8320e17c39fb055f635739c31052db5c3e45e Bloom:[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0] Difficulty:+1 Number:+303 GasLimit:1125899906842624 GasUsed:0 Time:1775732558 Extra:[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0] MixDigest:0x0000000000000000000000000000052a00000000000000280000000000000000 Nonce:[0 0 0 0 0 0 0 27] BaseFee:+100000000 WithdrawalsHash:<nil> BlobGasUsed:<nil> ExcessBlobGas:<nil> ParentBeaconRoot:<nil> RequestsHash:<nil>}"
+INFO [04-09|11:02:38.856] DelayedSequencer: Sequenced              msgnum=1 startpos=26
+INFO [04-09|11:02:39.377] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-09|11:02:39.377] resolved tx endorsement policy           txHash=14aece..5d8855 txIndex=0 policyID=default threshold=2
+INFO [04-09|11:02:39.388] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-09|11:02:39.388] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=304 blockHash=b01456..8652a8
+INFO [04-09|11:02:39.388] ENDORSEMENT_DEBUG endorser wiring        hasEndorser=true hasPolicyConfig=true
+INFO [04-09|11:02:39.388] ENDORSEMENT_DEBUG calling endorsement manager l2Block=304 txCount=1 timeout=2s
+INFO [04-09|11:02:39.388] ENDORSEMENT_MOCK_DECISION                txHash=14aece..5d8855 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=A reject=false reason=
+INFO [04-09|11:02:39.388] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=A requestID=2f63f6..6179cf decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:39.388] ENDORSEMENT_MOCK_DECISION                txHash=14aece..5d8855 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=B reject=false reason=
+INFO [04-09|11:02:39.389] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=B requestID=2f63f6..6179cf decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:39.389] ENDORSEMENT_MOCK_DECISION                txHash=14aece..5d8855 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=C reject=false reason=
+INFO [04-09|11:02:39.389] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=C requestID=2f63f6..6179cf decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:39.389] Candidate Block Endorsement Complete     AllSatisfied=true Mode=completed_all RebuildTxCount=0
+INFO [04-09|11:02:39.389] ENDORSEMENT_DEBUG endorsement manager returned l2Block=304 allSatisfied=true certCount=1
+INFO [04-09|11:02:39.389] candidate block endorsement satisfied    l2Block=304 certCount=1 commitmentRoot=416e8d..5b0ead
+INFO [04-09|11:02:39.389] ENDORSEMENT_METADATA_BUILT               block=304 hash=b01456..8652a8 metadataVersion=1 flags=3 timeboostLen=1 hasCommitmentRoot=true commitmentRoot=416e8d..5b0ead commitmentDataLen=118
+INFO [04-09|11:02:39.389] ENDORSEMENT_COMMITMENTDATA_PARSED        block=304 hash=b01456..8652a8 certCount=1 commitmentRoot=416e8d..5b0ead recomputedRoot=416e8d..5b0ead rootMatch=true
+INFO [04-09|11:02:39.389] ENDORSEMENT_COMMITMENT_CERT_VERIFY_INPUT block=304 hash=b01456..8652a8 blockTxCount=2 receiptCount=2 parsedCertCount=1
+INFO [04-09|11:02:39.389] ENDORSEMENT_COMMITMENT_CERT_VERIFY_OK    block=304 hash=b01456..8652a8 certCount=1
+INFO [04-09|11:02:39.392] Submitted transaction                    hash=0x14aeceeef497c5df48f7091d1e5406b463dc3f7fd62415a215591fbf9a5d8855 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 nonce=29 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-09|11:02:40.741] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-09|11:02:40.741] resolved tx endorsement policy           txHash=da8be8..a7685f txIndex=0 policyID=default threshold=2
+INFO [04-09|11:02:40.747] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-09|11:02:40.747] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=305 blockHash=3c042a..9db3b5
+INFO [04-09|11:02:40.747] ENDORSEMENT_DEBUG endorser wiring        hasEndorser=true hasPolicyConfig=true
+INFO [04-09|11:02:40.747] ENDORSEMENT_DEBUG calling endorsement manager l2Block=305 txCount=1 timeout=2s
+INFO [04-09|11:02:40.747] ENDORSEMENT_MOCK_DECISION                txHash=da8be8..a7685f txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=A reject=false reason=
+INFO [04-09|11:02:40.749] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=A requestID=0884d4..045475 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:40.748] ENDORSEMENT_MOCK_DECISION                txHash=da8be8..a7685f txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=B reject=false reason=
+INFO [04-09|11:02:40.748] ENDORSEMENT_MOCK_DECISION                txHash=da8be8..a7685f txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=C reject=false reason=
+INFO [04-09|11:02:40.749] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=C requestID=0884d4..045475 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:40.749] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=B requestID=0884d4..045475 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:40.749] Candidate Block Endorsement Complete     AllSatisfied=true Mode=completed_all RebuildTxCount=0
+INFO [04-09|11:02:40.750] ENDORSEMENT_DEBUG endorsement manager returned l2Block=305 allSatisfied=true certCount=1
+INFO [04-09|11:02:40.750] candidate block endorsement satisfied    l2Block=305 certCount=1 commitmentRoot=9a674a..7b7ac9
+INFO [04-09|11:02:40.750] ENDORSEMENT_METADATA_BUILT               block=305 hash=3c042a..9db3b5 metadataVersion=1 flags=3 timeboostLen=1 hasCommitmentRoot=true commitmentRoot=9a674a..7b7ac9 commitmentDataLen=118
+INFO [04-09|11:02:40.750] ENDORSEMENT_COMMITMENTDATA_PARSED        block=305 hash=3c042a..9db3b5 certCount=1 commitmentRoot=9a674a..7b7ac9 recomputedRoot=9a674a..7b7ac9 rootMatch=true
+INFO [04-09|11:02:40.751] ENDORSEMENT_COMMITMENT_CERT_VERIFY_INPUT block=305 hash=3c042a..9db3b5 blockTxCount=2 receiptCount=2 parsedCertCount=1
+INFO [04-09|11:02:40.751] ENDORSEMENT_COMMITMENT_CERT_VERIFY_OK    block=305 hash=3c042a..9db3b5 certCount=1
+INFO [04-09|11:02:40.753] Submitted transaction                    hash=0xda8be888d0ac7c64854d40c758bb17f669f1201998a785724458b54a87a7685f from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 nonce=30 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-09|11:02:42.296] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-09|11:02:42.296] resolved tx endorsement policy           txHash=714031..cd1c1f txIndex=0 policyID=default threshold=2
+INFO [04-09|11:02:42.302] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-09|11:02:42.303] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=306 blockHash=2dff46..ef609d
+INFO [04-09|11:02:42.303] ENDORSEMENT_DEBUG endorser wiring        hasEndorser=true hasPolicyConfig=true
+INFO [04-09|11:02:42.303] ENDORSEMENT_DEBUG calling endorsement manager l2Block=306 txCount=1 timeout=2s
+INFO [04-09|11:02:42.303] ENDORSEMENT_MOCK_DECISION                txHash=714031..cd1c1f txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=A reject=false reason=
+INFO [04-09|11:02:42.303] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=A requestID=c484da..ca470b decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:42.303] ENDORSEMENT_MOCK_DECISION                txHash=714031..cd1c1f txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=B reject=false reason=
+INFO [04-09|11:02:42.303] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=B requestID=c484da..ca470b decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:42.303] ENDORSEMENT_MOCK_DECISION                txHash=714031..cd1c1f txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=C reject=false reason=
+INFO [04-09|11:02:42.303] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=C requestID=c484da..ca470b decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:42.304] Candidate Block Endorsement Complete     AllSatisfied=true Mode=completed_all RebuildTxCount=0
+INFO [04-09|11:02:42.304] ENDORSEMENT_DEBUG endorsement manager returned l2Block=306 allSatisfied=true certCount=1
+INFO [04-09|11:02:42.304] candidate block endorsement satisfied    l2Block=306 certCount=1 commitmentRoot=f73e39..d98d72
+INFO [04-09|11:02:42.304] ENDORSEMENT_METADATA_BUILT               block=306 hash=2dff46..ef609d metadataVersion=1 flags=3 timeboostLen=1 hasCommitmentRoot=true commitmentRoot=f73e39..d98d72 commitmentDataLen=118
+INFO [04-09|11:02:42.304] ENDORSEMENT_COMMITMENTDATA_PARSED        block=306 hash=2dff46..ef609d certCount=1 commitmentRoot=f73e39..d98d72 recomputedRoot=f73e39..d98d72 rootMatch=true
+INFO [04-09|11:02:42.304] ENDORSEMENT_COMMITMENT_CERT_VERIFY_INPUT block=306 hash=2dff46..ef609d blockTxCount=2 receiptCount=2 parsedCertCount=1
+INFO [04-09|11:02:42.304] ENDORSEMENT_COMMITMENT_CERT_VERIFY_OK    block=306 hash=2dff46..ef609d certCount=1
+INFO [04-09|11:02:42.309] Submitted transaction                    hash=0x71403117fd3fb8dee698cb3221862373d64dca7e26e6be699375a476ffcd1c1f from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 nonce=31 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-09|11:02:43.596] Waiting for more batches to post next assertion latestStakedAssertionBatchCount=18 latestStakedAssertionBlockHash=0x610143dc
+INFO [04-09|11:02:43.614] Latest confirmed assertion               assertionAfterState="&{GlobalState:{BlockHash:0x610143dc52a9396420a72c38651d93a2746472e6470879334d49032ccb3b1396 SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:17 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0x7cf1deeade408cb3f03bdda3297d7d1a361c88bd84f688ef332051d54505a468}"
+INFO [04-09|11:02:43.615] Confirmed assertion by time              assertionHash=d8d054..bc6c9a
+INFO [04-09|11:02:43.719] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-09|11:02:43.719] resolved tx endorsement policy           txHash=3b7d4a..afeff6 txIndex=0 policyID=default threshold=2
+INFO [04-09|11:02:43.725] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-09|11:02:43.725] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=307 blockHash=aea3ba..9240e7
+INFO [04-09|11:02:43.725] ENDORSEMENT_DEBUG endorser wiring        hasEndorser=true hasPolicyConfig=true
+INFO [04-09|11:02:43.725] ENDORSEMENT_DEBUG calling endorsement manager l2Block=307 txCount=1 timeout=2s
+INFO [04-09|11:02:43.726] ENDORSEMENT_MOCK_DECISION                txHash=3b7d4a..afeff6 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=B reject=false reason=
+INFO [04-09|11:02:43.726] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=B requestID=1d5129..ceabfc decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:43.726] ENDORSEMENT_MOCK_DECISION                txHash=3b7d4a..afeff6 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=A reject=false reason=
+INFO [04-09|11:02:43.726] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=A requestID=1d5129..ceabfc decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:43.726] ENDORSEMENT_MOCK_DECISION                txHash=3b7d4a..afeff6 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=C reject=false reason=
+INFO [04-09|11:02:43.726] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=C requestID=1d5129..ceabfc decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:43.726] Candidate Block Endorsement Complete     AllSatisfied=true Mode=completed_all RebuildTxCount=0
+INFO [04-09|11:02:43.726] ENDORSEMENT_DEBUG endorsement manager returned l2Block=307 allSatisfied=true certCount=1
+INFO [04-09|11:02:43.726] candidate block endorsement satisfied    l2Block=307 certCount=1 commitmentRoot=690cad..742bb1
+INFO [04-09|11:02:43.727] ENDORSEMENT_METADATA_BUILT               block=307 hash=aea3ba..9240e7 metadataVersion=1 flags=3 timeboostLen=1 hasCommitmentRoot=true commitmentRoot=690cad..742bb1 commitmentDataLen=118
+INFO [04-09|11:02:43.727] ENDORSEMENT_COMMITMENTDATA_PARSED        block=307 hash=aea3ba..9240e7 certCount=1 commitmentRoot=690cad..742bb1 recomputedRoot=690cad..742bb1 rootMatch=true
+INFO [04-09|11:02:43.728] ENDORSEMENT_COMMITMENT_CERT_VERIFY_INPUT block=307 hash=aea3ba..9240e7 blockTxCount=2 receiptCount=2 parsedCertCount=1
+INFO [04-09|11:02:43.728] ENDORSEMENT_COMMITMENT_CERT_VERIFY_OK    block=307 hash=aea3ba..9240e7 certCount=1
+INFO [04-09|11:02:43.735] Submitted transaction                    hash=0x3b7d4aa50e7d6860a7c21b5245618cc80e4049b7296cd127067fe9d1f5afeff6 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 nonce=32 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-09|11:02:45.139] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-09|11:02:45.139] resolved tx endorsement policy           txHash=059b39..8e8cf5 txIndex=0 policyID=default threshold=2
+INFO [04-09|11:02:45.147] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-09|11:02:45.148] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=308 blockHash=b5ea3f..343daf
+INFO [04-09|11:02:45.148] ENDORSEMENT_DEBUG endorser wiring        hasEndorser=true hasPolicyConfig=true
+INFO [04-09|11:02:45.148] ENDORSEMENT_DEBUG calling endorsement manager l2Block=308 txCount=1 timeout=2s
+INFO [04-09|11:02:45.148] ENDORSEMENT_MOCK_DECISION                txHash=059b39..8e8cf5 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=A reject=false reason=
+INFO [04-09|11:02:45.149] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=A requestID=910176..509659 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:45.149] ENDORSEMENT_MOCK_DECISION                txHash=059b39..8e8cf5 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=C reject=false reason=
+INFO [04-09|11:02:45.149] ENDORSEMENT_MOCK_DECISION                txHash=059b39..8e8cf5 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=B reject=false reason=
+INFO [04-09|11:02:45.149] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=B requestID=910176..509659 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:45.149] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=C requestID=910176..509659 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:45.150] Candidate Block Endorsement Complete     AllSatisfied=true Mode=completed_all RebuildTxCount=0
+INFO [04-09|11:02:45.150] ENDORSEMENT_DEBUG endorsement manager returned l2Block=308 allSatisfied=true certCount=1
+INFO [04-09|11:02:45.150] candidate block endorsement satisfied    l2Block=308 certCount=1 commitmentRoot=643ffa..2537bc
+INFO [04-09|11:02:45.150] ENDORSEMENT_METADATA_BUILT               block=308 hash=b5ea3f..343daf metadataVersion=1 flags=3 timeboostLen=1 hasCommitmentRoot=true commitmentRoot=643ffa..2537bc commitmentDataLen=118
+INFO [04-09|11:02:45.150] ENDORSEMENT_COMMITMENTDATA_PARSED        block=308 hash=b5ea3f..343daf certCount=1 commitmentRoot=643ffa..2537bc recomputedRoot=643ffa..2537bc rootMatch=true
+INFO [04-09|11:02:45.150] ENDORSEMENT_COMMITMENT_CERT_VERIFY_INPUT block=308 hash=b5ea3f..343daf blockTxCount=2 receiptCount=2 parsedCertCount=1
+INFO [04-09|11:02:45.150] ENDORSEMENT_COMMITMENT_CERT_VERIFY_OK    block=308 hash=b5ea3f..343daf certCount=1
+INFO [04-09|11:02:45.154] Submitted transaction                    hash=0x059b3911345918343a086b407884ca38083c1b9145b00a8376781ed3e58e8cf5 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 nonce=33 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-09|11:02:46.530] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-09|11:02:46.531] resolved tx endorsement policy           txHash=48466b..f07c28 txIndex=0 policyID=default threshold=2
+INFO [04-09|11:02:46.537] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-09|11:02:46.537] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=309 blockHash=9d3b4a..70248c
+INFO [04-09|11:02:46.537] ENDORSEMENT_DEBUG endorser wiring        hasEndorser=true hasPolicyConfig=true
+INFO [04-09|11:02:46.537] ENDORSEMENT_DEBUG calling endorsement manager l2Block=309 txCount=1 timeout=2s
+INFO [04-09|11:02:46.537] ENDORSEMENT_MOCK_DECISION                txHash=48466b..f07c28 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=A reject=false reason=
+INFO [04-09|11:02:46.537] ENDORSEMENT_MOCK_DECISION                txHash=48466b..f07c28 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=B reject=false reason=
+INFO [04-09|11:02:46.538] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=B requestID=942728..001c8c decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:46.538] ENDORSEMENT_MOCK_DECISION                txHash=48466b..f07c28 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=C reject=false reason=
+INFO [04-09|11:02:46.538] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=C requestID=942728..001c8c decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:46.538] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=A requestID=942728..001c8c decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:46.539] Candidate Block Endorsement Complete     AllSatisfied=true Mode=completed_all RebuildTxCount=0
+INFO [04-09|11:02:46.539] ENDORSEMENT_DEBUG endorsement manager returned l2Block=309 allSatisfied=true certCount=1
+INFO [04-09|11:02:46.539] candidate block endorsement satisfied    l2Block=309 certCount=1 commitmentRoot=10fef5..9ec322
+INFO [04-09|11:02:46.539] ENDORSEMENT_METADATA_BUILT               block=309 hash=9d3b4a..70248c metadataVersion=1 flags=3 timeboostLen=1 hasCommitmentRoot=true commitmentRoot=10fef5..9ec322 commitmentDataLen=118
+INFO [04-09|11:02:46.539] ENDORSEMENT_COMMITMENTDATA_PARSED        block=309 hash=9d3b4a..70248c certCount=1 commitmentRoot=10fef5..9ec322 recomputedRoot=10fef5..9ec322 rootMatch=true
+INFO [04-09|11:02:46.539] ENDORSEMENT_COMMITMENT_CERT_VERIFY_INPUT block=309 hash=9d3b4a..70248c blockTxCount=2 receiptCount=2 parsedCertCount=1
+INFO [04-09|11:02:46.539] ENDORSEMENT_COMMITMENT_CERT_VERIFY_OK    block=309 hash=9d3b4a..70248c certCount=1
+INFO [04-09|11:02:46.543] Submitted transaction                    hash=0x48466b0fce52162bfd4b1b91b331ac7aaee4d558c8bc9c9166f8617ef7f07c28 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 nonce=34 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-09|11:02:47.984] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-09|11:02:47.985] resolved tx endorsement policy           txHash=b8c4d6..f11643 txIndex=0 policyID=default threshold=2
+INFO [04-09|11:02:47.993] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-09|11:02:47.994] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=310 blockHash=c78bc7..a7ed58
+INFO [04-09|11:02:47.994] ENDORSEMENT_DEBUG endorser wiring        hasEndorser=true hasPolicyConfig=true
+INFO [04-09|11:02:47.994] ENDORSEMENT_DEBUG calling endorsement manager l2Block=310 txCount=1 timeout=2s
+INFO [04-09|11:02:47.994] ENDORSEMENT_MOCK_DECISION                txHash=b8c4d6..f11643 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=C reject=false reason=
+INFO [04-09|11:02:47.994] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=C requestID=6858c6..6e82a5 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:47.994] ENDORSEMENT_MOCK_DECISION                txHash=b8c4d6..f11643 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=B reject=false reason=
+INFO [04-09|11:02:47.995] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=B requestID=6858c6..6e82a5 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:47.994] ENDORSEMENT_MOCK_DECISION                txHash=b8c4d6..f11643 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=A reject=false reason=
+INFO [04-09|11:02:47.995] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=A requestID=6858c6..6e82a5 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:47.995] Candidate Block Endorsement Complete     AllSatisfied=true Mode=completed_all RebuildTxCount=0
+INFO [04-09|11:02:47.995] ENDORSEMENT_DEBUG endorsement manager returned l2Block=310 allSatisfied=true certCount=1
+INFO [04-09|11:02:47.995] candidate block endorsement satisfied    l2Block=310 certCount=1 commitmentRoot=ec292e..003dd7
+INFO [04-09|11:02:47.995] ENDORSEMENT_METADATA_BUILT               block=310 hash=c78bc7..a7ed58 metadataVersion=1 flags=3 timeboostLen=1 hasCommitmentRoot=true commitmentRoot=ec292e..003dd7 commitmentDataLen=118
+INFO [04-09|11:02:47.996] ENDORSEMENT_COMMITMENTDATA_PARSED        block=310 hash=c78bc7..a7ed58 certCount=1 commitmentRoot=ec292e..003dd7 recomputedRoot=ec292e..003dd7 rootMatch=true
+INFO [04-09|11:02:47.996] ENDORSEMENT_COMMITMENT_CERT_VERIFY_INPUT block=310 hash=c78bc7..a7ed58 blockTxCount=2 receiptCount=2 parsedCertCount=1
+INFO [04-09|11:02:47.996] ENDORSEMENT_COMMITMENT_CERT_VERIFY_OK    block=310 hash=c78bc7..a7ed58 certCount=1
+INFO [04-09|11:02:48.001] Submitted transaction                    hash=0xb8c4d616a73bcce659cf65839db5a79e930429d1b8ad00385126b4830af11643 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 nonce=35 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-09|11:02:49.402] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-09|11:02:49.402] resolved tx endorsement policy           txHash=2c7b4b..691c0a txIndex=0 policyID=default threshold=2
+INFO [04-09|11:02:49.409] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-09|11:02:49.409] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=311 blockHash=3398bc..d2db17
+INFO [04-09|11:02:49.410] ENDORSEMENT_DEBUG endorser wiring        hasEndorser=true hasPolicyConfig=true
+INFO [04-09|11:02:49.410] ENDORSEMENT_DEBUG calling endorsement manager l2Block=311 txCount=1 timeout=2s
+INFO [04-09|11:02:49.411] ENDORSEMENT_MOCK_DECISION                txHash=2c7b4b..691c0a txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=B reject=false reason=
+INFO [04-09|11:02:49.411] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=B requestID=46558b..4a9ce4 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:49.411] ENDORSEMENT_MOCK_DECISION                txHash=2c7b4b..691c0a txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=A reject=false reason=
+INFO [04-09|11:02:49.412] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=A requestID=46558b..4a9ce4 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:49.411] ENDORSEMENT_MOCK_DECISION                txHash=2c7b4b..691c0a txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=C reject=false reason=
+INFO [04-09|11:02:49.413] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=C requestID=46558b..4a9ce4 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:49.413] Candidate Block Endorsement Complete     AllSatisfied=true Mode=completed_all RebuildTxCount=0
+INFO [04-09|11:02:49.413] ENDORSEMENT_DEBUG endorsement manager returned l2Block=311 allSatisfied=true certCount=1
+INFO [04-09|11:02:49.413] candidate block endorsement satisfied    l2Block=311 certCount=1 commitmentRoot=1e32b3..5bfa4f
+INFO [04-09|11:02:49.413] ENDORSEMENT_METADATA_BUILT               block=311 hash=3398bc..d2db17 metadataVersion=1 flags=3 timeboostLen=1 hasCommitmentRoot=true commitmentRoot=1e32b3..5bfa4f commitmentDataLen=118
+INFO [04-09|11:02:49.414] ENDORSEMENT_COMMITMENTDATA_PARSED        block=311 hash=3398bc..d2db17 certCount=1 commitmentRoot=1e32b3..5bfa4f recomputedRoot=1e32b3..5bfa4f rootMatch=true
+INFO [04-09|11:02:49.414] ENDORSEMENT_COMMITMENT_CERT_VERIFY_INPUT block=311 hash=3398bc..d2db17 blockTxCount=2 receiptCount=2 parsedCertCount=1
+INFO [04-09|11:02:49.414] ENDORSEMENT_COMMITMENT_CERT_VERIFY_OK    block=311 hash=3398bc..d2db17 certCount=1
+INFO [04-09|11:02:49.418] Submitted transaction                    hash=0x2c7b4b9ffd872b8d3537be1dcc6e82404fe8b8c3555d7f33c9d9ce77e9691c0a from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 nonce=36 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-09|11:02:50.896] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-09|11:02:50.896] resolved tx endorsement policy           txHash=6bec01..a72b4e txIndex=0 policyID=default threshold=2
+INFO [04-09|11:02:50.901] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-09|11:02:50.901] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=312 blockHash=63a858..87b554
+INFO [04-09|11:02:50.901] ENDORSEMENT_DEBUG endorser wiring        hasEndorser=true hasPolicyConfig=true
+INFO [04-09|11:02:50.901] ENDORSEMENT_DEBUG calling endorsement manager l2Block=312 txCount=1 timeout=2s
+INFO [04-09|11:02:50.901] ENDORSEMENT_MOCK_DECISION                txHash=6bec01..a72b4e txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=A reject=false reason=
+INFO [04-09|11:02:50.902] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=A requestID=258808..aa0717 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:50.901] ENDORSEMENT_MOCK_DECISION                txHash=6bec01..a72b4e txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=B reject=false reason=
+INFO [04-09|11:02:50.902] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=B requestID=258808..aa0717 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:50.901] ENDORSEMENT_MOCK_DECISION                txHash=6bec01..a72b4e txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=C reject=false reason=
+INFO [04-09|11:02:50.902] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=C requestID=258808..aa0717 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:50.902] Candidate Block Endorsement Complete     AllSatisfied=true Mode=completed_all RebuildTxCount=0
+INFO [04-09|11:02:50.902] ENDORSEMENT_DEBUG endorsement manager returned l2Block=312 allSatisfied=true certCount=1
+INFO [04-09|11:02:50.902] candidate block endorsement satisfied    l2Block=312 certCount=1 commitmentRoot=719cdd..6a57d2
+INFO [04-09|11:02:50.902] ENDORSEMENT_METADATA_BUILT               block=312 hash=63a858..87b554 metadataVersion=1 flags=3 timeboostLen=1 hasCommitmentRoot=true commitmentRoot=719cdd..6a57d2 commitmentDataLen=118
+INFO [04-09|11:02:50.902] ENDORSEMENT_COMMITMENTDATA_PARSED        block=312 hash=63a858..87b554 certCount=1 commitmentRoot=719cdd..6a57d2 recomputedRoot=719cdd..6a57d2 rootMatch=true
+INFO [04-09|11:02:50.902] ENDORSEMENT_COMMITMENT_CERT_VERIFY_INPUT block=312 hash=63a858..87b554 blockTxCount=2 receiptCount=2 parsedCertCount=1
+INFO [04-09|11:02:50.902] ENDORSEMENT_COMMITMENT_CERT_VERIFY_OK    block=312 hash=63a858..87b554 certCount=1
+INFO [04-09|11:02:50.906] Submitted transaction                    hash=0x6bec014edba772da0e7e297e50db8d153398038f14d83b9da17c00dcbea72b4e from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 nonce=37 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-09|11:02:52.253] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-09|11:02:52.254] resolved tx endorsement policy           txHash=cf63ab..7b9dc9 txIndex=0 policyID=default threshold=2
+INFO [04-09|11:02:52.259] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-09|11:02:52.260] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=313 blockHash=dc95af..0a5d97
+INFO [04-09|11:02:52.260] ENDORSEMENT_DEBUG endorser wiring        hasEndorser=true hasPolicyConfig=true
+INFO [04-09|11:02:52.260] ENDORSEMENT_DEBUG calling endorsement manager l2Block=313 txCount=1 timeout=2s
+INFO [04-09|11:02:52.260] ENDORSEMENT_MOCK_DECISION                txHash=cf63ab..7b9dc9 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=A reject=false reason=
+INFO [04-09|11:02:52.260] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=A requestID=722273..806b1e decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:52.260] ENDORSEMENT_MOCK_DECISION                txHash=cf63ab..7b9dc9 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=B reject=false reason=
+INFO [04-09|11:02:52.260] ENDORSEMENT_MOCK_DECISION                txHash=cf63ab..7b9dc9 txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=C reject=false reason=
+INFO [04-09|11:02:52.261] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=C requestID=722273..806b1e decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:52.260] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=B requestID=722273..806b1e decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:52.261] Candidate Block Endorsement Complete     AllSatisfied=true Mode=completed_all RebuildTxCount=0
+INFO [04-09|11:02:52.261] ENDORSEMENT_DEBUG endorsement manager returned l2Block=313 allSatisfied=true certCount=1
+INFO [04-09|11:02:52.261] candidate block endorsement satisfied    l2Block=313 certCount=1 commitmentRoot=5cc8ee..19d804
+INFO [04-09|11:02:52.261] ENDORSEMENT_METADATA_BUILT               block=313 hash=dc95af..0a5d97 metadataVersion=1 flags=3 timeboostLen=1 hasCommitmentRoot=true commitmentRoot=5cc8ee..19d804 commitmentDataLen=118
+INFO [04-09|11:02:52.261] ENDORSEMENT_COMMITMENTDATA_PARSED        block=313 hash=dc95af..0a5d97 certCount=1 commitmentRoot=5cc8ee..19d804 recomputedRoot=5cc8ee..19d804 rootMatch=true
+INFO [04-09|11:02:52.261] ENDORSEMENT_COMMITMENT_CERT_VERIFY_INPUT block=313 hash=dc95af..0a5d97 blockTxCount=2 receiptCount=2 parsedCertCount=1
+INFO [04-09|11:02:52.261] ENDORSEMENT_COMMITMENT_CERT_VERIFY_OK    block=313 hash=dc95af..0a5d97 certCount=1
+INFO [04-09|11:02:52.264] Submitted transaction                    hash=0xcf63ab314edd5378917aad8262669b81aaf6787279437d1152c799dec77b9dc9 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 nonce=38 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-09|11:02:53.605] Latest confirmed assertion               assertionAfterState="&{GlobalState:{BlockHash:0x610143dc52a9396420a72c38651d93a2746472e6470879334d49032ccb3b1396 SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:17 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0x7cf1deeade408cb3f03bdda3297d7d1a361c88bd84f688ef332051d54505a468}"
+INFO [04-09|11:02:53.676] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-09|11:02:53.677] resolved tx endorsement policy           txHash=412d3f..aff69c txIndex=0 policyID=default threshold=2
+INFO [04-09|11:02:53.685] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-09|11:02:53.685] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=314 blockHash=5ea605..df3c2e
+INFO [04-09|11:02:53.685] ENDORSEMENT_DEBUG endorser wiring        hasEndorser=true hasPolicyConfig=true
+INFO [04-09|11:02:53.685] ENDORSEMENT_DEBUG calling endorsement manager l2Block=314 txCount=1 timeout=2s
+INFO [04-09|11:02:53.686] ENDORSEMENT_MOCK_DECISION                txHash=412d3f..aff69c txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=A reject=false reason=
+INFO [04-09|11:02:53.687] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=A requestID=a92ff4..a09fa5 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:53.687] ENDORSEMENT_MOCK_DECISION                txHash=412d3f..aff69c txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=B reject=false reason=
+INFO [04-09|11:02:53.688] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=B requestID=a92ff4..a09fa5 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:53.687] ENDORSEMENT_MOCK_DECISION                txHash=412d3f..aff69c txIndex=0 to=0x2222222222222222222222222222222222222222 from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 endorser=C reject=false reason=
+INFO [04-09|11:02:53.688] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=C requestID=a92ff4..a09fa5 decision=0 reasonCode= sigLen=16
+INFO [04-09|11:02:53.688] Candidate Block Endorsement Complete     AllSatisfied=true Mode=completed_all RebuildTxCount=0
+INFO [04-09|11:02:53.688] ENDORSEMENT_DEBUG endorsement manager returned l2Block=314 allSatisfied=true certCount=1
+INFO [04-09|11:02:53.688] candidate block endorsement satisfied    l2Block=314 certCount=1 commitmentRoot=eaa4fd..58477f
+INFO [04-09|11:02:53.688] ENDORSEMENT_METADATA_BUILT               block=314 hash=5ea605..df3c2e metadataVersion=1 flags=3 timeboostLen=1 hasCommitmentRoot=true commitmentRoot=eaa4fd..58477f commitmentDataLen=118
+INFO [04-09|11:02:53.689] ENDORSEMENT_COMMITMENTDATA_PARSED        block=314 hash=5ea605..df3c2e certCount=1 commitmentRoot=eaa4fd..58477f recomputedRoot=eaa4fd..58477f rootMatch=true
+INFO [04-09|11:02:53.689] ENDORSEMENT_COMMITMENT_CERT_VERIFY_INPUT block=314 hash=5ea605..df3c2e blockTxCount=2 receiptCount=2 parsedCertCount=1
+INFO [04-09|11:02:53.689] ENDORSEMENT_COMMITMENT_CERT_VERIFY_OK    block=314 hash=5ea605..df3c2e certCount=1
+INFO [04-09|11:02:53.692] Submitted transaction                    hash=0x412d3f7f7599810cb61a2b5e97200970daaa2b7d99ebcd9e12eae02b9caff69c from=0x325dc37bae3a5A85790EeB65Ee7d9cE0f6556204 nonce=39 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000

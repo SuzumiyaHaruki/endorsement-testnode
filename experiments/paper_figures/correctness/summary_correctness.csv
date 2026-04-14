@@ -1,0 +1,6 @@
+case_name,tx_total,tx_receipt_count,tx_error_count,tx_timeout_count,tx_send_error_count,tx_receipt_error_count,lat_avg_ms,lat_p50_ms,lat_p95_ms,lat_p99_ms,keep_total,keep_success,keep_retention_rate,fail_total,fail_success,fail_drop_rate,disabled_skip,endorsement_satisfied,endorsement_failed,rebuild_count,remote_request_count,verify_ok_count,case_log_lines,fault_status,fault_message,fault_name,_case_dir
+correct_1keep_1fail,2,1,1,0,0,0,1638.631,1638.631,1638.631,1638.631,1,1,1.0,1,0,1.0,0,1,1,1,6,1,204,noop,no fault requested,none,correct_1keep_1fail
+correct_2fail_1keep,3,1,2,0,0,0,1665.243,1665.243,1665.243,1665.243,1,1,1.0,2,0,1.0,0,1,2,2,9,1,113,noop,no fault requested,none,correct_2fail_1keep
+correct_2keep_1fail,3,2,1,0,0,0,1707.998,1707.998,1736.518,1739.053,2,2,1.0,1,0,1.0,0,2,1,1,9,2,167,noop,no fault requested,none,correct_2keep_1fail
+correct_single_fail,1,0,1,0,0,0,,,,,0,0,,1,0,1.0,0,0,1,1,3,0,26,noop,no fault requested,none,correct_single_fail
+correct_single_keep,1,1,0,0,0,0,1374.413,1374.413,1374.413,1374.413,1,1,1.0,0,0,,0,1,0,0,3,1,25,noop,no fault requested,none,correct_single_keep

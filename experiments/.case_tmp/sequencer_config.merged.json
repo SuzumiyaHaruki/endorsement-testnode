@@ -1,0 +1,137 @@
+{
+  "ensure-rollup-deployment": false,
+  "parent-chain": {
+    "connection": {
+      "url": "ws://geth:8546"
+    }
+  },
+  "chain": {
+    "id": 412346,
+    "info-files": [
+      "/config/l2_chain_info.json"
+    ]
+  },
+  "node": {
+    "bold": {
+      "rpc-block-number": "latest",
+      "assertion-posting-interval": "10s",
+      "assertion-confirming-interval": "10s",
+      "parent-chain-block-time": 1
+    },
+    "staker": {
+      "dangerous": {
+        "without-block-validator": true
+      },
+      "parent-chain-wallet": {
+        "account": "0x6A568afe0f82d34759347bb36F14A6bB171d2CBe",
+        "password": "passphrase",
+        "pathname": "/home/user/l1keystore"
+      },
+      "disable-challenge": false,
+      "enable": true,
+      "staker-interval": "10s",
+      "make-assertion-interval": "10s",
+      "strategy": "MakeNodes",
+      "use-smart-contract-wallet": true
+    },
+    "sequencer": true,
+    "dangerous": {
+      "no-sequencer-coordinator": true,
+      "disable-blob-reader": true
+    },
+    "delayed-sequencer": {
+      "enable": true
+    },
+    "seq-coordinator": {
+      "enable": false,
+      "redis-url": "redis://redis:6379",
+      "lockout-duration": "30s",
+      "lockout-spare": "1s",
+      "my-url": "",
+      "retry-interval": "0.5s",
+      "seq-num-duration": "24h0m0s",
+      "update-interval": "3s"
+    },
+    "batch-poster": {
+      "enable": true,
+      "redis-url": "",
+      "max-delay": "30s",
+      "l1-block-bound": "ignore",
+      "parent-chain-wallet": {
+        "account": "0xe2148eE53c0755215Df69b2616E552154EdC584f",
+        "password": "passphrase",
+        "pathname": "/home/user/l1keystore"
+      },
+      "data-poster": {
+        "redis-signer": {
+          "signing-key": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+        },
+        "wait-for-l1-finality": false
+      }
+    },
+    "block-validator": {
+      "validation-server": {
+        "url": "ws://validation_node:8549",
+        "jwtsecret": "/config/val_jwt.hex"
+      }
+    },
+    "data-availability": {
+      "enable": false,
+      "rpc-aggregator": {
+        "enable": false,
+        "assumed-honest": 1,
+        "backends": [
+          {
+            "url": "http://das-committee-a:9876",
+            "pubkey": ""
+          },
+          {
+            "url": "http://das-committee-b:9876",
+            "pubkey": ""
+          }
+        ]
+      },
+      "rest-aggregator": {
+        "enable": true,
+        "urls": [
+          "http://das-mirror:9877"
+        ]
+      }
+    }
+  },
+  "execution": {
+    "sequencer": {
+      "enable": true,
+      "experimental-batching-window": "1000ms"
+    },
+    "forwarding-target": "null",
+    "endorsement-experiment": {
+      "enable": true,
+      "mode": "remote",
+      "default-threshold": 2,
+      "strict-threshold": 3,
+      "default-aggregation": "bls",
+      "strict-aggregation": "bls",
+      "block-endorsement-timeout": "2000ms",
+      "max-rebuild-rounds": 3,
+      "fail-to-address": "0x1111111111111111111111111111111111111111",
+      "endorser-a-url": "http://endorser-a:9001",
+      "endorser-b-url": "http://endorser-b:9002",
+      "endorser-c-url": "http://endorser-c:9003",
+      "endorser-a-pubkey": "a3f44d234234430c7c7c3268d5f49a674edc2281bb0aec9ea14be8b598c22c7ad0d909d14b35a4c5d64e155dd28d81ba",
+      "endorser-b-pubkey": "ad10f131ec7851674af913cbc0a62ebb7efd981535e3a0fdcdadc8c7e33bd7e494d4488b018d55659a7d44346b31ebc1",
+      "endorser-c-pubkey": "90f21d7ed995c790d21df79dcc2ad4e1464520108b46767c9326b56c6cce09bb9356962c06471ac1185ea9bc9df43a9b"
+    }
+  },
+  "persistent": {
+    "chain": "local"
+  },
+  "ws": {
+    "addr": "0.0.0.0"
+  },
+  "http": {
+    "addr": "0.0.0.0",
+    "vhosts": "*",
+    "corsdomain": "*"
+  }
+}

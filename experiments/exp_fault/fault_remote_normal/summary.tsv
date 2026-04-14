@@ -1,0 +1,2 @@
+case_name	tx_total	tx_receipt_count	tx_error_count	tx_timeout_count	tx_send_error_count	tx_receipt_error_count	lat_avg_ms	lat_p50_ms	lat_p95_ms	lat_p99_ms	keep_total	keep_success	keep_retention_rate	fail_total	fail_success	fail_drop_rate	disabled_skip	endorsement_satisfied	endorsement_failed	rebuild_count	remote_request_count	verify_ok_count	case_log_lines	fault_status	fault_message	fault_name
+fault_remote_normal	60	54	6	0	0	0	1197.336	1199.95	1253.919	1271.166	54	54	1.0	6	0	1.0	0	54	6	6	180	54	1633	noop	no fault requested	none

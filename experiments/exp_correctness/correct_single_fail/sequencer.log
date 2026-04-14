@@ -1,0 +1,26 @@
+INFO [04-10|08:44:50.037] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-10|08:44:50.038] resolved tx endorsement policy           txHash=f5aae5..906a56 txIndex=0 policyID=strict threshold=3
+INFO [04-10|08:44:50.053] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-10|08:44:50.053] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=3455 blockHash=95291c..f5b63d
+INFO [04-10|08:44:50.053] ENDORSEMENT_DEBUG endorser wiring        hasEndorser=true hasPolicyConfig=true
+INFO [04-10|08:44:50.054] ENDORSEMENT_DEBUG calling endorsement manager l2Block=3455 txCount=1 timeout=2s
+INFO [04-10|08:44:50.054] REMOTE_ENDORSEMENT_REQUEST               endorser=A url=http://endorser-a:9001/endorse requestID=495900..f657d0 txHash=f5aae5..906a56 txIndex=0
+INFO [04-10|08:44:50.054] REMOTE_ENDORSEMENT_REQUEST               endorser=B url=http://endorser-b:9002/endorse requestID=495900..f657d0 txHash=f5aae5..906a56 txIndex=0
+INFO [04-10|08:44:50.054] REMOTE_ENDORSEMENT_REQUEST               endorser=C url=http://endorser-c:9003/endorse requestID=495900..f657d0 txHash=f5aae5..906a56 txIndex=0
+INFO [04-10|08:44:50.067] REMOTE_ENDORSEMENT_RESPONSE              endorser=B decision=1 reasonCode="mock reject by to address" sigLen=0 requestID=495900..f657d0
+INFO [04-10|08:44:50.067] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=B requestID=495900..f657d0 decision=1 reasonCode="mock reject by to address" sigLen=0
+WARN [04-10|08:44:50.067] ENDORSEMENT_MANAGER_TX_FAILED            txIndex=0 endorser=B
+INFO [04-10|08:44:50.068] REMOTE_ENDORSEMENT_RESPONSE              endorser=A decision=1 reasonCode="mock reject by to address" sigLen=0 requestID=495900..f657d0
+INFO [04-10|08:44:50.068] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=A requestID=495900..f657d0 decision=1 reasonCode="mock reject by to address" sigLen=0
+INFO [04-10|08:44:50.068] REMOTE_ENDORSEMENT_RESPONSE              endorser=C decision=1 reasonCode="mock reject by to address" sigLen=0 requestID=495900..f657d0
+INFO [04-10|08:44:50.069] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=C requestID=495900..f657d0 decision=1 reasonCode="mock reject by to address" sigLen=0
+WARN [04-10|08:44:50.069] Candidate Block Endorsement Incomplete   AllSatisfied=false Mode=completed_all RebuildTxCount=1 FailedTxIndexes=[0]
+INFO [04-10|08:44:50.069] ENDORSEMENT_DEBUG endorsement manager returned l2Block=3455 allSatisfied=false certCount=0
+WARN [04-10|08:44:50.069] candidate block endorsement failed       l2Block=3455 failedTxIndexes=[0] failedTxHashes=[0xf5aae516bac530cc7261d901463ba60db2a764766c9f3b928e3d9cf801906a56]
+WARN [04-10|08:44:50.069] ENDORSEMENT_DEBUG rebuilding candidate block after endorsement failure rebuildRound=0 failedTxIndexes=[0] failedTxHashes=[0xf5aae516bac530cc7261d901463ba60db2a764766c9f3b928e3d9cf801906a56]
+WARN [04-10|08:44:50.069] all candidate txs filtered out after endorsement failure rebuildRound=0
+WARN [04-10|08:44:50.069] Served eth_sendRawTransaction            conn=172.18.0.1:49940 reqid=4 duration=1.233938519s err="candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xf5aae516bac530cc7261d901463ba60db2a764766c9f3b928e3d9cf801906a56]"
+INFO [04-10|08:44:56.788] Waiting for more batches to post next assertion latestStakedAssertionBatchCount=169 latestStakedAssertionBlockHash=0xc4c79c6d
+INFO [04-10|08:44:56.801] Latest confirmed assertion               assertionAfterState="&{GlobalState:{BlockHash:0xc4c79c6d2a4809a090f2075eb8e36ebd6548b1ce325b457fb02acc114414176c SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:168 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0xd60f15d716e2eb6cddf8696358203eb8134d777c9264e93d90e46ff8d3a9db85}"
+INFO [04-10|08:44:56.862] DataPoster sent transaction              nonce=167 hash=e4f848..8aa55a feeCap=12,000,000,070 tipCap=1,200,000,000 blobFeeCap=<nil> gas=219,768
+INFO [04-10|08:44:56.862] BatchPoster: batch sent                  sequenceNumber=168 from=3449 to=3455 prevDelayed=176 currentDelayed=177 totalSegments=15 numBlobs=0

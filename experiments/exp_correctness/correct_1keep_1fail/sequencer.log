@@ -1,0 +1,204 @@
+INFO [04-10|08:45:06.139] connected to l1 chain                    l1url=ws://geth:8546 l1chainid=1337
+WARN [04-10|08:45:06.143] Getting file info                        dir= error="stat : no such file or directory"
+WARN [04-10|08:45:06.143] Getting file info                        dir=/workspace/target/machines error="stat /workspace/target/machines: no such file or directory"
+WARN [04-10|08:45:06.143] Getting file info                        dir=/home/user/machines        error="stat /home/user/machines: no such file or directory"
+INFO [04-10|08:45:06.145] Using pebble as the backing database
+INFO [04-10|08:45:06.145] Allocated cache and file handles         database=/home/user/.arbitrum/local/nitro/l2chaindata cache=16.00MiB handles=16
+INFO [04-10|08:45:06.155] Opened ancient database                  database=/home/user/.arbitrum/local/nitro/l2chaindata/ancient/chain readonly=true
+INFO [04-10|08:45:06.155] Opened Era store                         datadir=/home/user/.arbitrum/local/nitro/l2chaindata/ancient/chain/era
+INFO [04-10|08:45:06.156] Using pebble as the backing database
+INFO [04-10|08:45:06.156] Allocated cache and file handles         database=/home/user/.arbitrum/local/nitro/l2chaindata cache=2.00GiB handles=512
+INFO [04-10|08:45:06.193] Opened ancient database                  database=/home/user/.arbitrum/local/nitro/l2chaindata/ancient/chain readonly=false
+INFO [04-10|08:45:06.193] Opened Era store                         datadir=/home/user/.arbitrum/local/nitro/l2chaindata/ancient/chain/era
+INFO [04-10|08:45:06.193] Using pebble as the backing database
+INFO [04-10|08:45:06.193] Allocated cache and file handles         database=/home/user/.arbitrum/local/nitro/wasm cache=2.00GiB handles=512
+INFO [04-10|08:45:06.216] State scheme set by user                 scheme=hash
+INFO [04-10|08:45:06.217] 
+INFO [04-10|08:45:06.217] ---------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO [04-10|08:45:06.217] Chain ID:  412346 (unknown)
+INFO [04-10|08:45:06.217] Consensus: Beacon (proof-of-stake), merged from Clique (proof-of-authority)
+INFO [04-10|08:45:06.217] 
+INFO [04-10|08:45:06.217] Pre-Merge hard forks (block based):
+INFO [04-10|08:45:06.217]  - Homestead:                   #0       
+INFO [04-10|08:45:06.217]  - Tangerine Whistle (EIP 150): #0       
+INFO [04-10|08:45:06.217]  - Spurious Dragon/1 (EIP 155): #0       
+INFO [04-10|08:45:06.217]  - Spurious Dragon/2 (EIP 158): #0       
+INFO [04-10|08:45:06.217]  - Byzantium:                   #0       
+INFO [04-10|08:45:06.217]  - Constantinople:              #0       
+INFO [04-10|08:45:06.217]  - Petersburg:                  #0       
+INFO [04-10|08:45:06.217]  - Istanbul:                    #0       
+INFO [04-10|08:45:06.217]  - Muir Glacier:                #0       
+INFO [04-10|08:45:06.217]  - Berlin:                      #0       
+INFO [04-10|08:45:06.217]  - London:                      #0       
+INFO [04-10|08:45:06.217] 
+INFO [04-10|08:45:06.217] Merge configured:
+INFO [04-10|08:45:06.217]  - Total terminal difficulty:  <nil>
+INFO [04-10|08:45:06.217] 
+INFO [04-10|08:45:06.217] Post-Merge hard forks (timestamp based):
+INFO [04-10|08:45:06.217] 
+INFO [04-10|08:45:06.217] All fork specifications can be found at https://ethereum.github.io/execution-specs/src/ethereum/forks/
+INFO [04-10|08:45:06.217] 
+INFO [04-10|08:45:06.217] ---------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO [04-10|08:45:06.217] 
+INFO [04-10|08:45:06.219] Loaded most recent local block           number=3457 hash=e18969..229c40 age=4s
+INFO [04-10|08:45:06.220] Loaded most recent local finalized block number=3454 hash=9cad96..e08ffa age=24s
+INFO [04-10|08:45:06.232] Initialized transaction indexer          range="last 126230400 blocks"
+INFO [04-10|08:45:06.240] Using pebble as the backing database
+INFO [04-10|08:45:06.240] Allocated cache and file handles         database=/home/user/.arbitrum/local/nitro/arbitrumdata cache=16.00MiB handles=16
+INFO [04-10|08:45:06.255] State scheme set by user                 scheme=hash
+INFO [04-10|08:45:06.256] Initialized log indexer                  firstblock=0 lastblock=3457 firstmap=0 lastmap=0 headindexed=true
+INFO [04-10|08:45:06.258] DA providers configured                  totalWriters=0
+WARN [04-10|08:45:06.258] validation not supported                 err="latestWasmModuleRoot not set"
+INFO [04-10|08:45:06.260] found validator smart contract wallet    address=0xC8e5D0c6919D4Da7D48fFB7d406D83ed1EA38132
+WARN [04-10|08:45:06.553] Unclean shutdown detected                booted=2026-04-10T03:43:34+0000 age=5h1m32s
+WARN [04-10|08:45:06.554] Unclean shutdown detected                booted=2026-04-10T03:48:29+0000 age=4h56m37s
+WARN [04-10|08:45:06.554] Unclean shutdown detected                booted=2026-04-10T03:55:08+0000 age=4h49m58s
+WARN [04-10|08:45:06.554] Unclean shutdown detected                booted=2026-04-10T04:23:28+0000 age=4h21m38s
+WARN [04-10|08:45:06.554] Unclean shutdown detected                booted=2026-04-10T04:39:59+0000 age=4h5m7s
+WARN [04-10|08:45:06.554] Unclean shutdown detected                booted=2026-04-10T04:54:38+0000 age=3h50m28s
+WARN [04-10|08:45:06.554] Unclean shutdown detected                booted=2026-04-10T05:09:33+0000 age=3h35m33s
+WARN [04-10|08:45:06.554] Unclean shutdown detected                booted=2026-04-10T07:46:29+0000 age=58m37s
+WARN [04-10|08:45:06.554] Unclean shutdown detected                booted=2026-04-10T08:09:21+0000 age=35m45s
+INFO [04-10|08:45:06.554] Started log indexer
+INFO [04-10|08:45:06.555] Starting peer-to-peer node               instance=nitro/vdevelopment/linux-amd64/go1.25.8
+WARN [04-10|08:45:06.555] P2P server will be useless, neither dialing nor listening
+INFO [04-10|08:45:06.570] New local node record                    seq=1,775,792,109,910 id=5b8f6cca16a492e1 ip=127.0.0.1 udp=0 tcp=0
+INFO [04-10|08:45:06.571] Started P2P networking                   self=enode://55ae6e1d85947da5c5126bd17953663b68f90ecbe3a75e17551037ea983d64a07eb226449a21fc12f47c6e2378888d7a0079ffee2d4129fd932d6f615c278f74@127.0.0.1:0
+INFO [04-10|08:45:06.571] HTTP server started                      endpoint=[::]:8547 auth=false prefix= cors=* vhosts=*
+INFO [04-10|08:45:06.571] GraphQL enabled                          url=http://[::]:8547/graphql
+INFO [04-10|08:45:06.571] GraphQL UI enabled                       url=http://[::]:8547/graphql/ui
+INFO [04-10|08:45:06.571] WebSocket enabled                        url=ws://[::]:8548
+INFO [04-10|08:45:06.573] Reading message result remotely.         msgIdx=3455
+INFO [04-10|08:45:06.573] Reading message result remotely.         msgIdx=3456
+INFO [04-10|08:45:06.573] Reading message result remotely.         msgIdx=3457
+INFO [04-10|08:45:06.573] arbitrum websocket broadcast server is listening address=[::]:9642
+INFO [04-10|08:45:06.578] Data poster transactions confirmed       previousNonce=0 newNonce=168 previousL1Block=0 newL1Block=18632
+INFO [04-10|08:45:06.578] BoLD protocol is active, initializing BoLD staker
+INFO [04-10|08:45:06.578] 
+ _______             __        _______
+/       \           /  |      /       \
+$$$$$$$  |  ______  $$ |      $$$$$$$  |
+$$ |__$$ | /      \ $$ |      $$ |  $$ |
+$$    $$< /$$$$$$  |$$ |      $$ |  $$ |
+$$$$$$$  |$$ |  $$ |$$ |      $$ |  $$ |
+$$ |__$$ |$$ \__$$ |$$ |_____ $$ |__$$ |
+$$    $$/ $$    $$/ $$       |$$    $$/
+$$$$$$$/   $$$$$$/  $$$$$$$$/ $$$$$$$/
+
+INFO [04-10|08:45:06.596] Minimum assertion period                 blocks=1
+INFO [04-10|08:45:06.607] Setting up challenge manager             name=default-validator addreess=0xC8e5D0c6919D4Da7D48fFB7d406D83ed1EA38132 rollup=0x8C2005559c23b0cf55F545103eaf0460641F9609
+INFO [04-10|08:45:06.608] running as validator                     txSender=0x6A568afe0f82d34759347bb36F14A6bB171d2CBe actingAsWallet=0xC8e5D0c6919D4Da7D48fFB7d406D83ed1EA38132 strategy=makenodes
+INFO [04-10|08:45:06.608] Starting BOLD staker
+INFO [04-10|08:45:06.608] Started challenge manager                stakerAddress=0xC8e5D0c6919D4Da7D48fFB7d406D83ed1EA38132
+INFO [04-10|08:45:06.612] Data poster transactions confirmed       previousNonce=0 newNonce=288 previousL1Block=0 newL1Block=18624
+INFO [04-10|08:45:06.618] Ready to post
+INFO [04-10|08:45:06.628] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+INFO [04-10|08:45:06.656] DataPoster sent transaction              nonce=288 hash=73a500..5d26c3 feeCap=12,000,000,070 tipCap=1,200,000,000 blobFeeCap=<nil> gas=238,425
+INFO [04-10|08:45:06.657] rpc response                             method=eth_estimateGas logId=125 err="execution reverted"           result="\"0x0\"" attempt=0 args="[{\"from\":\"0xc8e5d0c6919d4da7d48ffb7d406d83ed1ea38132\",\"input\":\"0x097da1f8000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000008c2005559c23b0cf55f545103eaf0460641f9609000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002843b86de196c13b286a314c6ba724bcb28d5db56d4a8e6dd69104ed9c0b1237da25899909811199cd5cc23035f910c5a2230898c72506ce3e71a447caad1b7ed00683f6b8fc2c02df561d4afaf9a1d6785f70098ec3874765c638e3cb6dbe8d3c83333e14c000000000000000000000000000000000000000000000000000000000000000800000000000000000000000043679e89a6fea7df648350f5a7fdcd0bb4a501e9000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000a9c4c79c6d2a4809a090f2075eb8e36ebd6548b1ce325b457fb02acc114414176c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001d60f15d716e2eb6cddf8696358203eb8134d777c9264e93d90e46ff8d3a9db859cad96fd012df43180a0e4dc5a68786d4f3895c8d9935de31d9a518f82e08ffa000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001abe747dfe21797c871fe5de500ba89b36b87fe807e65d7926339ae71c9968af11fe4ffb3e536b3fe26df7a838bba173cc1bf63f53cdb5f4740e2d4098e4246c600000000000000000000000000000000000000000000000000000000\",\"to\":\"0xc8e5d0c6919d4da7d48ffb7d406d83ed1ea38132\",\"value\":\"0x0\"}]" errorData="\"0xf26aea8b000000000000000000000000c8e5d0c6919d4da7d48ffb7d406d83ed1ea38132\""
+WARN [04-10|08:45:06.658] Could not submit latest assertion        err="could not create assertion: gas estimation errored for tx with hash 0x73a50028: execution reverted" validatorName=default-validator
+INFO [04-10|08:45:06.662] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:06.680] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:06.685] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:06.700] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:06.704] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:06.723] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:06.726] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:06.740] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:06.743] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:06.754] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:06.756] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:06.768] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:06.772] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:06.786] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:06.789] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:06.804] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:06.808] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:06.821] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:06.824] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:06.836] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:06.839] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:06.852] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:06.855] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:06.867] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:06.870] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:06.888] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:06.891] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:06.906] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:06.910] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:06.925] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:06.927] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:06.939] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:06.942] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:06.955] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:06.959] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:06.975] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:06.979] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:06.995] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:07.002] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:07.022] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:07.028] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:07.054] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:07.060] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:07.091] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:07.096] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:07.114] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:07.118] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:07.137] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:07.142] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:07.160] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:07.164] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+WARN [04-10|08:45:07.182] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 289, unconfirmed nonce: 288, max mempool size: 1" validatorName=default-validator
+INFO [04-10|08:45:07.189] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+INFO [04-10|08:45:07.193] Successfully submitted assertion         validatorName=default-validator requiredInboxMaxCount=169 postedExecutionState="&{GlobalState:{BlockHash:0x9cad96fd012df43180a0e4dc5a68786d4f3895c8d9935de31d9a518f82e08ffa SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:169 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0xabe747dfe21797c871fe5de500ba89b36b87fe807e65d7926339ae71c9968af1}" assertionHash=1fe4ff..4246c6
+INFO [04-10|08:45:07.193] Sending assertion to confirmation queue  assertionHash=1fe4ff..4246c6 addedBy=PostAssertionBasedOnParent
+INFO [04-10|08:45:08.312] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-10|08:45:08.312] resolved tx endorsement policy           txHash=d43e00..333e21 txIndex=0 policyID=strict threshold=3
+INFO [04-10|08:45:08.327] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-10|08:45:08.327] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=3458 blockHash=2dca17..5313bf
+INFO [04-10|08:45:08.327] ENDORSEMENT_DEBUG endorser wiring        hasEndorser=true hasPolicyConfig=true
+INFO [04-10|08:45:08.327] ENDORSEMENT_DEBUG calling endorsement manager l2Block=3458 txCount=1 timeout=2s
+INFO [04-10|08:45:08.327] REMOTE_ENDORSEMENT_REQUEST               endorser=C url=http://endorser-c:9003/endorse requestID=4da56d..2325f4 txHash=d43e00..333e21 txIndex=0
+INFO [04-10|08:45:08.327] REMOTE_ENDORSEMENT_REQUEST               endorser=A url=http://endorser-a:9001/endorse requestID=4da56d..2325f4 txHash=d43e00..333e21 txIndex=0
+INFO [04-10|08:45:08.327] REMOTE_ENDORSEMENT_REQUEST               endorser=B url=http://endorser-b:9002/endorse requestID=4da56d..2325f4 txHash=d43e00..333e21 txIndex=0
+INFO [04-10|08:45:08.333] REMOTE_ENDORSEMENT_RESPONSE              endorser=C decision=1 reasonCode="mock reject by to address" sigLen=0 requestID=4da56d..2325f4
+INFO [04-10|08:45:08.333] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=C requestID=4da56d..2325f4 decision=1 reasonCode="mock reject by to address" sigLen=0
+WARN [04-10|08:45:08.333] ENDORSEMENT_MANAGER_TX_FAILED            txIndex=0 endorser=C
+INFO [04-10|08:45:08.335] REMOTE_ENDORSEMENT_RESPONSE              endorser=A decision=1 reasonCode="mock reject by to address" sigLen=0 requestID=4da56d..2325f4
+INFO [04-10|08:45:08.335] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=A requestID=4da56d..2325f4 decision=1 reasonCode="mock reject by to address" sigLen=0
+INFO [04-10|08:45:08.335] REMOTE_ENDORSEMENT_RESPONSE              endorser=B decision=1 reasonCode="mock reject by to address" sigLen=0 requestID=4da56d..2325f4
+INFO [04-10|08:45:08.335] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=B requestID=4da56d..2325f4 decision=1 reasonCode="mock reject by to address" sigLen=0
+WARN [04-10|08:45:08.335] Candidate Block Endorsement Incomplete   AllSatisfied=false Mode=completed_all RebuildTxCount=1 FailedTxIndexes=[0]
+INFO [04-10|08:45:08.335] ENDORSEMENT_DEBUG endorsement manager returned l2Block=3458 allSatisfied=false certCount=0
+WARN [04-10|08:45:08.335] candidate block endorsement failed       l2Block=3458 failedTxIndexes=[0] failedTxHashes=[0xd43e0053e49cf333ae26abf90a403f918594e694fbfd5556bbb31a1183333e21]
+WARN [04-10|08:45:08.335] ENDORSEMENT_DEBUG rebuilding candidate block after endorsement failure rebuildRound=0 failedTxIndexes=[0] failedTxHashes=[0xd43e0053e49cf333ae26abf90a403f918594e694fbfd5556bbb31a1183333e21]
+WARN [04-10|08:45:08.335] all candidate txs filtered out after endorsement failure rebuildRound=0
+WARN [04-10|08:45:08.335] Served eth_sendRawTransaction            conn=172.18.0.1:39926 reqid=4 duration=1.524574678s err="candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xd43e0053e49cf333ae26abf90a403f918594e694fbfd5556bbb31a1183333e21]"
+INFO [04-10|08:45:10.232] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-10|08:45:10.233] resolved tx endorsement policy           txHash=f7fd4b..a34364 txIndex=0 policyID=default threshold=2
+INFO [04-10|08:45:10.236] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-10|08:45:10.236] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=3458 blockHash=681b6d..c29554
+INFO [04-10|08:45:10.236] ENDORSEMENT_DEBUG endorser wiring        hasEndorser=true hasPolicyConfig=true
+INFO [04-10|08:45:10.236] ENDORSEMENT_DEBUG calling endorsement manager l2Block=3458 txCount=1 timeout=2s
+INFO [04-10|08:45:10.236] REMOTE_ENDORSEMENT_REQUEST               endorser=A url=http://endorser-a:9001/endorse requestID=c77753..ab3dcf txHash=f7fd4b..a34364 txIndex=0
+INFO [04-10|08:45:10.237] REMOTE_ENDORSEMENT_REQUEST               endorser=B url=http://endorser-b:9002/endorse requestID=c77753..ab3dcf txHash=f7fd4b..a34364 txIndex=0
+INFO [04-10|08:45:10.237] REMOTE_ENDORSEMENT_REQUEST               endorser=C url=http://endorser-c:9003/endorse requestID=c77753..ab3dcf txHash=f7fd4b..a34364 txIndex=0
+INFO [04-10|08:45:10.238] REMOTE_ENDORSEMENT_RESPONSE              endorser=B decision=0 reasonCode=                            sigLen=96 requestID=c77753..ab3dcf
+INFO [04-10|08:45:10.239] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=B requestID=c77753..ab3dcf decision=0 reasonCode=                            sigLen=96
+INFO [04-10|08:45:10.239] REMOTE_ENDORSEMENT_RESPONSE              endorser=C decision=0 reasonCode=                            sigLen=96 requestID=c77753..ab3dcf
+INFO [04-10|08:45:10.239] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=C requestID=c77753..ab3dcf decision=0 reasonCode=                            sigLen=96
+INFO [04-10|08:45:10.240] REMOTE_ENDORSEMENT_RESPONSE              endorser=A decision=0 reasonCode=                            sigLen=96 requestID=c77753..ab3dcf
+INFO [04-10|08:45:10.240] ENDORSEMENT_MANAGER_RESPONSE_OK          txIndex=0 endorser=A requestID=c77753..ab3dcf decision=0 reasonCode=                            sigLen=96
+INFO [04-10|08:45:10.240] Candidate Block Endorsement Complete     AllSatisfied=true  Mode=completed_all RebuildTxCount=0
+INFO [04-10|08:45:10.244] ENDORSEMENT_DEBUG endorsement manager returned l2Block=3458 allSatisfied=true  certCount=1
+INFO [04-10|08:45:10.244] candidate block endorsement satisfied    l2Block=3458 certCount=1 commitmentRoot=0f07ba..86e84d
+INFO [04-10|08:45:10.244] ENDORSEMENT_METADATA_BUILT               block=3458 hash=681b6d..c29554 metadataVersion=1 flags=3 timeboostLen=1 hasCommitmentRoot=true commitmentRoot=0f07ba..86e84d commitmentDataLen=316
+INFO [04-10|08:45:10.244] ENDORSEMENT_COMMITMENTDATA_PARSED        block=3458 hash=681b6d..c29554 certCount=1 commitmentRoot=0f07ba..86e84d recomputedRoot=0f07ba..86e84d rootMatch=true
+INFO [04-10|08:45:10.247] ENDORSEMENT_COMMITMENT_CERT_VERIFY_INPUT block=3458 hash=681b6d..c29554 blockTxCount=2 receiptCount=2 parsedCertCount=1
+INFO [04-10|08:45:10.247] ENDORSEMENT_COMMITMENT_CERT_VERIFY_OK    block=3458 hash=681b6d..c29554 certCount=1
+INFO [04-10|08:45:10.248] Submitted transaction                    hash=0xf7fd4b5cbef20073ecd8008549da998b38620431a4ddc5329b2aa06a6ea34364 from=0xAF2cccae797685a4EE7C20A0Fca5fd5C896339D4 nonce=0   recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-10|08:45:16.631] Posting assertion for batch we agree with requiredInboxMaxCount=169 validatorName=default-validator
+INFO [04-10|08:45:16.636] Latest confirmed assertion               assertionAfterState="&{GlobalState:{BlockHash:0xc4c79c6d2a4809a090f2075eb8e36ebd6548b1ce325b457fb02acc114414176c SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:168 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0xd60f15d716e2eb6cddf8696358203eb8134d777c9264e93d90e46ff8d3a9db85}"
+INFO [04-10|08:45:16.640] Successfully submitted assertion         validatorName=default-validator requiredInboxMaxCount=169 postedExecutionState="&{GlobalState:{BlockHash:0x9cad96fd012df43180a0e4dc5a68786d4f3895c8d9935de31d9a518f82e08ffa SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:169 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0xabe747dfe21797c871fe5de500ba89b36b87fe807e65d7926339ae71c9968af1}" assertionHash=1fe4ff..4246c6
+INFO [04-10|08:45:17.289] DataPoster sent transaction              nonce=289 hash=2e449e..ca1abb feeCap=12,000,000,070 tipCap=1,200,000,000 blobFeeCap=<nil> gas=153,936
+INFO [04-10|08:45:17.291] rpc response                             method=eth_estimateGas logId=821 err="execution reverted"           result="\"0x0\"" attempt=0 args="[{\"from\":\"0xc8e5d0c6919d4da7d48ffb7d406d83ed1ea38132\",\"input\":\"0x097da1f8000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000008c2005559c23b0cf55f545103eaf0460641f9609000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001e410b98a351fe4ffb3e536b3fe26df7a838bba173cc1bf63f53cdb5f4740e2d4098e4246c625a27038aeb7ef7320f7df5322a24f8092bc004fa1b26d1c036121c5055798c79cad96fd012df43180a0e4dc5a68786d4f3895c8d9935de31d9a518f82e08ffa000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001abe747dfe21797c871fe5de500ba89b36b87fe807e65d7926339ae71c9968af10000000000000000000000000000000000000000000000000000000000000000c2c02df561d4afaf9a1d6785f70098ec3874765c638e3cb6dbe8d3c83333e14c000000000000000000000000000000000000000000000000000000000000000800000000000000000000000043679e89a6fea7df648350f5a7fdcd0bb4a501e9000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000a9b40dbef945ec2f250980b2b22f064235b6e9a4e8645299924757bccbb095f41300000000000000000000000000000000000000000000000000000000\",\"to\":\"0xc8e5d0c6919d4da7d48ffb7d406d83ed1ea38132\",\"value\":\"0x0\"}]" errorData="\"0xf26aea8b000000000000000000000000c8e5d0c6919d4da7d48ffb7d406d83ed1ea38132\""
+WARN [04-10|08:45:17.292] Could not confirm assertion              err="gas estimation errored for tx with hash 0x2e449e97: execution reverted" assertionHash=1fe4ff..4246c6

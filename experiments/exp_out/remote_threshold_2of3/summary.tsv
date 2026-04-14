@@ -1,0 +1,2 @@
+case_name	tx_total	tx_receipt_count	tx_error_count	tx_timeout_count	tx_send_error_count	tx_receipt_error_count	lat_avg_ms	lat_p50_ms	lat_p95_ms	lat_p99_ms	keep_total	keep_success	keep_retention_rate	fail_total	fail_success	fail_drop_rate	disabled_skip	endorsement_satisfied	endorsement_failed	rebuild_count	remote_request_count	verify_ok_count	case_log_lines	fault_status	fault_message	fault_name
+remote_threshold_2of3	20	18	2	0	0	0	1199.286	1194.154	1257.232	1260.927	18	18	1.0	2	0	1.0	0	18	2	2	60	18	572	noop	no fault requested	none

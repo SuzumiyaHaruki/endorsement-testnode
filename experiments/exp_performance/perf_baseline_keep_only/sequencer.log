@@ -1,0 +1,998 @@
+INFO [04-11|03:01:14.294] Started log indexer
+INFO [04-11|03:01:14.295] Starting peer-to-peer node               instance=nitro/vdevelopment/linux-amd64/go1.25.8
+WARN [04-11|03:01:14.296] P2P server will be useless, neither dialing nor listening
+INFO [04-11|03:01:14.308] HTTP server started                      endpoint=[::]:8547 auth=false prefix= cors=* vhosts=*
+INFO [04-11|03:01:14.308] GraphQL enabled                          url=http://[::]:8547/graphql
+INFO [04-11|03:01:14.308] GraphQL UI enabled                       url=http://[::]:8547/graphql/ui
+INFO [04-11|03:01:14.308] WebSocket enabled                        url=ws://[::]:8548
+INFO [04-11|03:01:14.309] New local node record                    seq=1,775,876,032,634 id=4b2ecd4a93c8390f ip=127.0.0.1 udp=0 tcp=0
+INFO [04-11|03:01:14.309] Started P2P networking                   self=enode://73166d67e06c57a9ef12fb2332c2abf79f49da13a77f597830160d9a6b167131d516d4edc92eaca803e41298ccf27c8f1d9bfde7b16933fc5b42564286210539@127.0.0.1:0
+INFO [04-11|03:01:14.311] Reading message result remotely.         msgIdx=70
+INFO [04-11|03:01:14.311] arbitrum websocket broadcast server is listening address=[::]:9642
+INFO [04-11|03:01:14.314] BoLD protocol is active, initializing BoLD staker
+INFO [04-11|03:01:14.314] 
+ _______             __        _______
+/       \           /  |      /       \
+$$$$$$$  |  ______  $$ |      $$$$$$$  |
+$$ |__$$ | /      \ $$ |      $$ |  $$ |
+$$    $$< /$$$$$$  |$$ |      $$ |  $$ |
+$$$$$$$  |$$ |  $$ |$$ |      $$ |  $$ |
+$$ |__$$ |$$ \__$$ |$$ |_____ $$ |__$$ |
+$$    $$/ $$    $$/ $$       |$$    $$/
+$$$$$$$/   $$$$$$/  $$$$$$$$/ $$$$$$$/
+
+INFO [04-11|03:01:14.315] Data poster transactions confirmed       previousNonce=0 newNonce=5 previousL1Block=0 newL1Block=610
+INFO [04-11|03:01:14.320] Minimum assertion period                 blocks=1
+INFO [04-11|03:01:14.327] Setting up challenge manager             name=default-validator addreess=0xC8e5D0c6919D4Da7D48fFB7d406D83ed1EA38132 rollup=0x8C2005559c23b0cf55F545103eaf0460641F9609
+INFO [04-11|03:01:14.327] running as validator                     txSender=0x6A568afe0f82d34759347bb36F14A6bB171d2CBe actingAsWallet=0xC8e5D0c6919D4Da7D48fFB7d406D83ed1EA38132 strategy=makenodes
+INFO [04-11|03:01:14.327] Starting BOLD staker
+INFO [04-11|03:01:14.327] Started challenge manager                stakerAddress=0xC8e5D0c6919D4Da7D48fFB7d406D83ed1EA38132
+INFO [04-11|03:01:14.329] Data poster transactions confirmed       previousNonce=0 newNonce=11 previousL1Block=0 newL1Block=608
+INFO [04-11|03:01:14.334] Ready to post
+INFO [04-11|03:01:14.339] Waiting for more batches to post next assertion latestStakedAssertionBatchCount=7 latestStakedAssertionBlockHash=0xc303f3dd
+INFO [04-11|03:01:15.760] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:15.760] resolved tx endorsement policy           txHash=d69054..c19b17 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:15.779] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:15.780] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=71 blockHash=063727..083370
+INFO [04-11|03:01:15.780] ENDORSEMENT_DISABLED_SKIP                l2Block=71 blockHash=063727..083370 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:15.780] ENDORSEMENT_METADATA_BUILT               block=71 hash=063727..083370 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:15.783] Submitted transaction                    hash=0xd690543dd5510a279517d7f453cefbc96a3b96d0ed482d2084cf524139c19b17 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=0 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:17.024] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:17.024] resolved tx endorsement policy           txHash=3e0dd0..f45560 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:17.026] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:17.026] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=72 blockHash=8a2352..e9143f
+INFO [04-11|03:01:17.027] ENDORSEMENT_DISABLED_SKIP                l2Block=72 blockHash=8a2352..e9143f hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:17.027] ENDORSEMENT_METADATA_BUILT               block=72 hash=8a2352..e9143f metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:17.028] Submitted transaction                    hash=0x3e0dd0cc9c147a544d1c0eecb8e3a24d5a17e049fde41445c1d1da687cf45560 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=1 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:18.255] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:18.255] resolved tx endorsement policy           txHash=74c693..1422e6 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:18.262] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:18.263] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=73 blockHash=b19e48..88b8b2
+INFO [04-11|03:01:18.263] ENDORSEMENT_DISABLED_SKIP                l2Block=73 blockHash=b19e48..88b8b2 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:18.263] ENDORSEMENT_METADATA_BUILT               block=73 hash=b19e48..88b8b2 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:18.267] Submitted transaction                    hash=0x74c6936d4392e53636647b3df280e3bb07a56b14eac58b7b378e2f980a1422e6 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=2 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:19.536] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:19.536] resolved tx endorsement policy           txHash=a00839..69cba9 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:19.541] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:19.541] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=74 blockHash=3e3700..d6379b
+INFO [04-11|03:01:19.541] ENDORSEMENT_DISABLED_SKIP                l2Block=74 blockHash=3e3700..d6379b hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:19.541] ENDORSEMENT_METADATA_BUILT               block=74 hash=3e3700..d6379b metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:19.544] Submitted transaction                    hash=0xa0083963315ea68241ba160779feb4abd0af817d6574a94d7c78d6390069cba9 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=3 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:20.909] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:20.909] resolved tx endorsement policy           txHash=17c2c0..d8ada8 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:20.911] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:20.912] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=75 blockHash=6a3742..71f67b
+INFO [04-11|03:01:20.912] ENDORSEMENT_DISABLED_SKIP                l2Block=75 blockHash=6a3742..71f67b hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:20.912] ENDORSEMENT_METADATA_BUILT               block=75 hash=6a3742..71f67b metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:20.913] Submitted transaction                    hash=0x17c2c0e297da92bef2f7d2a1d9cee6e0604a22e4578d89cc4c4f6d0908d8ada8 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=4 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:22.094] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:22.094] resolved tx endorsement policy           txHash=a88b2c..4be17a txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:22.095] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:22.095] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=76 blockHash=3a2595..8ea9ee
+INFO [04-11|03:01:22.095] ENDORSEMENT_DISABLED_SKIP                l2Block=76 blockHash=3a2595..8ea9ee hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:22.095] ENDORSEMENT_METADATA_BUILT               block=76 hash=3a2595..8ea9ee metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:22.096] Submitted transaction                    hash=0xa88b2c83d12ee8826670d32fc8a453ff8fe0a7c822e854215bd55e822d4be17a from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=5 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:23.269] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:23.269] resolved tx endorsement policy           txHash=bebde5..cec785 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:23.270] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:23.270] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=77 blockHash=197ce9..367729
+INFO [04-11|03:01:23.270] ENDORSEMENT_DISABLED_SKIP                l2Block=77 blockHash=197ce9..367729 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:23.271] ENDORSEMENT_METADATA_BUILT               block=77 hash=197ce9..367729 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:23.271] Submitted transaction                    hash=0xbebde5977c19e00c3809d6d388264249da11e91ea0cc238e4a89e03062cec785 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=6 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:24.335] Waiting for more batches to post next assertion latestStakedAssertionBatchCount=7 latestStakedAssertionBlockHash=0xc303f3dd
+INFO [04-11|03:01:24.339] Latest confirmed assertion               assertionAfterState="&{GlobalState:{BlockHash:0xc303f3dd075cfb795884baeb8e40a802653cf18e29ee7f25a2c3f0a53c14bac7 SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:6 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0x71339634c126986184f63d1fd7a31652c23d92f1eb2fcfbb985f4805cd2e40f4}"
+INFO [04-11|03:01:24.458] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:24.458] resolved tx endorsement policy           txHash=7f69ce..19e37a txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:24.461] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:24.461] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=78 blockHash=6cf185..0675e2
+INFO [04-11|03:01:24.461] ENDORSEMENT_DISABLED_SKIP                l2Block=78 blockHash=6cf185..0675e2 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:24.461] ENDORSEMENT_METADATA_BUILT               block=78 hash=6cf185..0675e2 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:24.464] Submitted transaction                    hash=0x7f69ce0692ac9c8293e9ce226472fa16892a5256d50be9bca6af05c2c219e37a from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=7 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:25.641] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:25.642] resolved tx endorsement policy           txHash=20bfc7..fa7ac6 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:25.645] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:25.645] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=79 blockHash=c91175..e007e2
+INFO [04-11|03:01:25.645] ENDORSEMENT_DISABLED_SKIP                l2Block=79 blockHash=c91175..e007e2 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:25.645] ENDORSEMENT_METADATA_BUILT               block=79 hash=c91175..e007e2 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:25.646] Submitted transaction                    hash=0x20bfc7979dc95a32da894bd82a7515c074475324e74ca1ba0e5011c38cfa7ac6 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=8 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:26.809] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:26.809] resolved tx endorsement policy           txHash=86cb75..893fa8 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:26.812] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:26.812] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=80 blockHash=846c3b..ab79de
+INFO [04-11|03:01:26.812] ENDORSEMENT_DISABLED_SKIP                l2Block=80 blockHash=846c3b..ab79de hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:26.812] ENDORSEMENT_METADATA_BUILT               block=80 hash=846c3b..ab79de metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:26.813] Submitted transaction                    hash=0x86cb75d7659c554b83c0148449b91455f43e30c1eec9cf599b9fe05ba1893fa8 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=9 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:28.025] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:28.026] resolved tx endorsement policy           txHash=2e164a..03b9b6 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:28.029] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:28.029] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=81 blockHash=8b0a18..4811f4
+INFO [04-11|03:01:28.029] ENDORSEMENT_DISABLED_SKIP                l2Block=81 blockHash=8b0a18..4811f4 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:28.029] ENDORSEMENT_METADATA_BUILT               block=81 hash=8b0a18..4811f4 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:28.030] Submitted transaction                    hash=0x2e164a6f77f9b4413b8b52a91a58a53dcf84fc1258ee63a332d563beb903b9b6 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=10 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:29.354] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:29.355] resolved tx endorsement policy           txHash=e9e229..e4ea09 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:29.358] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:29.358] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=82 blockHash=0f6bce..6e79c5
+INFO [04-11|03:01:29.358] ENDORSEMENT_DISABLED_SKIP                l2Block=82 blockHash=0f6bce..6e79c5 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:29.359] ENDORSEMENT_METADATA_BUILT               block=82 hash=0f6bce..6e79c5 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:29.361] Submitted transaction                    hash=0xe9e229352d38fb14de1b7a7394ecaf1380185dbbf1d7823f0060cd41a4e4ea09 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=11 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:30.690] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:30.690] resolved tx endorsement policy           txHash=544693..6e2d81 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:30.695] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:30.696] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=83 blockHash=cca1ef..edb2c4
+INFO [04-11|03:01:30.696] ENDORSEMENT_DISABLED_SKIP                l2Block=83 blockHash=cca1ef..edb2c4 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:30.696] ENDORSEMENT_METADATA_BUILT               block=83 hash=cca1ef..edb2c4 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:30.698] Submitted transaction                    hash=0x5446935e2cf06d51929ed13a3e3edad40a35c0371829210fe36e8840de6e2d81 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=12 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:32.012] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:32.013] resolved tx endorsement policy           txHash=bd10fd..c560a6 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:32.016] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:32.016] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=84 blockHash=e6e605..759a10
+INFO [04-11|03:01:32.017] ENDORSEMENT_DISABLED_SKIP                l2Block=84 blockHash=e6e605..759a10 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:32.017] ENDORSEMENT_METADATA_BUILT               block=84 hash=e6e605..759a10 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:32.022] Submitted transaction                    hash=0xbd10fd7fdb3bf1f74d660d25f8e56835a9c9c54ed617939f5b9c4fc1acc560a6 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=13 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:33.270] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:33.271] resolved tx endorsement policy           txHash=d8c668..be4d48 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:33.273] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:33.273] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=85 blockHash=1c7ea4..4e71b7
+INFO [04-11|03:01:33.274] ENDORSEMENT_DISABLED_SKIP                l2Block=85 blockHash=1c7ea4..4e71b7 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:33.274] ENDORSEMENT_METADATA_BUILT               block=85 hash=1c7ea4..4e71b7 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:33.275] Submitted transaction                    hash=0xd8c668cffcea3261ec063efecc85276811087c3075e07c0f44fa66581fbe4d48 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=14 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:34.338] Waiting for more batches to post next assertion latestStakedAssertionBatchCount=7 latestStakedAssertionBlockHash=0xc303f3dd
+INFO [04-11|03:01:34.344] Latest confirmed assertion               assertionAfterState="&{GlobalState:{BlockHash:0xc303f3dd075cfb795884baeb8e40a802653cf18e29ee7f25a2c3f0a53c14bac7 SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:6 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0x71339634c126986184f63d1fd7a31652c23d92f1eb2fcfbb985f4805cd2e40f4}"
+INFO [04-11|03:01:34.483] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:34.483] resolved tx endorsement policy           txHash=83dd59..7e5676 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:34.489] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:34.489] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=86 blockHash=ca4214..bf89aa
+INFO [04-11|03:01:34.489] ENDORSEMENT_DISABLED_SKIP                l2Block=86 blockHash=ca4214..bf89aa hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:34.490] ENDORSEMENT_METADATA_BUILT               block=86 hash=ca4214..bf89aa metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:34.491] Submitted transaction                    hash=0x83dd59a323312cd3057e6233d99950fbd3cbd80c644602673c94bd212a7e5676 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=15 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:35.687] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:35.687] resolved tx endorsement policy           txHash=1fe79c..383c92 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:35.692] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:35.692] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=87 blockHash=bc09be..f3fcd8
+INFO [04-11|03:01:35.692] ENDORSEMENT_DISABLED_SKIP                l2Block=87 blockHash=bc09be..f3fcd8 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:35.692] ENDORSEMENT_METADATA_BUILT               block=87 hash=bc09be..f3fcd8 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:35.703] Submitted transaction                    hash=0x1fe79c5cdfd715dadc1dedd68030d7ed462696b3ad5c44b21cabe33d3d383c92 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=16 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:36.942] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:36.942] resolved tx endorsement policy           txHash=10f4be..70706d txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:36.948] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:36.948] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=88 blockHash=825f89..288ab0
+INFO [04-11|03:01:36.948] ENDORSEMENT_DISABLED_SKIP                l2Block=88 blockHash=825f89..288ab0 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:36.948] ENDORSEMENT_METADATA_BUILT               block=88 hash=825f89..288ab0 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:36.950] Submitted transaction                    hash=0x10f4be7ff2180ab3bf10155c2f0230ec0439c7e92e8ba9065e8c9835a970706d from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=17 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:38.198] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:38.198] resolved tx endorsement policy           txHash=c38dff..23102c txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:38.203] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:38.203] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=89 blockHash=fb3629..0e9df1
+INFO [04-11|03:01:38.203] ENDORSEMENT_DISABLED_SKIP                l2Block=89 blockHash=fb3629..0e9df1 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:38.203] ENDORSEMENT_METADATA_BUILT               block=89 hash=fb3629..0e9df1 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:38.205] Submitted transaction                    hash=0xc38dff69e3daaca9463a1f095b14b962b256746f2e11206f799a56c02f23102c from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=18 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:39.418] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:39.418] resolved tx endorsement policy           txHash=ff3913..313df7 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:39.422] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:39.422] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=90 blockHash=0505cd..6f90d0
+INFO [04-11|03:01:39.422] ENDORSEMENT_DISABLED_SKIP                l2Block=90 blockHash=0505cd..6f90d0 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:39.422] ENDORSEMENT_METADATA_BUILT               block=90 hash=0505cd..6f90d0 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:39.424] Submitted transaction                    hash=0xff3913512b23dbfa6503ffe785a14aa4c1ae6917a039583f87b4327f3e313df7 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=19 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:40.660] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:40.660] resolved tx endorsement policy           txHash=83df6d..d91d46 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:40.662] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:40.662] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=91 blockHash=9ec66f..6d7073
+INFO [04-11|03:01:40.663] ENDORSEMENT_DISABLED_SKIP                l2Block=91 blockHash=9ec66f..6d7073 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:40.663] ENDORSEMENT_METADATA_BUILT               block=91 hash=9ec66f..6d7073 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:40.668] Submitted transaction                    hash=0x83df6d39203f5157527c15b2ecff96f5ed0729a7b5d4a4364bbcc22f8dd91d46 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=20 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:41.941] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:41.941] resolved tx endorsement policy           txHash=579e61..b53eae txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:41.943] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:41.943] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=92 blockHash=9dbfb2..a4ff90
+INFO [04-11|03:01:41.943] ENDORSEMENT_DISABLED_SKIP                l2Block=92 blockHash=9dbfb2..a4ff90 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:41.943] ENDORSEMENT_METADATA_BUILT               block=92 hash=9dbfb2..a4ff90 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:41.944] Submitted transaction                    hash=0x579e61b2028026a0ef54a99274249eaa728a80eaff340e53d47dd0670cb53eae from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=21 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:43.179] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:43.180] resolved tx endorsement policy           txHash=04c807..cebb26 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:43.187] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:43.187] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=93 blockHash=3f06c8..ef95f4
+INFO [04-11|03:01:43.187] ENDORSEMENT_DISABLED_SKIP                l2Block=93 blockHash=3f06c8..ef95f4 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:43.187] ENDORSEMENT_METADATA_BUILT               block=93 hash=3f06c8..ef95f4 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:43.191] Submitted transaction                    hash=0x04c80724f283613e281ceb7234ac27bdfc0411ac07579281d47b387ff8cebb26 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=22 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:44.343] Waiting for more batches to post next assertion latestStakedAssertionBatchCount=7 latestStakedAssertionBlockHash=0xc303f3dd
+INFO [04-11|03:01:44.357] Latest confirmed assertion               assertionAfterState="&{GlobalState:{BlockHash:0xc303f3dd075cfb795884baeb8e40a802653cf18e29ee7f25a2c3f0a53c14bac7 SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:6 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0x71339634c126986184f63d1fd7a31652c23d92f1eb2fcfbb985f4805cd2e40f4}"
+INFO [04-11|03:01:44.446] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:44.447] resolved tx endorsement policy           txHash=d309f4..2559fd txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:44.453] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:44.453] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=94 blockHash=0244e3..1a60d3
+INFO [04-11|03:01:44.454] ENDORSEMENT_DISABLED_SKIP                l2Block=94 blockHash=0244e3..1a60d3 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:44.454] ENDORSEMENT_METADATA_BUILT               block=94 hash=0244e3..1a60d3 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:44.459] Submitted transaction                    hash=0xd309f41ced51ac25236fdcb0c207848dadf06965639522d7068833161a2559fd from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=23 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:45.760] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:45.761] resolved tx endorsement policy           txHash=603465..809c06 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:45.768] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:45.768] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=95 blockHash=3455c6..240681
+INFO [04-11|03:01:45.768] ENDORSEMENT_DISABLED_SKIP                l2Block=95 blockHash=3455c6..240681 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:45.768] ENDORSEMENT_METADATA_BUILT               block=95 hash=3455c6..240681 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:45.770] Submitted transaction                    hash=0x603465ef02034419992ec5b6b2fadb53e697c7b14843175df32989b6de809c06 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=24 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:47.037] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:47.037] resolved tx endorsement policy           txHash=bcc212..3c41df txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:47.041] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:47.041] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=96 blockHash=908d0a..9b296f
+INFO [04-11|03:01:47.041] ENDORSEMENT_DISABLED_SKIP                l2Block=96 blockHash=908d0a..9b296f hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:47.041] ENDORSEMENT_METADATA_BUILT               block=96 hash=908d0a..9b296f metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:47.042] Submitted transaction                    hash=0xbcc212af1c81f76fbe8b3fca72c89d50aec193116318455c1422d538a33c41df from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=25 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:48.399] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:48.399] resolved tx endorsement policy           txHash=fe5cfe..2e93d3 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:48.407] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:48.408] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=97 blockHash=b1873e..614925
+INFO [04-11|03:01:48.408] ENDORSEMENT_DISABLED_SKIP                l2Block=97 blockHash=b1873e..614925 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:48.408] ENDORSEMENT_METADATA_BUILT               block=97 hash=b1873e..614925 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:48.410] Submitted transaction                    hash=0xfe5cfe74e8e961e9ed1be04dade0bb30abc2df492fc8f5c3b01798c2872e93d3 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=26 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:49.767] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:49.768] resolved tx endorsement policy           txHash=fc0108..ed9065 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:49.773] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:49.774] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=98 blockHash=2c788c..d989fb
+INFO [04-11|03:01:49.774] ENDORSEMENT_DISABLED_SKIP                l2Block=98 blockHash=2c788c..d989fb hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:49.774] ENDORSEMENT_METADATA_BUILT               block=98 hash=2c788c..d989fb metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:49.779] Submitted transaction                    hash=0xfc01088631f8874c29e13760c9dc63515226d06ca4d4fc96393379d61ded9065 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=27 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:51.116] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:51.116] resolved tx endorsement policy           txHash=802e36..3d68ad txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:51.121] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:51.121] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=99 blockHash=668427..656bd5
+INFO [04-11|03:01:51.121] ENDORSEMENT_DISABLED_SKIP                l2Block=99 blockHash=668427..656bd5 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:51.121] ENDORSEMENT_METADATA_BUILT               block=99 hash=668427..656bd5 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:51.122] Submitted transaction                    hash=0x802e360da7e07a1590df14808ca86f203fa2625ee9b0245e0e33550f6c3d68ad from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=28 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:52.586] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:52.586] resolved tx endorsement policy           txHash=0e9c02..2c6ae6 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:52.593] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:52.593] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=100 blockHash=306c7c..10f198
+INFO [04-11|03:01:52.593] ENDORSEMENT_DISABLED_SKIP                l2Block=100 blockHash=306c7c..10f198 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:52.594] ENDORSEMENT_METADATA_BUILT               block=100 hash=306c7c..10f198 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:52.598] Submitted transaction                    hash=0x0e9c0288c9193466a5edb8eb52c9e544b0376b206eabf9b97f2c0fbb9e2c6ae6 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=29 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:54.139] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:54.139] resolved tx endorsement policy           txHash=c0096f..d43a00 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:54.140] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:54.140] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=101 blockHash=5541e2..d2ab89
+INFO [04-11|03:01:54.140] ENDORSEMENT_DISABLED_SKIP                l2Block=101 blockHash=5541e2..d2ab89 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:54.140] ENDORSEMENT_METADATA_BUILT               block=101 hash=5541e2..d2ab89 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:54.143] Submitted transaction                    hash=0xc0096fa97ccfd08249a009d3ca44bf32bc3facc3e6162b14b379456934d43a00 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=30 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:54.337] Waiting for more batches to post next assertion latestStakedAssertionBatchCount=7 latestStakedAssertionBlockHash=0xc303f3dd
+INFO [04-11|03:01:54.345] Latest confirmed assertion               assertionAfterState="&{GlobalState:{BlockHash:0xc303f3dd075cfb795884baeb8e40a802653cf18e29ee7f25a2c3f0a53c14bac7 SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:6 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0x71339634c126986184f63d1fd7a31652c23d92f1eb2fcfbb985f4805cd2e40f4}"
+INFO [04-11|03:01:54.474] DataPoster sent transaction              nonce=5  hash=9de5d2..10fbc2 feeCap=12,000,000,070 tipCap=1,200,000,000 blobFeeCap=<nil> gas=236,077
+INFO [04-11|03:01:54.474] BatchPoster: batch sent                  sequenceNumber=6 from=70 to=102 prevDelayed=14 currentDelayed=15 totalSegments=84 numBlobs=0
+INFO [04-11|03:01:55.115] InboxTracker                             sequencerBatchCount=7 messageCount=102 l1Block=651 l1Timestamp=2026-04-11T03:01:54+0000
+INFO [04-11|03:01:55.280] Reading message result remotely.         msgIdx=101
+INFO [04-11|03:01:55.512] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:55.512] resolved tx endorsement policy           txHash=de93fb..05c4f1 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:55.514] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:55.514] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=102 blockHash=5c9619..50aa11
+INFO [04-11|03:01:55.514] ENDORSEMENT_DISABLED_SKIP                l2Block=102 blockHash=5c9619..50aa11 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:55.515] ENDORSEMENT_METADATA_BUILT               block=102 hash=5c9619..50aa11 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:55.517] Submitted transaction                    hash=0xde93fb0fa4b0884f54d33e824767b6fd48d9a071806d839a886ed8c6e105c4f1 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=31 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:56.090] ExecutionEngine: Added DelayedMessages   msgIdx=103 delayedMsgIdx=15 block-header="&{ParentHash:0x5c96199d13dd78a7302a48ff53249334a727ab9caa8b8a84dc92ab4e0050aa11 UncleHash:0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347 Coinbase:0xe2148eE53c0755215Df69b2616E552154EdC584f Root:0x9fe55f12de443a3c42ae22319275030b036691d503051831293a9f27a00cf65f TxHash:0x2d1f827d1c30233ac500ddad92745ffa4d62c0a2ed394ec57faf3baf5cca2fa2 ReceiptHash:0xf08cf5553e1dae52e3df19b356b8320e17c39fb055f635739c31052db5c3e45e Bloom:[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0] Difficulty:+1 Number:+103 GasLimit:1125899906842624 GasUsed:0 Time:1775876515 Extra:[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0] MixDigest:0x0000000000000000000000000000028b00000000000000280000000000000000 Nonce:[0 0 0 0 0 0 0 16] BaseFee:+100000000 WithdrawalsHash:<nil> BlobGasUsed:<nil> ExcessBlobGas:<nil> ParentBeaconRoot:<nil> RequestsHash:<nil>}"
+INFO [04-11|03:01:56.091] DelayedSequencer: Sequenced              msgnum=1 startpos=15
+INFO [04-11|03:01:56.698] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:56.699] resolved tx endorsement policy           txHash=ada759..521a43 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:56.701] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:56.702] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=104 blockHash=725f49..6a33d2
+INFO [04-11|03:01:56.702] ENDORSEMENT_DISABLED_SKIP                l2Block=104 blockHash=725f49..6a33d2 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:56.702] ENDORSEMENT_METADATA_BUILT               block=104 hash=725f49..6a33d2 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:56.704] Submitted transaction                    hash=0xada75903e881bf6f539800f583f86246d07215cbe874abc26c3f969e2a521a43 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=32 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:58.129] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:58.129] resolved tx endorsement policy           txHash=109ecf..be0c1d txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:58.131] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:58.132] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=105 blockHash=0240b1..753641
+INFO [04-11|03:01:58.132] ENDORSEMENT_DISABLED_SKIP                l2Block=105 blockHash=0240b1..753641 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:58.132] ENDORSEMENT_METADATA_BUILT               block=105 hash=0240b1..753641 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:58.133] Submitted transaction                    hash=0x109ecf411e47f31a5282f9e70ccd8e3643e1d56990bb119526b581778abe0c1d from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=33 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:01:59.529] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:01:59.529] resolved tx endorsement policy           txHash=ae30d8..749341 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:01:59.534] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:01:59.534] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=106 blockHash=ea84ac..fa9092
+INFO [04-11|03:01:59.534] ENDORSEMENT_DISABLED_SKIP                l2Block=106 blockHash=ea84ac..fa9092 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:01:59.535] ENDORSEMENT_METADATA_BUILT               block=106 hash=ea84ac..fa9092 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:01:59.538] Submitted transaction                    hash=0xae30d8e49868cf052baa5c7d53a97b9a35dae89ab20ffdb963879df3ac749341 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=34 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:00.988] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:00.988] resolved tx endorsement policy           txHash=3523d5..e81ff5 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:00.994] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:00.995] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=107 blockHash=58d670..68cb08
+INFO [04-11|03:02:00.995] ENDORSEMENT_DISABLED_SKIP                l2Block=107 blockHash=58d670..68cb08 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:00.995] ENDORSEMENT_METADATA_BUILT               block=107 hash=58d670..68cb08 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:00.997] Submitted transaction                    hash=0x3523d5f0583c11f935c31dd7d17e0584944217ef8582c45d367e140868e81ff5 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=35 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:02.293] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:02.293] resolved tx endorsement policy           txHash=97c84f..d24e50 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:02.298] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:02.299] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=108 blockHash=b514c4..9e5c7c
+INFO [04-11|03:02:02.299] ENDORSEMENT_DISABLED_SKIP                l2Block=108 blockHash=b514c4..9e5c7c hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:02.299] ENDORSEMENT_METADATA_BUILT               block=108 hash=b514c4..9e5c7c metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:02.302] Submitted transaction                    hash=0x97c84fb4a08fcee4b6159112f840d48afee42ef67bdcbd2d3ebc507db6d24e50 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=36 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:03.798] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:03.798] resolved tx endorsement policy           txHash=bffac5..52ff09 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:03.805] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:03.805] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=109 blockHash=696586..e069af
+INFO [04-11|03:02:03.805] ENDORSEMENT_DISABLED_SKIP                l2Block=109 blockHash=696586..e069af hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:03.805] ENDORSEMENT_METADATA_BUILT               block=109 hash=696586..e069af metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:03.808] Submitted transaction                    hash=0xbffac51e2c3feb2304fd2152d36208cd0334873fa12c1f8b429605ad6852ff09 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=37 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:04.338] Waiting for more batches to post next assertion latestStakedAssertionBatchCount=7 latestStakedAssertionBlockHash=0xc303f3dd
+INFO [04-11|03:02:04.342] Latest confirmed assertion               assertionAfterState="&{GlobalState:{BlockHash:0xc303f3dd075cfb795884baeb8e40a802653cf18e29ee7f25a2c3f0a53c14bac7 SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:6 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0x71339634c126986184f63d1fd7a31652c23d92f1eb2fcfbb985f4805cd2e40f4}"
+INFO [04-11|03:02:05.061] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:05.061] resolved tx endorsement policy           txHash=88d02f..3b3086 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:05.066] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:05.066] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=110 blockHash=df958b..31d696
+INFO [04-11|03:02:05.066] ENDORSEMENT_DISABLED_SKIP                l2Block=110 blockHash=df958b..31d696 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:05.066] ENDORSEMENT_METADATA_BUILT               block=110 hash=df958b..31d696 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:05.071] Submitted transaction                    hash=0x88d02f0adadfe9916440188f817e7d365695e50ec2a4b6609ff5f4ad483b3086 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=38 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:06.274] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:06.275] resolved tx endorsement policy           txHash=77e5d1..0c59ab txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:06.280] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:06.280] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=111 blockHash=d1c2c9..09f1fc
+INFO [04-11|03:02:06.280] ENDORSEMENT_DISABLED_SKIP                l2Block=111 blockHash=d1c2c9..09f1fc hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:06.280] ENDORSEMENT_METADATA_BUILT               block=111 hash=d1c2c9..09f1fc metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:06.284] Submitted transaction                    hash=0x77e5d1e73c2cdcd5701459bd84445d6a2fcbd0d2c8aa4d54dfd71622a50c59ab from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=39 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:07.724] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:07.724] resolved tx endorsement policy           txHash=350dce..1d4975 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:07.730] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:07.730] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=112 blockHash=0039ae..96b158
+INFO [04-11|03:02:07.731] ENDORSEMENT_DISABLED_SKIP                l2Block=112 blockHash=0039ae..96b158 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:07.731] ENDORSEMENT_METADATA_BUILT               block=112 hash=0039ae..96b158 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:07.735] Submitted transaction                    hash=0x350dcef9a2835bfc003a16a2eef3b0419c0af780478c4bdb86867ebed11d4975 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=40 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:09.090] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:09.091] resolved tx endorsement policy           txHash=b2cc57..4858ea txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:09.101] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:09.102] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=113 blockHash=817d7e..8d446c
+INFO [04-11|03:02:09.102] ENDORSEMENT_DISABLED_SKIP                l2Block=113 blockHash=817d7e..8d446c hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:09.102] ENDORSEMENT_METADATA_BUILT               block=113 hash=817d7e..8d446c metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:09.106] Submitted transaction                    hash=0xb2cc577e0d006faacd08b4f64386c4b26d977b48eb3d92bc5ff92bab4f4858ea from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=41 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:10.420] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:10.420] resolved tx endorsement policy           txHash=fc0114..fa0a02 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:10.425] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:10.425] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=114 blockHash=f15d44..1fa795
+INFO [04-11|03:02:10.425] ENDORSEMENT_DISABLED_SKIP                l2Block=114 blockHash=f15d44..1fa795 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:10.425] ENDORSEMENT_METADATA_BUILT               block=114 hash=f15d44..1fa795 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:10.430] Submitted transaction                    hash=0xfc0114250467fb40bcf9dace987e7795ec5d9bbc2fd2b0cbd61ff00349fa0a02 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=42 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:11.717] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:11.717] resolved tx endorsement policy           txHash=fe6fa2..408d43 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:11.722] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:11.722] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=115 blockHash=8555d0..5f3ce4
+INFO [04-11|03:02:11.723] ENDORSEMENT_DISABLED_SKIP                l2Block=115 blockHash=8555d0..5f3ce4 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:11.723] ENDORSEMENT_METADATA_BUILT               block=115 hash=8555d0..5f3ce4 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:11.730] Submitted transaction                    hash=0xfe6fa2dd415ee63f8ddd66f1fd3a736f9c4f75af144f28fd75c1d44271408d43 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=43 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:13.023] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:13.023] resolved tx endorsement policy           txHash=c3b84f..24d589 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:13.026] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:13.026] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=116 blockHash=3f1517..47413e
+INFO [04-11|03:02:13.026] ENDORSEMENT_DISABLED_SKIP                l2Block=116 blockHash=3f1517..47413e hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:13.026] ENDORSEMENT_METADATA_BUILT               block=116 hash=3f1517..47413e metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:13.027] Submitted transaction                    hash=0xc3b84fe2e2d3d9e4ac94bb6cb48c993b61893f87bbe4f643b4fbbb0e0224d589 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=44 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:14.271] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:14.271] resolved tx endorsement policy           txHash=0359be..995022 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:14.273] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:14.273] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=117 blockHash=c0154a..fda127
+INFO [04-11|03:02:14.273] ENDORSEMENT_DISABLED_SKIP                l2Block=117 blockHash=c0154a..fda127 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:14.273] ENDORSEMENT_METADATA_BUILT               block=117 hash=c0154a..fda127 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:14.275] Submitted transaction                    hash=0x0359be2859ac3871e5f86e9e3411bbd1d14dba64fa9fabb589ebd0ac22995022 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=45 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:14.336] Waiting for more batches to post next assertion latestStakedAssertionBatchCount=7 latestStakedAssertionBlockHash=0xc303f3dd
+INFO [04-11|03:02:14.338] Latest confirmed assertion               assertionAfterState="&{GlobalState:{BlockHash:0xc303f3dd075cfb795884baeb8e40a802653cf18e29ee7f25a2c3f0a53c14bac7 SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:6 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0x71339634c126986184f63d1fd7a31652c23d92f1eb2fcfbb985f4805cd2e40f4}"
+INFO [04-11|03:02:15.497] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:15.497] resolved tx endorsement policy           txHash=76814a..d0bb90 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:15.502] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:15.502] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=118 blockHash=f20d20..02ebc8
+INFO [04-11|03:02:15.502] ENDORSEMENT_DISABLED_SKIP                l2Block=118 blockHash=f20d20..02ebc8 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:15.502] ENDORSEMENT_METADATA_BUILT               block=118 hash=f20d20..02ebc8 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:15.505] Submitted transaction                    hash=0x76814a7f212ac460d30033f282d4085b6139ee46df87a0267bc185def6d0bb90 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=46 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:16.919] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:16.919] resolved tx endorsement policy           txHash=639e59..af3685 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:16.925] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:16.925] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=119 blockHash=ef2a53..e1610f
+INFO [04-11|03:02:16.925] ENDORSEMENT_DISABLED_SKIP                l2Block=119 blockHash=ef2a53..e1610f hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:16.925] ENDORSEMENT_METADATA_BUILT               block=119 hash=ef2a53..e1610f metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:16.929] Submitted transaction                    hash=0x639e596778ac68e8a1c7c3ff11002a1351e1dc1da131036974279811d9af3685 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=47 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:18.382] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:18.383] resolved tx endorsement policy           txHash=70cf5c..7e106a txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:18.390] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:18.391] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=120 blockHash=bbf5c6..84818c
+INFO [04-11|03:02:18.391] ENDORSEMENT_DISABLED_SKIP                l2Block=120 blockHash=bbf5c6..84818c hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:18.391] ENDORSEMENT_METADATA_BUILT               block=120 hash=bbf5c6..84818c metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:18.395] Submitted transaction                    hash=0x70cf5cf2ec60665dac61cc819426185f122e1845656763d58f82f2115d7e106a from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=48 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:19.725] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:19.725] resolved tx endorsement policy           txHash=8965ae..6d5571 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:19.730] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:19.730] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=121 blockHash=79a44c..dd5f6b
+INFO [04-11|03:02:19.730] ENDORSEMENT_DISABLED_SKIP                l2Block=121 blockHash=79a44c..dd5f6b hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:19.730] ENDORSEMENT_METADATA_BUILT               block=121 hash=79a44c..dd5f6b metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:19.733] Submitted transaction                    hash=0x8965ae199fb920a5becd461d55b56093b39f3a53bdf3481091498c0b276d5571 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=49 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:21.267] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:21.268] resolved tx endorsement policy           txHash=8777b6..4f1fe1 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:21.274] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:21.274] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=122 blockHash=17f0eb..f802f9
+INFO [04-11|03:02:21.274] ENDORSEMENT_DISABLED_SKIP                l2Block=122 blockHash=17f0eb..f802f9 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:21.274] ENDORSEMENT_METADATA_BUILT               block=122 hash=17f0eb..f802f9 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:21.278] Submitted transaction                    hash=0x8777b60a67fc59708ddb49ebf5293ce553f2c53cd56656cf1b7d68d2ce4f1fe1 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=50 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:22.600] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:22.601] resolved tx endorsement policy           txHash=087a8a..ce8ac3 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:22.606] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:22.606] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=123 blockHash=178b1d..541a65
+INFO [04-11|03:02:22.606] ENDORSEMENT_DISABLED_SKIP                l2Block=123 blockHash=178b1d..541a65 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:22.606] ENDORSEMENT_METADATA_BUILT               block=123 hash=178b1d..541a65 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:22.609] Submitted transaction                    hash=0x087a8a48e40b552e6bea607b7804af33baece2758abfa86e5689f5f67bce8ac3 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=51 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:23.971] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:23.972] resolved tx endorsement policy           txHash=afef5c..f19477 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:23.980] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:23.980] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=124 blockHash=df5fa9..f23aeb
+INFO [04-11|03:02:23.980] ENDORSEMENT_DISABLED_SKIP                l2Block=124 blockHash=df5fa9..f23aeb hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:23.980] ENDORSEMENT_METADATA_BUILT               block=124 hash=df5fa9..f23aeb metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:23.984] Submitted transaction                    hash=0xafef5c072743e13eb9eba3141d552af63454052b924bef4c9afed90508f19477 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=52 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=71
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=72
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=73
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=74
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=75
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=76
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=77
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=78
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=79
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=80
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=81
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=82
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=83
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=84
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=85
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=86
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=87
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=88
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=89
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=90
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=91
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=92
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=93
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=94
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=95
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=96
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=97
+INFO [04-11|03:02:24.337] Reading message result remotely.         msgIdx=98
+INFO [04-11|03:02:24.339] Reading message result remotely.         msgIdx=99
+INFO [04-11|03:02:24.339] Reading message result remotely.         msgIdx=100
+INFO [04-11|03:02:24.342] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+INFO [04-11|03:02:24.352] Latest confirmed assertion               assertionAfterState="&{GlobalState:{BlockHash:0xc303f3dd075cfb795884baeb8e40a802653cf18e29ee7f25a2c3f0a53c14bac7 SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:6 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0x71339634c126986184f63d1fd7a31652c23d92f1eb2fcfbb985f4805cd2e40f4}"
+INFO [04-11|03:02:24.375] DataPoster sent transaction              nonce=11 hash=72d617..f0c599 feeCap=12,000,000,070 tipCap=1,200,000,000 blobFeeCap=<nil> gas=238,449
+INFO [04-11|03:02:24.377] rpc response                             method=eth_estimateGas logId=1226 err="execution reverted"           result="\"0x0\"" attempt=0 args="[{\"from\":\"0xc8e5d0c6919d4da7d48ffb7d406d83ed1ea38132\",\"input\":\"0x097da1f8000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000008c2005559c23b0cf55f545103eaf0460641f9609000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002843b86de1919a23723546adbc837e4ad965e4a704fea014bb50163e7e125d2afe5c0de200f48e55ab22a649109e1312df1ea6dc42ac71c6a2758a582e4925d0fd4c060b106c2c02df561d4afaf9a1d6785f70098ec3874765c638e3cb6dbe8d3c83333e14c000000000000000000000000000000000000000000000000000000000000000800000000000000000000000043679e89a6fea7df648350f5a7fdcd0bb4a501e900000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000007c303f3dd075cfb795884baeb8e40a802653cf18e29ee7f25a2c3f0a53c14bac7000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000171339634c126986184f63d1fd7a31652c23d92f1eb2fcfbb985f4805cd2e40f45541e2599a130c79c0d2f974d1199edbc63ea32fe52640a4b83863d0a3d2ab8900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015ab1acea3676e2d61daae82c46e2b785efa65731fab3ec150da47d46cc1e09a61bdfbdb2df46a76cb27c02a96498013928f09571e1c9f68064542a78a1d35b4200000000000000000000000000000000000000000000000000000000\",\"to\":\"0xc8e5d0c6919d4da7d48ffb7d406d83ed1ea38132\",\"value\":\"0x0\"}]" errorData="\"0xf26aea8b000000000000000000000000c8e5d0c6919d4da7d48ffb7d406d83ed1ea38132\""
+WARN [04-11|03:02:24.377] Could not submit latest assertion        err="could not create assertion: gas estimation errored for tx with hash 0x72d61705: execution reverted" validatorName=default-validator
+INFO [04-11|03:02:24.381] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:24.410] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:24.413] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:24.433] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:24.436] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:24.456] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:24.459] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:24.480] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:24.484] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:24.502] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:24.505] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:24.522] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:24.525] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:24.546] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:24.549] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:24.571] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:24.576] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:24.605] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:24.609] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:24.628] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:24.632] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:24.652] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:24.657] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:24.683] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:24.688] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:24.714] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:24.721] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:24.745] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:24.751] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:24.771] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:24.775] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:24.810] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:24.816] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:24.842] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:24.849] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:24.880] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:24.887] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:24.909] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:24.914] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:24.933] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:24.940] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:24.972] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:24.976] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:25.000] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:25.004] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:25.026] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:25.032] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:25.054] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:25.058] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:25.085] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:25.088] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:25.117] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:25.122] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:25.155] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:25.161] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:25.194] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:25.200] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+WARN [04-11|03:02:25.242] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 12, unconfirmed nonce: 11, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:02:25.251] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+INFO [04-11|03:02:25.292] DataPoster sent transaction              nonce=12 hash=82263a..f40042 feeCap=12,000,000,070 tipCap=1,200,000,000 blobFeeCap=<nil> gas=238,449
+INFO [04-11|03:02:25.297] rpc response                             method=eth_estimateGas logId=1740 err="execution reverted"           result="\"0x0\"" attempt=0 args="[{\"from\":\"0xc8e5d0c6919d4da7d48ffb7d406d83ed1ea38132\",\"input\":\"0x097da1f8000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000008c2005559c23b0cf55f545103eaf0460641f9609000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002843b86de1919a23723546adbc837e4ad965e4a704fea014bb50163e7e125d2afe5c0de200f48e55ab22a649109e1312df1ea6dc42ac71c6a2758a582e4925d0fd4c060b106c2c02df561d4afaf9a1d6785f70098ec3874765c638e3cb6dbe8d3c83333e14c000000000000000000000000000000000000000000000000000000000000000800000000000000000000000043679e89a6fea7df648350f5a7fdcd0bb4a501e900000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000007c303f3dd075cfb795884baeb8e40a802653cf18e29ee7f25a2c3f0a53c14bac7000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000171339634c126986184f63d1fd7a31652c23d92f1eb2fcfbb985f4805cd2e40f45541e2599a130c79c0d2f974d1199edbc63ea32fe52640a4b83863d0a3d2ab8900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015ab1acea3676e2d61daae82c46e2b785efa65731fab3ec150da47d46cc1e09a61bdfbdb2df46a76cb27c02a96498013928f09571e1c9f68064542a78a1d35b4200000000000000000000000000000000000000000000000000000000\",\"to\":\"0xc8e5d0c6919d4da7d48ffb7d406d83ed1ea38132\",\"value\":\"0x0\"}]" errorData="\"0xf26aea8b000000000000000000000000c8e5d0c6919d4da7d48ffb7d406d83ed1ea38132\""
+WARN [04-11|03:02:25.297] Could not submit latest assertion        err="could not create assertion: gas estimation errored for tx with hash 0x82263aa5: execution reverted" validatorName=default-validator
+INFO [04-11|03:02:25.304] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+INFO [04-11|03:02:25.312] Successfully submitted assertion         validatorName=default-validator requiredInboxMaxCount=7 postedExecutionState="&{GlobalState:{BlockHash:0x5541e2599a130c79c0d2f974d1199edbc63ea32fe52640a4b83863d0a3d2ab89 SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:7 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0x5ab1acea3676e2d61daae82c46e2b785efa65731fab3ec150da47d46cc1e09a6}" assertionHash=1bdfbd..d35b42
+INFO [04-11|03:02:25.312] Sending assertion to confirmation queue  assertionHash=1bdfbd..d35b42 addedBy=PostAssertionBasedOnParent
+INFO [04-11|03:02:25.402] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:25.403] resolved tx endorsement policy           txHash=978ea1..790c5a txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:25.409] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:25.410] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=125 blockHash=61001c..7cf59e
+INFO [04-11|03:02:25.411] ENDORSEMENT_DISABLED_SKIP                l2Block=125 blockHash=61001c..7cf59e hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:25.411] ENDORSEMENT_METADATA_BUILT               block=125 hash=61001c..7cf59e metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:25.416] Submitted transaction                    hash=0x978ea12e348e0702bcd606b4ee47ea28f29ae91d345812dc6f847450ef790c5a from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=53 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:26.789] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:26.790] resolved tx endorsement policy           txHash=b8053e..414828 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:26.794] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:26.794] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=126 blockHash=a51232..aec9a4
+INFO [04-11|03:02:26.795] ENDORSEMENT_DISABLED_SKIP                l2Block=126 blockHash=a51232..aec9a4 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:26.796] ENDORSEMENT_METADATA_BUILT               block=126 hash=a51232..aec9a4 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:26.801] Submitted transaction                    hash=0xb8053e31132d7ba18d302e9c6939a92083e439db0b1a6ec72218a61ba2414828 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=54 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:28.302] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:28.303] resolved tx endorsement policy           txHash=a9129f..7a00c6 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:28.311] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:28.311] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=127 blockHash=f9fbc9..54963f
+INFO [04-11|03:02:28.311] ENDORSEMENT_DISABLED_SKIP                l2Block=127 blockHash=f9fbc9..54963f hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:28.312] ENDORSEMENT_METADATA_BUILT               block=127 hash=f9fbc9..54963f metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:28.317] Submitted transaction                    hash=0xa9129f06c13c61345096ee1d6930a8e9a8041a6fc710d56b957b4436327a00c6 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=55 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:29.670] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:29.670] resolved tx endorsement policy           txHash=de7ec2..976330 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:29.675] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:29.675] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=128 blockHash=b1383a..4147f1
+INFO [04-11|03:02:29.676] ENDORSEMENT_DISABLED_SKIP                l2Block=128 blockHash=b1383a..4147f1 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:29.676] ENDORSEMENT_METADATA_BUILT               block=128 hash=b1383a..4147f1 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:29.679] Submitted transaction                    hash=0xde7ec2ae8c136a29d57e7e03c2dda5d750302616eb0b8c8816159b2ced976330 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=56 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:31.163] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:31.163] resolved tx endorsement policy           txHash=625cfd..cfc270 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:31.167] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:31.167] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=129 blockHash=57a8b5..76880b
+INFO [04-11|03:02:31.167] ENDORSEMENT_DISABLED_SKIP                l2Block=129 blockHash=57a8b5..76880b hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:31.167] ENDORSEMENT_METADATA_BUILT               block=129 hash=57a8b5..76880b metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:31.173] Submitted transaction                    hash=0x625cfd8d45b922376d99f4255f140b4467557b2bf07f688096ab9c7588cfc270 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=57 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:32.433] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:32.434] resolved tx endorsement policy           txHash=876bfd..e9558f txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:32.440] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:32.440] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=130 blockHash=7c27ec..5abb24
+INFO [04-11|03:02:32.440] ENDORSEMENT_DISABLED_SKIP                l2Block=130 blockHash=7c27ec..5abb24 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:32.440] ENDORSEMENT_METADATA_BUILT               block=130 hash=7c27ec..5abb24 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:32.455] Submitted transaction                    hash=0x876bfdb7d1429ecb86957c769415705eac63072d6910971c5e3fc08006e9558f from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=58 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:34.000] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:34.000] resolved tx endorsement policy           txHash=103320..614ad9 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:34.005] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:34.005] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=131 blockHash=721777..0da724
+INFO [04-11|03:02:34.005] ENDORSEMENT_DISABLED_SKIP                l2Block=131 blockHash=721777..0da724 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:34.005] ENDORSEMENT_METADATA_BUILT               block=131 hash=721777..0da724 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:34.008] Submitted transaction                    hash=0x103320ade567f620d6d4e4a9a73cac5a44038f69fc0d5a3fd4341c2c46614ad9 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=59 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:34.342] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+INFO [04-11|03:02:34.347] Latest confirmed assertion               assertionAfterState="&{GlobalState:{BlockHash:0xc303f3dd075cfb795884baeb8e40a802653cf18e29ee7f25a2c3f0a53c14bac7 SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:6 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0x71339634c126986184f63d1fd7a31652c23d92f1eb2fcfbb985f4805cd2e40f4}"
+INFO [04-11|03:02:34.351] Successfully submitted assertion         validatorName=default-validator requiredInboxMaxCount=7 postedExecutionState="&{GlobalState:{BlockHash:0x5541e2599a130c79c0d2f974d1199edbc63ea32fe52640a4b83863d0a3d2ab89 SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:7 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0x5ab1acea3676e2d61daae82c46e2b785efa65731fab3ec150da47d46cc1e09a6}" assertionHash=1bdfbd..d35b42
+INFO [04-11|03:02:34.715] DataPoster sent transaction              nonce=6  hash=525b75..3c2a7e feeCap=12,000,000,070 tipCap=1,200,000,000 blobFeeCap=<nil> gas=233,402
+INFO [04-11|03:02:34.716] BatchPoster: batch sent                  sequenceNumber=7 from=102 to=132 prevDelayed=15 currentDelayed=16 totalSegments=88 numBlobs=0
+INFO [04-11|03:02:35.395] DataPoster sent transaction              nonce=13 hash=3096a6..909b00 feeCap=12,000,000,070 tipCap=1,200,000,000 blobFeeCap=<nil> gas=153,960
+INFO [04-11|03:02:35.397] rpc response                             method=eth_estimateGas logId=1960 err="execution reverted"           result="\"0x0\"" attempt=0 args="[{\"from\":\"0xc8e5d0c6919d4da7d48ffb7d406d83ed1ea38132\",\"input\":\"0x097da1f8000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000008c2005559c23b0cf55f545103eaf0460641f9609000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001e410b98a351bdfbdb2df46a76cb27c02a96498013928f09571e1c9f68064542a78a1d35b42b4cf2157da5fe6cc2ffbe02abf61f2df1ba7fb26e2e6ef05837a771d68cfe5bd5541e2599a130c79c0d2f974d1199edbc63ea32fe52640a4b83863d0a3d2ab8900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015ab1acea3676e2d61daae82c46e2b785efa65731fab3ec150da47d46cc1e09a60000000000000000000000000000000000000000000000000000000000000000c2c02df561d4afaf9a1d6785f70098ec3874765c638e3cb6dbe8d3c83333e14c000000000000000000000000000000000000000000000000000000000000000800000000000000000000000043679e89a6fea7df648350f5a7fdcd0bb4a501e90000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000712602dd378e6410fd5950a1d580729c75ab6240ea1cc7dfbdbd360e185a3a6f800000000000000000000000000000000000000000000000000000000\",\"to\":\"0xc8e5d0c6919d4da7d48ffb7d406d83ed1ea38132\",\"value\":\"0x0\"}]" errorData="\"0xf26aea8b000000000000000000000000c8e5d0c6919d4da7d48ffb7d406d83ed1ea38132\""
+WARN [04-11|03:02:35.397] Could not confirm assertion              err="gas estimation errored for tx with hash 0x3096a654: execution reverted" assertionHash=1bdfbd..d35b42
+INFO [04-11|03:02:35.437] InboxTracker                             sequencerBatchCount=8 messageCount=132 l1Block=691 l1Timestamp=2026-04-11T03:02:34+0000
+INFO [04-11|03:02:35.453] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:35.453] resolved tx endorsement policy           txHash=26e561..b5102d txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:35.459] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:35.459] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=132 blockHash=d8e3b9..d4e6b8
+INFO [04-11|03:02:35.459] ENDORSEMENT_DISABLED_SKIP                l2Block=132 blockHash=d8e3b9..d4e6b8 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:35.459] ENDORSEMENT_METADATA_BUILT               block=132 hash=d8e3b9..d4e6b8 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:35.462] Submitted transaction                    hash=0x26e561232bfb52cee7bdd24d47fe77bae95738d28a2e66f4bbdfb89b44b5102d from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=60 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:35.487] Reading message result remotely.         msgIdx=131
+INFO [04-11|03:02:36.399] ExecutionEngine: Added DelayedMessages   msgIdx=133 delayedMsgIdx=16 block-header="&{ParentHash:0xd8e3b9753e08d6f7b9cdf4598d9b377f402d8c8255801ea09a7396a9cad4e6b8 UncleHash:0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347 Coinbase:0xe2148eE53c0755215Df69b2616E552154EdC584f Root:0x8980237a164581b9db88fb37d1ba3c6595d5602084b37baea8df722f2b2fb833 TxHash:0xbd07ca733ab7cfdd29292234ede3353028b9d20da53287e311a6d9f1f05ffb8e ReceiptHash:0xf08cf5553e1dae52e3df19b356b8320e17c39fb055f635739c31052db5c3e45e Bloom:[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0] Difficulty:+1 Number:+133 GasLimit:1125899906842624 GasUsed:0 Time:1775876555 Extra:[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0] MixDigest:0x000000000000000000000000000002b300000000000000280000000000000000 Nonce:[0 0 0 0 0 0 0 17] BaseFee:+100000000 WithdrawalsHash:<nil> BlobGasUsed:<nil> ExcessBlobGas:<nil> ParentBeaconRoot:<nil> RequestsHash:<nil>}"
+INFO [04-11|03:02:36.399] DelayedSequencer: Sequenced              msgnum=1 startpos=16
+INFO [04-11|03:02:36.856] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:36.856] resolved tx endorsement policy           txHash=5bba86..540d2c txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:36.863] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:36.863] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=134 blockHash=74b3b3..350ea2
+INFO [04-11|03:02:36.863] ENDORSEMENT_DISABLED_SKIP                l2Block=134 blockHash=74b3b3..350ea2 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:36.863] ENDORSEMENT_METADATA_BUILT               block=134 hash=74b3b3..350ea2 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:36.866] Submitted transaction                    hash=0x5bba8645229ae24b1683873c72d767ee5168780f3aeeb5ee3cfb851ded540d2c from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=61 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:38.257] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:38.257] resolved tx endorsement policy           txHash=d4cfc9..242685 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:38.261] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:38.261] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=135 blockHash=051115..792fff
+INFO [04-11|03:02:38.262] ENDORSEMENT_DISABLED_SKIP                l2Block=135 blockHash=051115..792fff hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:38.262] ENDORSEMENT_METADATA_BUILT               block=135 hash=051115..792fff metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:38.263] Submitted transaction                    hash=0xd4cfc9c16ce068aa9a91760ea34a9cad5cc1e9c9c64a3dbbf643af35c1242685 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=62 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:39.452] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:39.452] resolved tx endorsement policy           txHash=c42b9b..50bb55 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:39.455] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:39.455] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=136 blockHash=205a63..ac0cc6
+INFO [04-11|03:02:39.455] ENDORSEMENT_DISABLED_SKIP                l2Block=136 blockHash=205a63..ac0cc6 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:39.455] ENDORSEMENT_METADATA_BUILT               block=136 hash=205a63..ac0cc6 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:39.457] Submitted transaction                    hash=0xc42b9b817d968547f70dbde5cb3dce450a4865ae130169316e1ab229a850bb55 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=63 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:40.718] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:40.718] resolved tx endorsement policy           txHash=464e13..a47fa7 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:40.719] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:40.719] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=137 blockHash=b95ef3..aa8e6d
+INFO [04-11|03:02:40.719] ENDORSEMENT_DISABLED_SKIP                l2Block=137 blockHash=b95ef3..aa8e6d hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:40.719] ENDORSEMENT_METADATA_BUILT               block=137 hash=b95ef3..aa8e6d metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:40.720] Submitted transaction                    hash=0x464e136960b3d380bb73260df349abfdba0f993b55bb67c38a8b4ea2e2a47fa7 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=64 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:41.863] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:41.863] resolved tx endorsement policy           txHash=9e947d..28cfa4 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:41.864] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:41.865] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=138 blockHash=fb0c0b..12d107
+INFO [04-11|03:02:41.865] ENDORSEMENT_DISABLED_SKIP                l2Block=138 blockHash=fb0c0b..12d107 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:41.865] ENDORSEMENT_METADATA_BUILT               block=138 hash=fb0c0b..12d107 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:41.866] Submitted transaction                    hash=0x9e947dd02535cdd3e1f702720db8fc8dc31a27c3d6be33c04ca06df2eb28cfa4 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=65 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:43.084] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:43.084] resolved tx endorsement policy           txHash=84f15e..f3ae25 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:43.087] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:43.087] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=139 blockHash=26da17..b1d1c6
+INFO [04-11|03:02:43.087] ENDORSEMENT_DISABLED_SKIP                l2Block=139 blockHash=26da17..b1d1c6 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:43.087] ENDORSEMENT_METADATA_BUILT               block=139 hash=26da17..b1d1c6 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:43.089] Submitted transaction                    hash=0x84f15ef87e8ee95f7e6a02516fbc6b4a8afcff743795290cf6322cc28cf3ae25 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=66 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:44.345] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+INFO [04-11|03:02:44.348] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:44.348] resolved tx endorsement policy           txHash=57fb21..dac899 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:44.350] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:44.350] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=140 blockHash=4f2376..1e5125
+INFO [04-11|03:02:44.350] ENDORSEMENT_DISABLED_SKIP                l2Block=140 blockHash=4f2376..1e5125 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:44.350] ENDORSEMENT_METADATA_BUILT               block=140 hash=4f2376..1e5125 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:44.352] Successfully submitted assertion         validatorName=default-validator requiredInboxMaxCount=7 postedExecutionState="&{GlobalState:{BlockHash:0x5541e2599a130c79c0d2f974d1199edbc63ea32fe52640a4b83863d0a3d2ab89 SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:7 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0x5ab1acea3676e2d61daae82c46e2b785efa65731fab3ec150da47d46cc1e09a6}" assertionHash=1bdfbd..d35b42
+INFO [04-11|03:02:44.353] Latest confirmed assertion               assertionAfterState="&{GlobalState:{BlockHash:0x5541e2599a130c79c0d2f974d1199edbc63ea32fe52640a4b83863d0a3d2ab89 SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:7 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0x5ab1acea3676e2d61daae82c46e2b785efa65731fab3ec150da47d46cc1e09a6}"
+INFO [04-11|03:02:44.353] Submitted transaction                    hash=0x57fb21109e8cc12af342bcbe103c5eb199f8cfa21faf51846aa980ee73dac899 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=67 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:45.333] Confirmed assertion by time              assertionHash=1bdfbd..d35b42
+INFO [04-11|03:02:45.669] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:45.670] resolved tx endorsement policy           txHash=f75cad..494ee2 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:45.673] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:45.673] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=141 blockHash=490292..bc8f9d
+INFO [04-11|03:02:45.674] ENDORSEMENT_DISABLED_SKIP                l2Block=141 blockHash=490292..bc8f9d hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:45.674] ENDORSEMENT_METADATA_BUILT               block=141 hash=490292..bc8f9d metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:45.679] Submitted transaction                    hash=0xf75cad0563fc810379778d9d685847059a6afbe10e822fc70cd61449f5494ee2 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=68 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:46.932] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:46.933] resolved tx endorsement policy           txHash=4e58be..b6f612 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:46.937] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:46.937] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=142 blockHash=a71914..72c378
+INFO [04-11|03:02:46.937] ENDORSEMENT_DISABLED_SKIP                l2Block=142 blockHash=a71914..72c378 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:46.937] ENDORSEMENT_METADATA_BUILT               block=142 hash=a71914..72c378 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:46.941] Submitted transaction                    hash=0x4e58be9d9be0b5dacc3d725cd86ecf29e4b7d087b8bd22db26a7bfabf7b6f612 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=69 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:48.229] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:48.229] resolved tx endorsement policy           txHash=b99e33..dee8ba txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:48.236] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:48.236] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=143 blockHash=ed9208..9e625e
+INFO [04-11|03:02:48.236] ENDORSEMENT_DISABLED_SKIP                l2Block=143 blockHash=ed9208..9e625e hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:48.236] ENDORSEMENT_METADATA_BUILT               block=143 hash=ed9208..9e625e metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:48.240] Submitted transaction                    hash=0xb99e33db7645c02cf516d87807433374d52162cd1c082baaabd1bf3c7cdee8ba from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=70 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:49.509] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:49.510] resolved tx endorsement policy           txHash=94a012..5df50e txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:49.513] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:49.513] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=144 blockHash=3870e9..61d4f8
+INFO [04-11|03:02:49.513] ENDORSEMENT_DISABLED_SKIP                l2Block=144 blockHash=3870e9..61d4f8 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:49.513] ENDORSEMENT_METADATA_BUILT               block=144 hash=3870e9..61d4f8 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:49.515] Submitted transaction                    hash=0x94a012a01e8dfc39771cec1a74687634fa40d895708bdeabc8dbc3bb525df50e from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=71 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:50.783] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:50.784] resolved tx endorsement policy           txHash=6eb2d5..88ea0e txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:50.790] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:50.790] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=145 blockHash=924faa..b189f7
+INFO [04-11|03:02:50.790] ENDORSEMENT_DISABLED_SKIP                l2Block=145 blockHash=924faa..b189f7 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:50.790] ENDORSEMENT_METADATA_BUILT               block=145 hash=924faa..b189f7 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:50.794] Submitted transaction                    hash=0x6eb2d5b99589c5368c9414b7d1ef560568152758963ef72d7de1fc393788ea0e from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=72 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:52.042] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:52.042] resolved tx endorsement policy           txHash=876d6f..6ff51f txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:52.049] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:52.049] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=146 blockHash=59fc75..4193e8
+INFO [04-11|03:02:52.049] ENDORSEMENT_DISABLED_SKIP                l2Block=146 blockHash=59fc75..4193e8 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:52.050] ENDORSEMENT_METADATA_BUILT               block=146 hash=59fc75..4193e8 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:52.052] Submitted transaction                    hash=0x876d6f881e07956b9e195f8d7aab65da05db043f68525e889387a1a3286ff51f from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=73 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:53.324] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:53.324] resolved tx endorsement policy           txHash=84c7bc..338cfc txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:53.327] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:53.327] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=147 blockHash=8d41b7..ed9ba1
+INFO [04-11|03:02:53.327] ENDORSEMENT_DISABLED_SKIP                l2Block=147 blockHash=8d41b7..ed9ba1 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:53.327] ENDORSEMENT_METADATA_BUILT               block=147 hash=8d41b7..ed9ba1 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:53.329] Submitted transaction                    hash=0x84c7bc97cbf09192a9fa7353f1149b4c824a376591cfca411b8105bceb338cfc from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=74 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:54.347] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+INFO [04-11|03:02:54.350] Latest confirmed assertion               assertionAfterState="&{GlobalState:{BlockHash:0x5541e2599a130c79c0d2f974d1199edbc63ea32fe52640a4b83863d0a3d2ab89 SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:7 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0x5ab1acea3676e2d61daae82c46e2b785efa65731fab3ec150da47d46cc1e09a6}"
+INFO [04-11|03:02:54.355] Successfully submitted assertion         validatorName=default-validator requiredInboxMaxCount=7 postedExecutionState="&{GlobalState:{BlockHash:0x5541e2599a130c79c0d2f974d1199edbc63ea32fe52640a4b83863d0a3d2ab89 SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:7 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0x5ab1acea3676e2d61daae82c46e2b785efa65731fab3ec150da47d46cc1e09a6}" assertionHash=1bdfbd..d35b42
+INFO [04-11|03:02:54.571] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:54.573] resolved tx endorsement policy           txHash=3326a9..8702d9 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:54.578] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:54.579] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=148 blockHash=b05fd2..6f8215
+INFO [04-11|03:02:54.579] ENDORSEMENT_DISABLED_SKIP                l2Block=148 blockHash=b05fd2..6f8215 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:54.579] ENDORSEMENT_METADATA_BUILT               block=148 hash=b05fd2..6f8215 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:54.580] Submitted transaction                    hash=0x3326a9fcd5e468be95e537c17a1b49aca3c114b945d5d407e47302739b8702d9 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=75 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:55.866] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:55.866] resolved tx endorsement policy           txHash=5dc4ac..7c18f4 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:55.869] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:55.869] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=149 blockHash=09f947..e2cf4b
+INFO [04-11|03:02:55.869] ENDORSEMENT_DISABLED_SKIP                l2Block=149 blockHash=09f947..e2cf4b hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:55.869] ENDORSEMENT_METADATA_BUILT               block=149 hash=09f947..e2cf4b metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:55.871] Submitted transaction                    hash=0x5dc4acb72ef5e4ed932aaaeae1eff09c70dafe3f355b38d6c1b2cc94c67c18f4 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=76 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:57.129] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:57.130] resolved tx endorsement policy           txHash=c576ca..afa898 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:57.135] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:57.135] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=150 blockHash=368737..6e30f2
+INFO [04-11|03:02:57.135] ENDORSEMENT_DISABLED_SKIP                l2Block=150 blockHash=368737..6e30f2 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:57.135] ENDORSEMENT_METADATA_BUILT               block=150 hash=368737..6e30f2 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:57.138] Submitted transaction                    hash=0xc576cace2913f1f72f4d83ef411f2d85592cb513aebb81ab293a346b3eafa898 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=77 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:58.405] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:58.405] resolved tx endorsement policy           txHash=7fe33d..d82e4a txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:58.410] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:58.410] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=151 blockHash=f82c3f..9a0941
+INFO [04-11|03:02:58.411] ENDORSEMENT_DISABLED_SKIP                l2Block=151 blockHash=f82c3f..9a0941 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:58.411] ENDORSEMENT_METADATA_BUILT               block=151 hash=f82c3f..9a0941 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:58.416] Submitted transaction                    hash=0x7fe33dde8fb5e1e253d86a7de3bbf9fea343033ddb3be78db710b18e61d82e4a from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=78 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:02:59.681] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:02:59.683] resolved tx endorsement policy           txHash=f61459..a544fa txIndex=0 policyID=default threshold=2
+INFO [04-11|03:02:59.690] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:02:59.692] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=152 blockHash=54109c..9cd435
+INFO [04-11|03:02:59.692] ENDORSEMENT_DISABLED_SKIP                l2Block=152 blockHash=54109c..9cd435 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:02:59.692] ENDORSEMENT_METADATA_BUILT               block=152 hash=54109c..9cd435 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:02:59.694] Submitted transaction                    hash=0xf614599c8c0e9d2cdc445a08cb9a4dae60d40be528bb4210164d3d0921a544fa from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=79 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:03:00.944] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:03:00.944] resolved tx endorsement policy           txHash=f18fb1..7bedbd txIndex=0 policyID=default threshold=2
+INFO [04-11|03:03:00.947] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:03:00.947] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=153 blockHash=78c5d4..66c8b4
+INFO [04-11|03:03:00.947] ENDORSEMENT_DISABLED_SKIP                l2Block=153 blockHash=78c5d4..66c8b4 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:03:00.947] ENDORSEMENT_METADATA_BUILT               block=153 hash=78c5d4..66c8b4 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:03:00.949] Submitted transaction                    hash=0xf18fb1d2de60e15ee709a8a7ebadebc185c6f22137b80cfa1e9e928f697bedbd from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=80 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:03:02.194] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:03:02.194] resolved tx endorsement policy           txHash=610bbb..4c88b2 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:03:02.197] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:03:02.197] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=154 blockHash=d773e8..4db12b
+INFO [04-11|03:03:02.198] ENDORSEMENT_DISABLED_SKIP                l2Block=154 blockHash=d773e8..4db12b hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:03:02.198] ENDORSEMENT_METADATA_BUILT               block=154 hash=d773e8..4db12b metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:03:02.201] Submitted transaction                    hash=0x610bbb262a7cfaa597ab3986b406d52e1ee3caf96b4d28cf51afa378674c88b2 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=81 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:03:03.465] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:03:03.465] resolved tx endorsement policy           txHash=518957..0650a6 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:03:03.469] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:03:03.469] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=155 blockHash=b8e77c..961fac
+INFO [04-11|03:03:03.470] ENDORSEMENT_DISABLED_SKIP                l2Block=155 blockHash=b8e77c..961fac hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:03:03.470] ENDORSEMENT_METADATA_BUILT               block=155 hash=b8e77c..961fac metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:03:03.472] Submitted transaction                    hash=0x518957f41821b76809d9d774b67919d6ad3c5ab53f2ae2a9e1890f9b7e0650a6 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=82 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:03:04.343] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+INFO [04-11|03:03:04.347] Latest confirmed assertion               assertionAfterState="&{GlobalState:{BlockHash:0x5541e2599a130c79c0d2f974d1199edbc63ea32fe52640a4b83863d0a3d2ab89 SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:7 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0x5ab1acea3676e2d61daae82c46e2b785efa65731fab3ec150da47d46cc1e09a6}"
+INFO [04-11|03:03:04.352] Successfully submitted assertion         validatorName=default-validator requiredInboxMaxCount=7 postedExecutionState="&{GlobalState:{BlockHash:0x5541e2599a130c79c0d2f974d1199edbc63ea32fe52640a4b83863d0a3d2ab89 SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:7 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0x5ab1acea3676e2d61daae82c46e2b785efa65731fab3ec150da47d46cc1e09a6}" assertionHash=1bdfbd..d35b42
+INFO [04-11|03:03:04.734] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:03:04.734] resolved tx endorsement policy           txHash=1c2ec8..79eb08 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:03:04.739] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:03:04.739] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=156 blockHash=c0d48c..c5abf4
+INFO [04-11|03:03:04.739] ENDORSEMENT_DISABLED_SKIP                l2Block=156 blockHash=c0d48c..c5abf4 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:03:04.740] ENDORSEMENT_METADATA_BUILT               block=156 hash=c0d48c..c5abf4 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:03:04.742] Submitted transaction                    hash=0x1c2ec8190af382074ef4191626036623474ca7650d94316ac58363f8a379eb08 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=83 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:03:05.990] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:03:05.991] resolved tx endorsement policy           txHash=f00afb..521c86 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:03:05.997] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:03:05.997] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=157 blockHash=c73c66..af8292
+INFO [04-11|03:03:05.997] ENDORSEMENT_DISABLED_SKIP                l2Block=157 blockHash=c73c66..af8292 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:03:05.997] ENDORSEMENT_METADATA_BUILT               block=157 hash=c73c66..af8292 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:03:06.000] Submitted transaction                    hash=0xf00afbb1811b721fe75dc99f263acd59ebfe44b57117ddd7dbdec13d79521c86 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=84 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:03:07.256] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:03:07.256] resolved tx endorsement policy           txHash=2ed297..37701c txIndex=0 policyID=default threshold=2
+INFO [04-11|03:03:07.259] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:03:07.260] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=158 blockHash=8f49b2..da013a
+INFO [04-11|03:03:07.260] ENDORSEMENT_DISABLED_SKIP                l2Block=158 blockHash=8f49b2..da013a hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:03:07.260] ENDORSEMENT_METADATA_BUILT               block=158 hash=8f49b2..da013a metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:03:07.263] Submitted transaction                    hash=0x2ed29740d6a16db070e1171dda88d181497ba6cac3b358c030f0e4453437701c from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=85 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:03:08.510] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:03:08.510] resolved tx endorsement policy           txHash=266617..a3d5a0 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:03:08.517] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:03:08.517] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=159 blockHash=c86a5e..e34991
+INFO [04-11|03:03:08.517] ENDORSEMENT_DISABLED_SKIP                l2Block=159 blockHash=c86a5e..e34991 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:03:08.518] ENDORSEMENT_METADATA_BUILT               block=159 hash=c86a5e..e34991 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:03:08.523] Submitted transaction                    hash=0x266617f05e5fbeee0233e07b8ee245e2e9ea62f5d555441dc2e51cf676a3d5a0 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=86 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:03:09.759] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:03:09.759] resolved tx endorsement policy           txHash=525aff..8c50e4 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:03:09.764] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:03:09.765] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=160 blockHash=9f0765..ffebff
+INFO [04-11|03:03:09.765] ENDORSEMENT_DISABLED_SKIP                l2Block=160 blockHash=9f0765..ffebff hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:03:09.765] ENDORSEMENT_METADATA_BUILT               block=160 hash=9f0765..ffebff metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:03:09.769] Submitted transaction                    hash=0x525aff00c2553a8551efbecf724d4d1f573ed4923a87965fac92729a608c50e4 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=87 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:03:11.025] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:03:11.026] resolved tx endorsement policy           txHash=e39093..4b4385 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:03:11.032] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:03:11.032] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=161 blockHash=d8a54c..df81dd
+INFO [04-11|03:03:11.032] ENDORSEMENT_DISABLED_SKIP                l2Block=161 blockHash=d8a54c..df81dd hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:03:11.032] ENDORSEMENT_METADATA_BUILT               block=161 hash=d8a54c..df81dd metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:03:11.034] Submitted transaction                    hash=0xe39093e33cefa687259e45a8ac6d0551e9f6c2b14815ca82bde194e56b4b4385 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=88 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:03:12.265] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:03:12.265] resolved tx endorsement policy           txHash=92ab95..e2a497 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:03:12.268] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:03:12.269] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=162 blockHash=666c97..e8681a
+INFO [04-11|03:03:12.270] ENDORSEMENT_DISABLED_SKIP                l2Block=162 blockHash=666c97..e8681a hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:03:12.270] ENDORSEMENT_METADATA_BUILT               block=162 hash=666c97..e8681a metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:03:12.272] Submitted transaction                    hash=0x92ab95c4fa78f079e60b988f1fd0946298d45e5d6e86910ac50f41ef26e2a497 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=89 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:03:13.510] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:03:13.511] resolved tx endorsement policy           txHash=604c2d..fe4376 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:03:13.513] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:03:13.514] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=163 blockHash=c88c28..13029b
+INFO [04-11|03:03:13.514] ENDORSEMENT_DISABLED_SKIP                l2Block=163 blockHash=c88c28..13029b hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:03:13.514] ENDORSEMENT_METADATA_BUILT               block=163 hash=c88c28..13029b metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:03:13.516] Submitted transaction                    hash=0x604c2dfd785c7a1c09902f60b6b384ba7e45fca4971a2c6eefb3388ca3fe4376 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=90 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:03:14.340] Posting assertion for batch we agree with requiredInboxMaxCount=7 validatorName=default-validator
+INFO [04-11|03:03:14.346] Latest confirmed assertion               assertionAfterState="&{GlobalState:{BlockHash:0x5541e2599a130c79c0d2f974d1199edbc63ea32fe52640a4b83863d0a3d2ab89 SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:7 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0x5ab1acea3676e2d61daae82c46e2b785efa65731fab3ec150da47d46cc1e09a6}"
+INFO [04-11|03:03:14.347] Successfully submitted assertion         validatorName=default-validator requiredInboxMaxCount=7 postedExecutionState="&{GlobalState:{BlockHash:0x5541e2599a130c79c0d2f974d1199edbc63ea32fe52640a4b83863d0a3d2ab89 SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:7 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0x5ab1acea3676e2d61daae82c46e2b785efa65731fab3ec150da47d46cc1e09a6}" assertionHash=1bdfbd..d35b42
+INFO [04-11|03:03:14.801] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:03:14.801] resolved tx endorsement policy           txHash=695d75..04fe71 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:03:14.806] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:03:14.806] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=164 blockHash=0780b4..8fbb79
+INFO [04-11|03:03:14.806] ENDORSEMENT_DISABLED_SKIP                l2Block=164 blockHash=0780b4..8fbb79 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:03:14.806] ENDORSEMENT_METADATA_BUILT               block=164 hash=0780b4..8fbb79 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:03:14.806] Submitted transaction                    hash=0x695d75024328c1d924e153118fd697dfc1a44031997f634b28cc78488204fe71 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=91 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:03:14.857] DataPoster sent transaction              nonce=7  hash=635858..e12ce1 feeCap=12,000,000,070 tipCap=1,200,000,000 blobFeeCap=<nil> gas=235,699
+INFO [04-11|03:03:14.857] BatchPoster: batch sent                  sequenceNumber=8 from=132 to=164 prevDelayed=16 currentDelayed=17 totalSegments=94 numBlobs=0
+INFO [04-11|03:03:15.641] InboxTracker                             sequencerBatchCount=9 messageCount=164 l1Block=731 l1Timestamp=2026-04-11T03:03:13+0000
+INFO [04-11|03:03:15.923] Reading message result remotely.         msgIdx=163
+INFO [04-11|03:03:16.061] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:03:16.061] resolved tx endorsement policy           txHash=774b7b..b521f2 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:03:16.066] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:03:16.066] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=165 blockHash=0e91fc..76916c
+INFO [04-11|03:03:16.067] ENDORSEMENT_DISABLED_SKIP                l2Block=165 blockHash=0e91fc..76916c hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:03:16.067] ENDORSEMENT_METADATA_BUILT               block=165 hash=0e91fc..76916c metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:03:16.069] Submitted transaction                    hash=0x774b7bd11df6384e0d8232b8daf7b804eacbc1790aad19b255db171268b521f2 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=92 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:03:16.619] ExecutionEngine: Added DelayedMessages   msgIdx=166 delayedMsgIdx=17 block-header="&{ParentHash:0x0e91fc1fd50e58846e82470695dec68cb03b8bb2290615d47336cdaada76916c UncleHash:0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347 Coinbase:0xe2148eE53c0755215Df69b2616E552154EdC584f Root:0xdfe5bad0995c851669f99dc100a3d6e8497e7e335272fcdbb8e78ee3829add2d TxHash:0x6c3e241ad1d2a94c327236304e06508563330d0de23b68d6a594ebb4b6aa6148 ReceiptHash:0xf08cf5553e1dae52e3df19b356b8320e17c39fb055f635739c31052db5c3e45e Bloom:[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0] Difficulty:+1 Number:+166 GasLimit:1125899906842624 GasUsed:0 Time:1775876596 Extra:[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0] MixDigest:0x000000000000000000000000000002db00000000000000280000000000000000 Nonce:[0 0 0 0 0 0 0 18] BaseFee:+100000000 WithdrawalsHash:<nil> BlobGasUsed:<nil> ExcessBlobGas:<nil> ParentBeaconRoot:<nil> RequestsHash:<nil>}"
+INFO [04-11|03:03:16.620] DelayedSequencer: Sequenced              msgnum=1 startpos=17
+INFO [04-11|03:03:17.328] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:03:17.328] resolved tx endorsement policy           txHash=2d93ec..866cbe txIndex=0 policyID=default threshold=2
+INFO [04-11|03:03:17.332] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:03:17.333] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=167 blockHash=223791..5517de
+INFO [04-11|03:03:17.333] ENDORSEMENT_DISABLED_SKIP                l2Block=167 blockHash=223791..5517de hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:03:17.333] ENDORSEMENT_METADATA_BUILT               block=167 hash=223791..5517de metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:03:17.335] Submitted transaction                    hash=0x2d93ec84562c8a7dc63064cb66073c52309ca6188aa2c5733b96afa0b7866cbe from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=93 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:03:18.589] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:03:18.589] resolved tx endorsement policy           txHash=ac3753..b79f86 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:03:18.593] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:03:18.593] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=168 blockHash=aa1729..3225b6
+INFO [04-11|03:03:18.593] ENDORSEMENT_DISABLED_SKIP                l2Block=168 blockHash=aa1729..3225b6 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:03:18.593] ENDORSEMENT_METADATA_BUILT               block=168 hash=aa1729..3225b6 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:03:18.594] Submitted transaction                    hash=0xac3753954501fcfef22983fd43bb9e2b3024bc403d762917b6fdcb4b4cb79f86 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=94 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:03:19.858] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:03:19.858] resolved tx endorsement policy           txHash=b95218..f975c4 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:03:19.864] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:03:19.864] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=169 blockHash=4fec3a..115452
+INFO [04-11|03:03:19.864] ENDORSEMENT_DISABLED_SKIP                l2Block=169 blockHash=4fec3a..115452 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:03:19.864] ENDORSEMENT_METADATA_BUILT               block=169 hash=4fec3a..115452 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:03:19.866] Submitted transaction                    hash=0xb9521858befd132dfd9329bb4672bb6926035e15d6feef19df7d9eb821f975c4 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=95 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:03:21.129] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:03:21.129] resolved tx endorsement policy           txHash=41337a..96880a txIndex=0 policyID=default threshold=2
+INFO [04-11|03:03:21.133] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:03:21.133] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=170 blockHash=9f52e3..59fe12
+INFO [04-11|03:03:21.133] ENDORSEMENT_DISABLED_SKIP                l2Block=170 blockHash=9f52e3..59fe12 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:03:21.133] ENDORSEMENT_METADATA_BUILT               block=170 hash=9f52e3..59fe12 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:03:21.135] Submitted transaction                    hash=0x41337a6249c810844ad877bf5c0ce4b6c84158fe434942ddd17a27f52796880a from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=96 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:03:22.357] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:03:22.358] resolved tx endorsement policy           txHash=c02d70..0ee7ec txIndex=0 policyID=default threshold=2
+INFO [04-11|03:03:22.361] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:03:22.362] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=171 blockHash=e3dd50..e977c3
+INFO [04-11|03:03:22.362] ENDORSEMENT_DISABLED_SKIP                l2Block=171 blockHash=e3dd50..e977c3 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:03:22.362] ENDORSEMENT_METADATA_BUILT               block=171 hash=e3dd50..e977c3 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:03:22.364] Submitted transaction                    hash=0xc02d701d01a1d99cf1dee3a1e0c2b6c0e07cc2eebbb5feab8325b28c4d0ee7ec from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=97 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:03:23.627] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:03:23.628] resolved tx endorsement policy           txHash=f5c8dd..ef42cd txIndex=0 policyID=default threshold=2
+INFO [04-11|03:03:23.632] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:03:23.633] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=172 blockHash=de41f7..039e35
+INFO [04-11|03:03:23.633] ENDORSEMENT_DISABLED_SKIP                l2Block=172 blockHash=de41f7..039e35 hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:03:23.633] ENDORSEMENT_METADATA_BUILT               block=172 hash=de41f7..039e35 metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:03:23.635] Submitted transaction                    hash=0xf5c8dd6c89c35eb4fa50100fa998e5e5c13b95235c4be9bef88f7b9f17ef42cd from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=98 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:03:24.339] Reading message result remotely.         msgIdx=102
+INFO [04-11|03:03:24.340] Reading message result remotely.         msgIdx=103
+INFO [04-11|03:03:24.340] Reading message result remotely.         msgIdx=104
+INFO [04-11|03:03:24.340] Reading message result remotely.         msgIdx=105
+INFO [04-11|03:03:24.340] Reading message result remotely.         msgIdx=106
+INFO [04-11|03:03:24.340] Reading message result remotely.         msgIdx=107
+INFO [04-11|03:03:24.340] Reading message result remotely.         msgIdx=108
+INFO [04-11|03:03:24.340] Reading message result remotely.         msgIdx=109
+INFO [04-11|03:03:24.340] Reading message result remotely.         msgIdx=110
+INFO [04-11|03:03:24.340] Reading message result remotely.         msgIdx=111
+INFO [04-11|03:03:24.340] Reading message result remotely.         msgIdx=112
+INFO [04-11|03:03:24.340] Reading message result remotely.         msgIdx=113
+INFO [04-11|03:03:24.340] Reading message result remotely.         msgIdx=114
+INFO [04-11|03:03:24.340] Reading message result remotely.         msgIdx=115
+INFO [04-11|03:03:24.340] Reading message result remotely.         msgIdx=116
+INFO [04-11|03:03:24.340] Reading message result remotely.         msgIdx=117
+INFO [04-11|03:03:24.341] Reading message result remotely.         msgIdx=118
+INFO [04-11|03:03:24.341] Reading message result remotely.         msgIdx=119
+INFO [04-11|03:03:24.341] Reading message result remotely.         msgIdx=120
+INFO [04-11|03:03:24.341] Reading message result remotely.         msgIdx=121
+INFO [04-11|03:03:24.341] Reading message result remotely.         msgIdx=122
+INFO [04-11|03:03:24.341] Reading message result remotely.         msgIdx=123
+INFO [04-11|03:03:24.341] Reading message result remotely.         msgIdx=124
+INFO [04-11|03:03:24.341] Reading message result remotely.         msgIdx=125
+INFO [04-11|03:03:24.341] Reading message result remotely.         msgIdx=126
+INFO [04-11|03:03:24.341] Reading message result remotely.         msgIdx=127
+INFO [04-11|03:03:24.341] Reading message result remotely.         msgIdx=128
+INFO [04-11|03:03:24.341] Reading message result remotely.         msgIdx=129
+INFO [04-11|03:03:24.341] Reading message result remotely.         msgIdx=130
+INFO [04-11|03:03:24.349] Latest confirmed assertion               assertionAfterState="&{GlobalState:{BlockHash:0x5541e2599a130c79c0d2f974d1199edbc63ea32fe52640a4b83863d0a3d2ab89 SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:7 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0x5ab1acea3676e2d61daae82c46e2b785efa65731fab3ec150da47d46cc1e09a6}"
+INFO [04-11|03:03:24.898] ENDORSEMENT_DEBUG sequencer attached candidate block rebuildRound=0 txCount=1
+INFO [04-11|03:03:24.898] resolved tx endorsement policy           txHash=5e7809..ef33b7 txIndex=0 policyID=default threshold=2
+INFO [04-11|03:03:24.900] ENDORSEMENT_DEBUG entered processCandidateBlockEndorsement hasBlock=true hasHooks=true
+INFO [04-11|03:03:24.900] ENDORSEMENT_DEBUG candidate block attached hasCandidateBlock=true txCount=1 l2Block=173 blockHash=752f84..d30a7e
+INFO [04-11|03:03:24.900] ENDORSEMENT_DISABLED_SKIP                l2Block=173 blockHash=752f84..d30a7e hasEndorser=false hasPolicyConfig=false txCount=1
+INFO [04-11|03:03:24.900] ENDORSEMENT_METADATA_BUILT               block=173 hash=752f84..d30a7e metadataVersion=0 flags=0 timeboostLen=1 hasCommitmentRoot=false commitmentRoot=000000..000000 commitmentDataLen=0
+INFO [04-11|03:03:24.901] Submitted transaction                    hash=0x5e78090acc0256584b19c8e3e087fe8971de4defa8b5dff60b2a35f434ef33b7 from=0xFD54E8383Ec864BC0eC69F19c3133BeCf689d66e nonce=99 recipient=0x2222222222222222222222222222222222222222 value=1,000,000,000,000,000
+INFO [04-11|03:03:25.001] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+INFO [04-11|03:03:25.033] DataPoster sent transaction              nonce=14 hash=c824b4..30912e feeCap=12,000,000,070 tipCap=1,200,000,000 blobFeeCap=<nil> gas=237,039
+INFO [04-11|03:03:25.035] rpc response                             method=eth_estimateGas logId=2801 err="execution reverted"           result="\"0x0\"" attempt=0 args="[{\"from\":\"0xc8e5d0c6919d4da7d48ffb7d406d83ed1ea38132\",\"input\":\"0x097da1f8000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000008c2005559c23b0cf55f545103eaf0460641f9609000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002843b86de19b4cf2157da5fe6cc2ffbe02abf61f2df1ba7fb26e2e6ef05837a771d68cfe5bd12602dd378e6410fd5950a1d580729c75ab6240ea1cc7dfbdbd360e185a3a6f8c2c02df561d4afaf9a1d6785f70098ec3874765c638e3cb6dbe8d3c83333e14c000000000000000000000000000000000000000000000000000000000000000800000000000000000000000043679e89a6fea7df648350f5a7fdcd0bb4a501e9000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000085541e2599a130c79c0d2f974d1199edbc63ea32fe52640a4b83863d0a3d2ab8900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015ab1acea3676e2d61daae82c46e2b785efa65731fab3ec150da47d46cc1e09a6721777746f90a8e0446bfcb6eb4e3b897c7f7ed130774cdf1f30d90ce30da7240000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001e88fbe39f01dd31c39a3390390eef07e6b105a55c1c9cd06f6f5ad204b2815be1bd8f6d433b09c64c791acda5751f6d0931b976f4a4b0410a976200320f5bd9100000000000000000000000000000000000000000000000000000000\",\"to\":\"0xc8e5d0c6919d4da7d48ffb7d406d83ed1ea38132\",\"value\":\"0x0\"}]" errorData="\"0xf26aea8b000000000000000000000000c8e5d0c6919d4da7d48ffb7d406d83ed1ea38132\""
+WARN [04-11|03:03:25.036] Could not submit latest assertion        err="could not create assertion: gas estimation errored for tx with hash 0xc824b454: execution reverted" validatorName=default-validator
+INFO [04-11|03:03:25.038] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.056] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.058] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.071] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.074] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.089] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.092] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.104] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.106] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.117] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.119] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.129] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.133] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.147] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.149] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.163] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.164] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.177] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.179] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.196] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.198] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.213] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.216] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.230] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.232] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.248] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.253] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.265] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.273] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.287] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.289] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.301] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.303] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.315] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.317] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.329] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.331] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.349] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.351] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.365] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.367] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.384] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.387] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.401] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.405] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.419] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.422] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.438] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.440] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.453] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.455] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.467] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.469] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.480] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.482] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.495] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.497] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.508] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.510] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.522] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.524] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.539] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.541] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.553] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.556] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.569] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.571] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.584] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.586] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.597] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.599] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.612] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.614] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.629] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.633] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+WARN [04-11|03:03:25.644] Could not submit latest assertion        err="could not create assertion: test execution of tx errored before sending payable tx: failed to execute builder transaction: posting this transaction will exceed max mempool size: transaction nonce: 15, unconfirmed nonce: 14, max mempool size: 1" validatorName=default-validator
+INFO [04-11|03:03:25.648] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+INFO [04-11|03:03:25.665] DataPoster sent transaction              nonce=15 hash=bbe628..36628a feeCap=12,000,000,070 tipCap=1,200,000,000 blobFeeCap=<nil> gas=237,039
+INFO [04-11|03:03:25.666] rpc response                             method=eth_estimateGas logId=3443 err="execution reverted"           result="\"0x0\"" attempt=0 args="[{\"from\":\"0xc8e5d0c6919d4da7d48ffb7d406d83ed1ea38132\",\"input\":\"0x097da1f8000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000008c2005559c23b0cf55f545103eaf0460641f9609000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002843b86de19b4cf2157da5fe6cc2ffbe02abf61f2df1ba7fb26e2e6ef05837a771d68cfe5bd12602dd378e6410fd5950a1d580729c75ab6240ea1cc7dfbdbd360e185a3a6f8c2c02df561d4afaf9a1d6785f70098ec3874765c638e3cb6dbe8d3c83333e14c000000000000000000000000000000000000000000000000000000000000000800000000000000000000000043679e89a6fea7df648350f5a7fdcd0bb4a501e9000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000085541e2599a130c79c0d2f974d1199edbc63ea32fe52640a4b83863d0a3d2ab8900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015ab1acea3676e2d61daae82c46e2b785efa65731fab3ec150da47d46cc1e09a6721777746f90a8e0446bfcb6eb4e3b897c7f7ed130774cdf1f30d90ce30da7240000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001e88fbe39f01dd31c39a3390390eef07e6b105a55c1c9cd06f6f5ad204b2815be1bd8f6d433b09c64c791acda5751f6d0931b976f4a4b0410a976200320f5bd9100000000000000000000000000000000000000000000000000000000\",\"to\":\"0xc8e5d0c6919d4da7d48ffb7d406d83ed1ea38132\",\"value\":\"0x0\"}]" errorData="\"0xf26aea8b000000000000000000000000c8e5d0c6919d4da7d48ffb7d406d83ed1ea38132\""
+WARN [04-11|03:03:25.667] Could not submit latest assertion        err="could not create assertion: gas estimation errored for tx with hash 0xbbe62894: execution reverted" validatorName=default-validator
+INFO [04-11|03:03:25.670] Posting assertion for batch we agree with requiredInboxMaxCount=8 validatorName=default-validator
+INFO [04-11|03:03:25.672] Successfully submitted assertion         validatorName=default-validator requiredInboxMaxCount=8 postedExecutionState="&{GlobalState:{BlockHash:0x721777746f90a8e0446bfcb6eb4e3b897c7f7ed130774cdf1f30d90ce30da724 SendRoot:0x0000000000000000000000000000000000000000000000000000000000000000 Batch:8 PosInBatch:0} MachineStatus:1 EndHistoryRoot:0xe88fbe39f01dd31c39a3390390eef07e6b105a55c1c9cd06f6f5ad204b2815be}" assertionHash=1bd8f6..f5bd91
+INFO [04-11|03:03:25.672] Sending assertion to confirmation queue  assertionHash=1bd8f6..f5bd91 addedBy=PostAssertionBasedOnParent

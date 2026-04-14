@@ -1,0 +1,4 @@
+status=cleared
+fault=down:nitro-testnode-endorser-a-1,nitro-testnode-endorser-b-1
+message=container nitro-testnode-endorser-b-1 started
+timestamp=1775882027

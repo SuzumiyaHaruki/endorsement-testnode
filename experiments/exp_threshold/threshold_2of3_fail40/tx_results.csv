@@ -1,0 +1,101 @@
+seq,tx_type,send_ts_ns,tx_hash,receipt_status,block_number,latency_ms,error,error_stage
+1,fail,1775878848781364016,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+2,fail,1775878850155802555,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+3,fail,1775878851530657894,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+4,fail,1775878852974519579,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+5,fail,1775878854449952160,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+6,fail,1775878855907200963,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+7,fail,1775878857243890882,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+8,fail,1775878858624648792,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+9,fail,1775878859996580220,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+10,fail,1775878861362857137,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+11,fail,1775878862770814061,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+12,fail,1775878864207855239,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+13,fail,1775878865638445971,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+14,fail,1775878867059762014,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+15,fail,1775878868448748326,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+16,fail,1775878869766498700,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+17,fail,1775878871076098137,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+18,fail,1775878872362001182,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+19,fail,1775878873691999628,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+20,fail,1775878875060286999,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+21,fail,1775878876443758148,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+22,fail,1775878877785746771,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+23,fail,1775878879102430085,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+24,fail,1775878880410035761,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+25,fail,1775878881730989732,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+26,fail,1775878883061376185,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+27,fail,1775878884402401899,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+28,fail,1775878885711555632,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+29,fail,1775878887035461424,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+30,fail,1775878888373441620,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+31,fail,1775878889725614543,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+32,fail,1775878891012922398,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+33,fail,1775878892348130103,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+34,fail,1775878893716313486,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+35,fail,1775878895142240342,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+36,fail,1775878896598568615,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+37,fail,1775878898006938418,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+38,fail,1775878899467978802,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+39,fail,1775878900889839603,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+40,fail,1775878902350727307,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xdec3a0987d537b1fae942d3718a62d6d87a60460bc026e7a0d6b5f128d169f98] ",send
+41,keep,1775878903767836539,0x43fbf2df7be5f28e2d4afb6da3eee1ca3a2f6ab2791e7736e52607cb7aadaa63,0x1,0x3eb,1251.679,,
+42,keep,1775878905512865914,0x6ba067d8b8287ca6b127f2b676da99689b1249a5e294083abd473daf69517c41,0x1,0x3ec,1190.701,,
+43,keep,1775878907163646674,0x8b07589ea67329e0eaf5efc7ba87cc87cec19d40a9875db9dfefbd4dfeecaf12,0x1,0x3ed,1180.846,,
+44,keep,1775878908711023412,0xca536c137a9c056b67661fb8321e1003fa135633a9804a06e17619a8d35727cb,0x1,0x3ee,1147.38,,
+45,keep,1775878910211311410,0x34548ff899e09ad776df2bd167cd2d7cdffea624cdc263486ea49f860997110b,0x1,0x3ef,1103.924,,
+46,keep,1775878911691314624,0xe812fa90080c922971850d5be858db337a816245a82c4641313184549fa4ccde,0x1,0x3f0,1156.279,,
+47,keep,1775878913223975171,0xe15e83176cfaa3f4294539abd5852f5890d80dfe57292b8c1249317ff65b1055,0x1,0x3f1,1198.843,,
+48,keep,1775878914861081732,0xa37f657abc9c27b4e5f32102f0a528c22e31a1b5235623ef4ecf8f54d48d9ac0,0x1,0x3f2,1066.273,,
+49,keep,1775878916179797418,0x9b5b87b0c8a8c9ad35df94d2dcb9c2bf9556484c065799d15df61bdde6e23f75,0x1,0x3f3,1099.755,,
+50,keep,1775878917576592008,0x725a349bfe10f9c8012eafa07b6a5c480065d4aac2aa1e88d9e7daff87fd69a2,0x1,0x3f4,1098.201,,
+51,keep,1775878918985561565,0x68bf950568b2d46b4221134bc2c33f34a06f36e51faccb044066f6fb1d3fecba,0x1,0x3f5,1119.409,,
+52,keep,1775878920440020774,0x25e646ee3430a88cfa13e23146bcd914fae4e58bc8f88534808b3cb2b58d8540,0x1,0x3f6,1126.462,,
+53,keep,1775878921892781887,0x907927a9874f3e61512e8f2779dbdbfcaae70d8052974b62dfff3991f404cfe8,0x1,0x3f7,1110.317,,
+54,keep,1775878923306836373,0x6f9a80876a381bc8999742e97a2a1fb112781cb37da83f48ea96599a54d328a0,0x1,0x3f8,1098.631,,
+55,keep,1775878924708166600,0x90dbd0fbc495875be40baa6abe89d6f4903fac7cb9ab512cadddc25c81f5410b,0x1,0x3f9,1125.72,,
+56,keep,1775878926189662651,0xc2cc0b137ed472e7688ddbb4a7b513b2a0bc5096ad9fdf59cd186d26a4108e60,0x1,0x3fa,1189.342,,
+57,keep,1775878927740165319,0xa3485e87f7ba2b956ea53d3653c9c05d08f26dad0f036623fa0a9768f0bc8bad,0x1,0x3fb,1103.323,,
+58,keep,1775878929160659799,0xb1e343d8d8a52d58631fe4cc409b629332f395690d18292cc4879bd4a2575672,0x1,0x3fc,1104.686,,
+59,keep,1775878930565441938,0x30f9bd7d36ba9dbd24c1f7760a9dd3b32ffdc90c8bdeb39ea5ba4a0e4cd07860,0x1,0x3fd,1112.572,,
+60,keep,1775878931986223107,0x6365483a3795353fe5c2a0adbe4cca7c2b24101d808925b7bdcbd861b7e427c1,0x1,0x3fe,1123.599,,
+61,keep,1775878933419957002,0x713ff18b95a584f906d46bd64db0ef647ed78883d9ad1038a5d4bcfa722d0b13,0x1,0x3ff,1165.819,,
+62,keep,1775878934863543251,0x91cae0b86c8651ac53f56b2852f086904a89dd67c0e2dc4b6f0c93e9a7dba68a,0x1,0x400,1152.801,,
+63,keep,1775878936366439883,0x173d238037f0a72a59ab109ed20b3768a24926c899c08be1a5f7097cfc86082d,0x1,0x401,1251.285,,
+64,keep,1775878937993004665,0xffb8770067ad2fa7009c24d3871feb1f3ab93a4cb454ebc5beda5981fdaad471,0x1,0x403,1217.231,,
+65,keep,1775878939630455481,0xb91b76a5419abc4c5bbebe265690520b177ce412b80b91b1f9284ac374db7011,0x1,0x404,1216.889,,
+66,keep,1775878941276322244,0x5dc461d5ed8412cde97f03f9a86c804b8fed37166c6e48ef2dfd219b795e2671,0x1,0x405,1194.263,,
+67,keep,1775878942919531383,0x2eef2ecd118cc77b4575c7d2cea4e5fb609f8ec5c1be78da9cdd9b970e2b3f2a,0x1,0x406,1226.53,,
+68,keep,1775878944644243354,0x6eef52cddf08251e4bd17c2a22e965426ab497d0e42dbb03a8567f16aad1d2fd,0x1,0x407,1187.225,,
+69,keep,1775878946199726644,0x18e8397d028a6e800a93190b69c5ef4e871907f67f76151b92d089fc7ce531cb,0x1,0x408,1187.762,,
+70,keep,1775878947834477147,0xb0f466cde367080c7fe76f6c693977f43ffa7c9c3b4996fd0edcc61bf99d6acf,0x1,0x409,1224.795,,
+71,keep,1775878949479652171,0x713a075f45529af8993a02bab6aa43d1ef96e86a742aadb864e767e5252898e5,0x1,0x40a,1241.716,,
+72,keep,1775878951194779984,0x378251af23210263c85e46a5869fa1aca34571794c9dbfd02bcab26ed0bbf185,0x1,0x40b,1260.62,,
+73,keep,1775878952853528445,0x1a0b9580be6557eba6e4812e7bd680b608267e5a81ca0c362b7f36005cdbd48d,0x1,0x40c,1193.385,,
+74,keep,1775878954468576733,0xacce385fe498a8466aa5e1e3d7ccda32e3e9b4628ec6f53897b808fd303d0dbe,0x1,0x40d,1258.03,,
+75,keep,1775878956199572599,0x75bcfa0a4f19e98efaba55b6c83cce3a1e4bafe2618f35594cfc8292af8ea816,0x1,0x40e,1184.761,,
+76,keep,1775878957791358648,0x6e0fab896a110902d1dd5c8b4ce382fd34af6b88091141a692ec16ea352687dd,0x1,0x40f,1205.92,,
+77,keep,1775878959415175936,0x621330dcd8e716929af1097d457c4b73df6bd51202a78a9c9a14ef86499f0150,0x1,0x410,1274.852,,
+78,keep,1775878961109494532,0x25b6c4de42570740f5e4c9f9713e9b9499a24347e92c36c2e1332d642bf45314,0x1,0x411,1206.535,,
+79,keep,1775878962645893375,0xd5b2bc99c00d93c3a913c6c3e3cbfcb50a7d4803288927cc7f993123752e7e2a,0x1,0x412,1141.692,,
+80,keep,1775878964093596200,0x9f4383b688f42c164821dd9d7d73f066d93b035f5623c0d177348dac214783b9,0x1,0x413,1082.555,,
+81,keep,1775878965457355420,0x0aaa0dc088074458bd2acdd6fc7ba05f9439ed8136b928a4e4f261ae8bc8c89e,0x1,0x414,1132.613,,
+82,keep,1775878966923896658,0x4d4ec081b86352a4afca6a6b6a93988ed5d665d8ec143c172731c413d1ab5eeb,0x1,0x415,1140.019,,
+83,keep,1775878968380493645,0xc1c7a3dd0c36d1901a4b86d0c1728ced791a85ede6f12a8a2b1835137e22c1ff,0x1,0x417,1146.259,,
+84,keep,1775878969874562436,0x0b7fc6be8a914a515113a8faf09f7cb2fcf66933373a0144d0aa95d9bacebaf5,0x1,0x418,1112.534,,
+85,keep,1775878971303633330,0x50d2999538fdcc89bbd2cc4d61c0f7956c0f5db7e311526f98ff7311c6f0221e,0x1,0x419,1121.653,,
+86,keep,1775878972770606680,0x4d3c4022a02e55dd600981ea1fe91bb6df0a9f7bd64997d1babf409678661862,0x1,0x41a,1132.517,,
+87,keep,1775878974253557916,0xa116f65dc103fa249cfde0873fd2afbf93704d86c2829a64084d1dd3fdfcdbb7,0x1,0x41b,1120.655,,
+88,keep,1775878975706614311,0x16bc64e10c406b92488da59e5273e96ad89cf35b4fa50dc72073d67d9c787eea,0x1,0x41c,1136.223,,
+89,keep,1775878977164856243,0x4c70b312178cacc6a182c65b78717b110bd18e0aa2ed6a982a1a698c831e4a6c,0x1,0x41d,1108.244,,
+90,keep,1775878978611381391,0x8e52c99771b199db5b6de5c1dd637613a0d820ad52e3eda44b3daa942473c055,0x1,0x41e,1126.773,,
+91,keep,1775878980062738874,0x729ab157ff5a15eed7299c2bddea261d4a353c34503cc0f664dd16f55526633e,0x1,0x41f,1107.164,,
+92,keep,1775878981484885707,0x0fb02b4a61f383d0845d30af6bf054d037347c49d520e84f7e1d7466779b4aec,0x1,0x420,1137.791,,
+93,keep,1775878982971189000,0x93420c5a6c793bf5f8c9a3f09753ecc24d29bfe25fa20e0d670ea22c1fe24b47,0x1,0x421,1097.919,,
+94,keep,1775878984380164138,0xab7f70efe34ed7077c566338eed7fd912ce0704fa03eefc9827f1af923e68b1e,0x1,0x422,1126.662,,
+95,keep,1775878985927952530,0x87aabbd1677c94eeae0cc524c8fd1ec00ab212acdc5c4bb25bf92c59cddec3a3,0x1,0x423,1143.184,,
+96,keep,1775878987386765828,0xd64fa410b79fcc4723939ca45ba8c00533179ad56f2d9185deb0d62792da5ed0,0x1,0x424,1103.821,,
+97,keep,1775878988805914064,0x321cc8cdb965dff9179f9a78cbc1144877330f6959fd240aae4cb074910c7aa2,0x1,0x425,1175.659,,
+98,keep,1775878990444004292,0x2efb4cf9687af9f76fae5459de73957b77b543f46c5edd5456855c6ae84179d8,0x1,0x426,1140.647,,
+99,keep,1775878992019221359,0x82140c661fd56be7763fc2e4d5181afb8b3225501b7864d355160c4e7da10f14,0x1,0x427,1174.07,,
+100,keep,1775878993623397090,0x9ec6c889a43d621e4e31cd620913d270d83f7935b9f413578e1151b301472b60,0x1,0x428,1239.476,,

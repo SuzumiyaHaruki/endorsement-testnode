@@ -1,0 +1,24 @@
+{
+  "execution": {
+    "sequencer": {
+      "experimental-batching-window": "1000ms"
+    },
+    "endorsement-experiment": {
+      "enable": true,
+      "mode": "remote",
+      "default-threshold": 2,
+      "strict-threshold": 3,
+      "default-aggregation": "bls",
+      "strict-aggregation": "bls",
+      "block-endorsement-timeout": "2000ms",
+      "max-rebuild-rounds": 3,
+      "fail-to-address": "0x1111111111111111111111111111111111111111",
+      "endorser-a-url": "http://endorser-a:9001",
+      "endorser-b-url": "http://endorser-b:9002",
+      "endorser-c-url": "http://endorser-c:9003",
+      "endorser-a-pubkey": "a3f44d234234430c7c7c3268d5f49a674edc2281bb0aec9ea14be8b598c22c7ad0d909d14b35a4c5d64e155dd28d81ba",
+      "endorser-b-pubkey": "ad10f131ec7851674af913cbc0a62ebb7efd981535e3a0fdcdadc8c7e33bd7e494d4488b018d55659a7d44346b31ebc1",
+      "endorser-c-pubkey": "90f21d7ed995c790d21df79dcc2ad4e1464520108b46767c9326b56c6cce09bb9356962c06471ac1185ea9bc9df43a9b"
+    }
+  }
+}

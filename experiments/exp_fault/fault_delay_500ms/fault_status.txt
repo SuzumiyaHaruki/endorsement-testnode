@@ -1,0 +1,4 @@
+status=applied
+fault=delay:nitro-testnode-endorser-a-1:500ms
+message=delay 500ms applied to nitro-testnode-endorser-a-1
+timestamp=1775881484

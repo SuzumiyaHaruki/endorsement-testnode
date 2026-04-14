@@ -85,9 +85,6 @@ services:
       - --gcmode=archive
       - --rpc.allow-unprotected-txs
 
-  # Creates a genesis state for the beacon chain using a YAML configuration file and
-  # a deterministic set of validators
-  # TODO: Make num validators customizable
   create_beacon_chain_genesis:
     image: "gcr.io/prysmaticlabs/prysm/cmd/prysmctl:v6.1.1"
     command:
@@ -103,10 +100,6 @@ services:
       - "consensus:/consensus"
       - "config:/config"
 
-  # Runs a Prysm beacon chain from a specified genesis state created in the previous step
-  # and connects to go-ethereum in the same network as the execution client.
-  # The account used in go-ethereum is set as the suggested fee recipient for transactions
-  # proposed via the validators attached to the beacon node.
   prysm_beacon_chain:
     image: "gcr.io/prysmaticlabs/prysm/beacon-chain:v6.1.1"
     command:
@@ -136,8 +129,6 @@ services:
       - "consensus:/consensus"
       - "config:/config"
 
-  # We run a validator client with 64, deterministically-generated keys that match
-  # The validator keys present in the beacon chain genesis state generated a few steps above.
   prysm_validator:
     image: "gcr.io/prysmaticlabs/prysm/validator:stable"
     command:
@@ -154,9 +145,69 @@ services:
       - "consensus:/consensus"
       - "config:/config"
 
+  endorser-a:
+    image: nitro-node-dev-testnode:endorsement-dev
+    container_name: nitro-testnode-endorser-a-1
+    working_dir: /workspace
+    entrypoint: /workspace/endorser
+    cap_add:
+      - NET_ADMIN
+    command:
+      - -id
+      - A
+      - -listen
+      - :9001
+      - -bls-secret-key
+      - 4a828dadf8374bd9dfc8e74b0f5c0e3e90e9760cf495b491502d2f784f634917
+    volumes:
+      - ../nitro:/workspace
+    ports:
+      - "127.0.0.1:9001:9001"
+    restart: unless-stopped
+
+  endorser-b:
+    image: nitro-node-dev-testnode:endorsement-dev
+    container_name: nitro-testnode-endorser-b-1
+    working_dir: /workspace
+    entrypoint: /workspace/endorser
+    cap_add:
+      - NET_ADMIN
+    command:
+      - -id
+      - B
+      - -listen
+      - :9002
+      - -bls-secret-key
+      - 3e0113bf243ee2409d37540d6007ad634cc4dfbab960d8808f373708bbcd25fe
+    volumes:
+      - ../nitro:/workspace
+    ports:
+      - "127.0.0.1:9002:9002"
+    restart: unless-stopped
+
+  endorser-c:
+    image: nitro-node-dev-testnode:endorsement-dev
+    container_name: nitro-testnode-endorser-c-1
+    working_dir: /workspace
+    entrypoint: /workspace/endorser
+    cap_add:
+      - NET_ADMIN
+    command:
+      - -id
+      - C
+      - -listen
+      - :9003
+      - -bls-secret-key
+      - 4b469620cf2e1ff647a7092d7a658c6dd5be85fa627ae2dea448f5c9c8ee27e1
+    volumes:
+      - ../nitro:/workspace
+    ports:
+      - "127.0.0.1:9003:9003"
+    restart: unless-stopped
+
   sequencer:
-    pid: host # allow debugging
-    image: nitro-node-dev-testnode
+    pid: host
+    image: nitro-node-dev-testnode:endorsement-dev
     entrypoint: /usr/local/bin/nitro
     ports:
       - "127.0.0.1:8547:8547"
@@ -178,10 +229,13 @@ services:
       - --graphql.corsdomain=*
     depends_on:
       - geth
+      - endorser-a
+      - endorser-b
+      - endorser-c
 
   sequencer_b:
-    pid: host # allow debugging
-    image: nitro-node-dev-testnode
+    pid: host
+    image: nitro-node-dev-testnode:endorsement-dev
     entrypoint: /usr/local/bin/nitro
     ports:
       - "127.0.0.1:8647:8547"
@@ -198,8 +252,8 @@ services:
       - redis
 
   sequencer_c:
-    pid: host # allow debugging
-    image: nitro-node-dev-testnode
+    pid: host
+    image: nitro-node-dev-testnode:endorsement-dev
     entrypoint: /usr/local/bin/nitro
     ports:
       - "127.0.0.1:8747:8547"
@@ -216,8 +270,8 @@ services:
       - redis
 
   sequencer_d:
-    pid: host # allow debugging
-    image: nitro-node-dev-testnode
+    pid: host
+    image: nitro-node-dev-testnode:endorsement-dev
     entrypoint: /usr/local/bin/nitro
     ports:
       - "127.0.0.1:8847:8547"
@@ -234,8 +288,8 @@ services:
       - redis
 
   staker-unsafe:
-    pid: host # allow debugging
-    image: nitro-node-dev-testnode
+    pid: host
+    image: nitro-node-dev-testnode:endorsement-dev
     entrypoint: /usr/local/bin/nitro
     ports:
       - "127.0.0.1:8047:8547"
@@ -251,8 +305,8 @@ services:
       - validation_node
 
   poster:
-    pid: host # allow debugging
-    image: nitro-node-dev-testnode
+    pid: host
+    image: nitro-node-dev-testnode:endorsement-dev
     entrypoint: /usr/local/bin/nitro
     ports:
       - "127.0.0.1:8147:8547"
@@ -267,8 +321,8 @@ services:
       - redis
 
   poster_b:
-    pid: host # allow debugging
-    image: nitro-node-dev-testnode
+    pid: host
+    image: nitro-node-dev-testnode:endorsement-dev
     entrypoint: /usr/local/bin/nitro
     ports:
       - "127.0.0.1:9147:8547"
@@ -283,8 +337,8 @@ services:
       - redis
 
   poster_c:
-    pid: host # allow debugging
-    image: nitro-node-dev-testnode
+    pid: host
+    image: nitro-node-dev-testnode:endorsement-dev
     entrypoint: /usr/local/bin/nitro
     ports:
       - "127.0.0.1:9247:8547"
@@ -299,8 +353,8 @@ services:
       - redis
 
   validator:
-    pid: host # allow debugging
-    image: nitro-node-dev-testnode
+    pid: host
+    image: nitro-node-dev-testnode:endorsement-dev
     entrypoint: /usr/local/bin/nitro
     ports:
       - "127.0.0.1:8247:8547"
@@ -315,8 +369,8 @@ services:
       - validation_node
 
   l3node:
-    pid: host # allow debugging
-    image: nitro-node-dev-testnode
+    pid: host
+    image: nitro-node-dev-testnode:endorsement-dev
     entrypoint: /usr/local/bin/nitro
     ports:
       - "127.0.0.1:3347:3347"
@@ -331,8 +385,8 @@ services:
       - validation_node
 
   validation_node:
-    pid: host # allow debugging
-    image: nitro-node-dev-testnode
+    pid: host
+    image: nitro-node-dev-testnode:endorsement-dev
     entrypoint: /usr/local/bin/nitro-val
     ports:
       - "127.0.0.1:8949:8549"
@@ -349,7 +403,7 @@ services:
 
   relay:
     pid: host
-    image: nitro-node-dev-testnode
+    image: nitro-node-dev-testnode:endorsement-dev
     entrypoint: /usr/local/bin/relay
     ports:
       - "127.0.0.1:9652:9652"
@@ -388,7 +442,7 @@ services:
       - "referenceda-provider-data:/referenceda-provider"
 
   datool:
-    image: nitro-node-dev-testnode
+    image: nitro-node-dev-testnode:endorsement-dev
     entrypoint: /usr/local/bin/datool
     volumes:
       - "config:/config"
@@ -398,8 +452,8 @@ services:
       - "referenceda-provider-data:/referenceda-provider"
 
   das-committee-a:
-    pid: host # allow debugging
-    image: nitro-node-dev-testnode
+    pid: host
+    image: nitro-node-dev-testnode:endorsement-dev
     entrypoint: /usr/local/bin/daserver
     ports:
       - "127.0.0.1:9876:9876"
@@ -411,8 +465,8 @@ services:
       - --conf.file=/config/l2_das_committee.json
 
   das-committee-b:
-    pid: host # allow debugging
-    image: nitro-node-dev-testnode
+    pid: host
+    image: nitro-node-dev-testnode:endorsement-dev
     entrypoint: /usr/local/bin/daserver
     ports:
       - "127.0.0.1:8876:9876"
@@ -424,8 +478,8 @@ services:
       - --conf.file=/config/l2_das_committee.json
 
   das-mirror:
-    pid: host # allow debugging
-    image: nitro-node-dev-testnode
+    pid: host
+    image: nitro-node-dev-testnode:endorsement-dev
     entrypoint: /usr/local/bin/daserver
     ports:
       - "127.0.0.1:7877:9877"
@@ -436,8 +490,8 @@ services:
       - --conf.file=/config/l2_das_mirror.json
 
   referenceda-provider:
-    pid: host # allow debugging
-    image: nitro-node-dev-testnode
+    pid: host
+    image: nitro-node-dev-testnode:endorsement-dev
     entrypoint: /usr/local/bin/daprovider
     ports:
       - "127.0.0.1:9880:9880"
@@ -450,8 +504,8 @@ services:
       - --conf.file=/config/referenceda_provider.json
 
   timeboost-auctioneer:
-    pid: host # allow debugging
-    image: nitro-node-dev-testnode
+    pid: host
+    image: nitro-node-dev-testnode:endorsement-dev
     entrypoint: /usr/local/bin/autonomous-auctioneer
     volumes:
       - "config:/config"
@@ -463,8 +517,8 @@ services:
       - redis
 
   timeboost-bid-validator:
-    pid: host # allow debugging
-    image: nitro-node-dev-testnode
+    pid: host
+    image: nitro-node-dev-testnode:endorsement-dev
     entrypoint: /usr/local/bin/autonomous-auctioneer
     ports:
       - "127.0.0.1:9372:8547"
@@ -499,7 +553,7 @@ services:
 
   transaction-filterer:
     pid: host
-    image: nitro-node-dev-testnode
+    image: nitro-node-dev-testnode:endorsement-dev
     entrypoint: /usr/local/bin/transaction-filterer
     ports:
       - "127.0.0.1:8549:8547"

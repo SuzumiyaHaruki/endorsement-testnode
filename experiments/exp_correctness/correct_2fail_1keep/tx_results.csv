@@ -1,0 +1,4 @@
+seq,tx_type,send_ts_ns,tx_hash,receipt_status,block_number,latency_ms,error,error_stage
+1,fail,1775810749981411210,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xd78c98521d16343ee4bb95c9bc17db92c175e999facf8db4e72f20efb5726f59] ",send
+2,fail,1775810751808848027,,,,"Error: server returned an error response: error code -32000: candidate block rebuild required: failedTxIndexes=[0] failedTxHashes=[0xd78c98521d16343ee4bb95c9bc17db92c175e999facf8db4e72f20efb5726f59] ",send
+3,keep,1775810753684286008,0x51883900de48dfc0e2884a17a48b39a98025a8273042281e09dc23376d48e0e3,0x1,0xd8a,1665.243,,

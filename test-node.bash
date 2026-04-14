@@ -626,54 +626,114 @@ if $force_init; then
     echo == Funding l2 funnel and dev key
     docker compose up --wait $INITIAL_SEQ_NODES
     sleep 45 # in case we need to create a smart contract wallet, allow for parent chain to recieve the contract creation tx and process it
+    
     run_script bridge-funds --ethamount 100000 --wait
     run_script send-l2 --ethamount 100 --to l2owner --wait
     rollupAddress=`docker compose run --rm --entrypoint sh poster -c "jq -r '.[0].rollup.rollup' /config/deployed_chain_info.json | tail -n 1 | tr -d '\r\n'"`
 
     if $l2timeboost; then
-        run_script send-l2 --ethamount 100 --to auctioneer --wait
-        biddingTokenAddress=`run_script create-erc20 --deployer auctioneer | tail -n 1 | awk '{ print $NF }'`
-        auctionContractAddress=`run_script deploy-express-lane-auction --bidding-token $biddingTokenAddress | tail -n 1 | awk '{ print $NF }'`
-        auctioneerAddress=`run_script print-address --account auctioneer | tail -n1 | tr -d '\r\n'`
-        echo == Starting up Timeboost auctioneer and bid validator.
-        echo == Bidding token: $biddingTokenAddress, auction contract $auctionContractAddress
-        run_script write-timeboost-configs --auction-contract $auctionContractAddress
-        docker compose run --rm --user root --entrypoint sh timeboost-auctioneer -c "chown -R 1000:1000 /data"
+	    run_script send-l2 --ethamount 100 --to auctioneer --wait
+	    biddingTokenAddress=`run_script create-erc20 --deployer auctioneer | tail -n 1 | awk '{ print $NF }'`
+	    auctionContractAddress=`run_script deploy-express-lane-auction --bidding-token $biddingTokenAddress | tail -n 1 | awk '{ print $NF }'`
+	    auctioneerAddress=`run_script print-address --account auctioneer | tail -n1 | tr -d '\r\n'`
+	    echo == Starting up Timeboost auctioneer and bid validator.
+	    echo == Bidding token: $biddingTokenAddress, auction contract $auctionContractAddress
+	    run_script write-timeboost-configs --auction-contract $auctionContractAddress
+	    docker compose run --rm --user root --entrypoint sh timeboost-auctioneer -c "chown -R 1000:1000 /data"
 
-        echo == Funding alice and bob user accounts for timeboost testing
-        run_script send-l2 --ethamount 10 --to user_alice --wait
-        run_script send-l2 --ethamount 10 --to user_bob --wait
-        run_script transfer-erc20 --token $biddingTokenAddress --amount 10000 --from auctioneer --to user_alice
-        run_script transfer-erc20 --token $biddingTokenAddress --amount 10000 --from auctioneer --to user_bob
+	    echo == Funding alice and bob user accounts for timeboost testing
+	    run_script send-l2 --ethamount 10 --to user_alice --wait
+	    run_script send-l2 --ethamount 10 --to user_bob --wait
+	    run_script transfer-erc20 --token $biddingTokenAddress --amount 10000 --from auctioneer --to user_alice
+	    run_script transfer-erc20 --token $biddingTokenAddress --amount 10000 --from auctioneer --to user_bob
 
-        docker compose run --rm --entrypoint sh scripts -c "sed -i 's/\(\"execution\":{\"sequencer\":{\"enable\":true,\"timeboost\":{\"enable\":\)false/\1true,\"auction-contract-address\":\"$auctionContractAddress\",\"auctioneer-address\":\"$auctioneerAddress\"/' /config/sequencer_config.json" --wait
-        docker compose restart $INITIAL_SEQ_NODES
+	    docker compose run --rm --entrypoint sh scripts -c "sed -i 's/\(\"execution\":{\"sequencer\":{\"enable\":true,\"timeboost\":{\"enable\":\)false/\1true,\"auction-contract-address\":\"$auctionContractAddress\",\"auctioneer-address\":\"$auctioneerAddress\"/' /config/sequencer_config.json" --wait
+	    docker compose restart $INITIAL_SEQ_NODES
     fi
 
-    if $l2txfiltering; then
-        echo == Funding transaction filterer account
-        run_script send-l2 --ethamount 100 --to filterer --wait
+	if $l2txfiltering; then
+	    echo == Funding transaction filterer account
+	    run_script send-l2 --ethamount 100 --to filterer --wait
 
-        echo == Granting TransactionFilterer role
-        run_script grant-filterer-role
+	    echo == Granting TransactionFilterer role
+	    run_script grant-filterer-role
 
-        echo == Writing transaction-filterer service config
-        run_script write-tx-filterer-config
-    fi
+	    echo == Writing transaction-filterer service config
+	    run_script write-tx-filterer-config
+	fi
 
-    if $tokenbridge; then
-        echo == Deploying L1-L2 token bridge
-        sleep 10 # no idea why this sleep is needed but without it the deploy fails randomly
-        docker compose run --rm -e ROLLUP_OWNER_KEY=$l2ownerKey -e ROLLUP_ADDRESS=$rollupAddress -e PARENT_KEY=$devprivkey -e PARENT_RPC=http://geth:8545 -e CHILD_KEY=$devprivkey -e CHILD_RPC=http://sequencer:8547 tokenbridge deploy:local:token-bridge
-        docker compose run --rm --entrypoint sh tokenbridge -c "cat network.json && cp network.json l1l2_network.json && cp network.json localNetwork.json"
-        echo
-    fi
+	if $tokenbridge; then
+	    echo == Deploying L1-L2 token bridge
+	    sleep 10 # no idea why this sleep is needed but without it the deploy fails randomly
+	    docker compose run --rm -e ROLLUP_OWNER_KEY=$l2ownerKey -e ROLLUP_ADDRESS=$rollupAddress -e PARENT_KEY=$devprivkey -e PARENT_RPC=http://geth:8545 -e CHILD_KEY=$devprivkey -e CHILD_RPC=http://sequencer:8547 tokenbridge deploy:local:token-bridge
+	    docker compose run --rm --entrypoint sh tokenbridge -c "cat network.json && cp network.json l1l2_network.json && cp network.json localNetwork.json"
+	    echo
+	fi
 
-    echo == Deploy CacheManager on L2
-    docker compose run --rm -e CHILD_CHAIN_RPC="http://sequencer:8547" -e CHAIN_OWNER_PRIVKEY=$l2ownerKey rollupcreator deploy-cachemanager-testnode
+	echo == Waiting for sequencer RPC to become ready
+	for i in $(seq 1 30); do
+	    docker compose run --rm \
+	      --entrypoint sh \
+	      -e CHILD_CHAIN_RPC="http://sequencer:8547" \
+	      rollupcreator \
+	      -lc 'node -e "
+		const { ethers } = require(\"ethers\");
+		(async () => {
+		  const provider = new ethers.providers.JsonRpcProvider(process.env.CHILD_CHAIN_RPC);
+		  const net = await provider.getNetwork();
+		  console.log(\"chainId=\", net.chainId);
+		})().catch(err => {
+		  process.exit(1);
+		});
+	      "' && break
+	    echo "sequencer RPC not ready yet ($i), retrying..."
+	    sleep 2
+	done
 
-    echo == Deploy Stylus Deployer on L2
-    run_script create-stylus-deployer --deployer l2owner
+	echo == Re-funding l2owner on final L2 before CacheManager deployment
+	for i in $(seq 1 10); do
+	    docker compose run --rm \
+	      --entrypoint sh \
+	      -e CHILD_CHAIN_RPC="http://sequencer:8547" \
+	      -e FUNDER_PRIVKEY=$devprivkey \
+	      -e TARGET_PRIVKEY=$l2ownerKey \
+	      rollupcreator \
+	      -lc 'node -e "
+		const { ethers } = require(\"ethers\");
+		(async () => {
+		  const provider = new ethers.providers.JsonRpcProvider(process.env.CHILD_CHAIN_RPC);
+		  const net = await provider.getNetwork();
+		  console.log(\"connected chainId=\", net.chainId);
+
+		  const funder = new ethers.Wallet(process.env.FUNDER_PRIVKEY, provider);
+		  const target = new ethers.Wallet(process.env.TARGET_PRIVKEY);
+
+		  const tx = await funder.sendTransaction({
+		    to: target.address,
+		    value: ethers.utils.parseEther(\"1.0\"),
+		    gasLimit: 21000
+		  });
+		  console.log(\"refill tx:\", tx.hash);
+		  await tx.wait();
+
+		  const bal = await provider.getBalance(target.address);
+		  console.log(\"l2owner:\", target.address);
+		  console.log(\"l2owner balance:\", ethers.utils.formatEther(bal));
+		})().catch(err => {
+		  console.error(err);
+		  process.exit(1);
+		});
+	      "' && break
+
+	    echo "refill failed ($i), retrying in 3 seconds..."
+	    sleep 3
+	done
+
+	echo == Deploy CacheManager on L2
+	docker compose run --rm -e CHILD_CHAIN_RPC="http://sequencer:8547" -e CHAIN_OWNER_PRIVKEY=$l2ownerKey rollupcreator deploy-cachemanager-testnode
+
+	echo == Deploy Stylus Deployer on L2
+	run_script create-stylus-deployer --deployer l2owner
 
     # TODO: remove this once the gas estimation issue is fixed
     echo == Gas Estimation workaround

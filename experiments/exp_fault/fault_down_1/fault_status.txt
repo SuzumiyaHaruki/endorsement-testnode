@@ -1,0 +1,4 @@
+status=applied
+fault=down:nitro-testnode-endorser-a-1
+message=container nitro-testnode-endorser-a-1 stopped
+timestamp=1775881618

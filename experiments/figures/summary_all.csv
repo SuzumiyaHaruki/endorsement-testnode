@@ -1,0 +1,9 @@
+case_name,tx_total,tx_receipt_count,tx_error_count,tx_timeout_count,tx_send_error_count,tx_receipt_error_count,lat_avg_ms,lat_p50_ms,lat_p95_ms,lat_p99_ms,keep_total,keep_success,keep_retention_rate,fail_total,fail_success,fail_drop_rate,disabled_skip,endorsement_satisfied,endorsement_failed,rebuild_count,remote_request_count,verify_ok_count,case_log_lines,fault_status,fault_message,fault_name,_case_dir
+baseline_keep_only,20,20,0,0,0,0,987.058,976.618,1038.857,1055.687,20,20,1.0,0,0,,20,0,0,0,0,0,152,noop,no fault requested,none,baseline_keep_only
+local_keep_only,20,20,0,0,0,0,983.773,977.167,1034.902,1060.065,20,20,1.0,0,0,,0,20,0,0,0,20,412,noop,no fault requested,none,local_keep_only
+remote_keep_only,20,20,0,0,0,0,984.956,981.26,1022.022,1059.64,20,20,1.0,0,0,,0,20,0,0,60,20,488,noop,no fault requested,none,remote_keep_only
+remote_mixed_30pct_fail,20,14,6,0,0,0,1179.225,1171.728,1241.332,1241.425,14,14,1.0,6,0,1.0,0,14,6,6,60,14,521,noop,no fault requested,none,remote_mixed_30pct_fail
+remote_threshold_2of3,20,18,2,0,0,0,1199.286,1194.154,1257.232,1260.927,18,18,1.0,2,0,1.0,0,18,2,2,60,18,572,noop,no fault requested,none,remote_threshold_2of3
+remote_threshold_3of3,20,18,2,0,0,0,1194.222,1187.856,1266.484,1277.098,18,18,1.0,2,0,1.0,0,18,2,2,60,18,628,noop,no fault requested,none,remote_threshold_3of3
+remote_fault_delay_a,15,14,1,0,0,0,1515.168,1509.714,1577.268,1590.087,14,14,1.0,1,0,1.0,0,14,1,1,45,14,411,applied,delay 300ms applied to nitro-testnode-endorser-a-1,delay:nitro-testnode-endorser-a-1:300ms,remote_fault_delay_a
+remote_fault_down_a,15,14,1,0,0,0,2683.022,3195.257,3286.447,3291.606,14,14,1.0,1,0,1.0,0,14,1,1,45,14,459,applied,container nitro-testnode-endorser-a-1 stopped,down:nitro-testnode-endorser-a-1,remote_fault_down_a
