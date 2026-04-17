@@ -3,9 +3,17 @@ set -euo pipefail
 
 CASE_OVERRIDE_JSON="${1:-}"
 WORK_DIR="${2:-./.case_tmp}"
+CLUSTER_ENV="${CLUSTER_ENV:-./cluster.env}"
 
-CONFIG_VOLUME="${CONFIG_VOLUME:-nitro-testnode_config}"
-SEQUENCER_CONTAINER="${SEQUENCER_CONTAINER:-nitro-testnode-sequencer-1}"
+if [[ -f "$CLUSTER_ENV" ]]; then
+  # shellcheck disable=SC1090
+  source "$CLUSTER_ENV"
+fi
+
+SEQUENCER_SSH_TARGET="${SEQUENCER_SSH_TARGET:-}"
+SEQUENCER_CONFIG_PATH="${SEQUENCER_CONFIG_PATH:-/etc/nitro/sequencer_config.json}"
+SEQUENCER_SERVICE="${SEQUENCER_SERVICE:-nitro-sequencer}"
+SSH_OPTS="${SSH_OPTS:-}"
 
 if [[ -z "$CASE_OVERRIDE_JSON" ]]; then
   echo "usage: $0 <case-override-json> [work-dir]" >&2
@@ -18,30 +26,54 @@ need_cmd() {
   command -v "$1" >/dev/null 2>&1 || { echo "missing command: $1" >&2; exit 1; }
 }
 
-need_cmd docker
 need_cmd python3
+need_cmd cp
+need_cmd ssh
+need_cmd scp
+need_cmd mktemp
 
-HELPER_NAME="nitro-config-helper-$$"
+run_target_cmd() {
+  local cmd="$1"
+  if [[ -z "$SEQUENCER_SSH_TARGET" ]]; then
+    bash -lc "$cmd"
+  else
+    ssh $SSH_OPTS "$SEQUENCER_SSH_TARGET" "bash -lc $(printf '%q' "$cmd")"
+  fi
+}
+
+copy_from_target() {
+  local src="$1"
+  local dst="$2"
+  if [[ -z "$SEQUENCER_SSH_TARGET" ]]; then
+    cp "$src" "$dst"
+  else
+    scp $SSH_OPTS "$SEQUENCER_SSH_TARGET:$src" "$dst"
+  fi
+}
+
+copy_to_target() {
+  local src="$1"
+  local dst="$2"
+  if [[ -z "$SEQUENCER_SSH_TARGET" ]]; then
+    cp "$src" "$dst"
+  else
+    scp $SSH_OPTS "$src" "$SEQUENCER_SSH_TARGET:$dst"
+  fi
+}
+
 BASE_JSON="$WORK_DIR/sequencer_config.base.json"
 OVERRIDE_JSON="$CASE_OVERRIDE_JSON"
 MERGED_JSON="$WORK_DIR/sequencer_config.merged.json"
+REMOTE_TMP="${SEQUENCER_CONFIG_PATH}.codex.$$"
 
-cleanup() {
-  docker rm -f "$HELPER_NAME" >/dev/null 2>&1 || true
-}
-trap cleanup EXIT
-
-docker create --name "$HELPER_NAME" -v "${CONFIG_VOLUME}:/config" alpine:3.19 sleep 600 >/dev/null
-
-# 首次时从 volume 里导出当前配置，作为基线备份
 if [[ ! -f "$BASE_JSON" ]]; then
-  docker cp "${HELPER_NAME}:/config/sequencer_config.json" "$BASE_JSON"
+  copy_from_target "$SEQUENCER_CONFIG_PATH" "$BASE_JSON"
 fi
 
 python3 ./merge_json.py "$BASE_JSON" "$OVERRIDE_JSON" "$MERGED_JSON"
 
-docker cp "$MERGED_JSON" "${HELPER_NAME}:/config/sequencer_config.json"
+copy_to_target "$MERGED_JSON" "$REMOTE_TMP"
 
-docker restart "$SEQUENCER_CONTAINER" >/dev/null
+run_target_cmd "cp '$REMOTE_TMP' '$SEQUENCER_CONFIG_PATH' && rm -f '$REMOTE_TMP' && systemctl restart '$SEQUENCER_SERVICE'"
 
-echo "[*] applied config to volume ${CONFIG_VOLUME} and restarted ${SEQUENCER_CONTAINER}"
+echo "[*] applied config to ${SEQUENCER_CONFIG_PATH} and restarted ${SEQUENCER_SERVICE}"

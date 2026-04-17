@@ -7,13 +7,30 @@ OUT_DIR="${2:-./exp_out}"
 ROOT_DIR="${ROOT_DIR:-$PWD}"
 CASE_TMP_DIR="${ROOT_DIR}/.case_tmp"
 FAULT_STATUS_DIR="${ROOT_DIR}/.fault_status"
+CLUSTER_ENV="${CLUSTER_ENV:-$ROOT_DIR/cluster.env}"
+
+if [[ -f "$CLUSTER_ENV" ]]; then
+  # shellcheck disable=SC1090
+  source "$CLUSTER_ENV"
+fi
 
 L2_RPC_URL="${L2_RPC_URL:-http://127.0.0.1:8547}"
+SSH_OPTS="${SSH_OPTS:-}"
 
-SEQ_CONTAINER="${SEQ_CONTAINER:-nitro-testnode-sequencer-1}"
-ENDORSER_A="${ENDORSER_A:-nitro-testnode-endorser-a-1}"
-ENDORSER_B="${ENDORSER_B:-nitro-testnode-endorser-b-1}"
-ENDORSER_C="${ENDORSER_C:-nitro-testnode-endorser-c-1}"
+SEQUENCER_SSH_TARGET="${SEQUENCER_SSH_TARGET:-}"
+SEQUENCER_LOG_CMD_TEMPLATE="${SEQUENCER_LOG_CMD_TEMPLATE:-journalctl -u ${SEQUENCER_SERVICE:-nitro-sequencer} --since '@__SINCE__' --no-pager}"
+
+ENDORSER_A_SSH_TARGET="${ENDORSER_A_SSH_TARGET:-}"
+ENDORSER_B_SSH_TARGET="${ENDORSER_B_SSH_TARGET:-}"
+ENDORSER_C_SSH_TARGET="${ENDORSER_C_SSH_TARGET:-}"
+
+ENDORSER_A_URL="${ENDORSER_A_URL:-http://127.0.0.1:9001}"
+ENDORSER_B_URL="${ENDORSER_B_URL:-http://127.0.0.1:9002}"
+ENDORSER_C_URL="${ENDORSER_C_URL:-http://127.0.0.1:9003}"
+
+ENDORSER_A_LOG_CMD_TEMPLATE="${ENDORSER_A_LOG_CMD_TEMPLATE:-journalctl -u ${ENDORSER_A_SERVICE:-nitro-endorser-a} --since '@__SINCE__' --no-pager}"
+ENDORSER_B_LOG_CMD_TEMPLATE="${ENDORSER_B_LOG_CMD_TEMPLATE:-journalctl -u ${ENDORSER_B_SERVICE:-nitro-endorser-b} --since '@__SINCE__' --no-pager}"
+ENDORSER_C_LOG_CMD_TEMPLATE="${ENDORSER_C_LOG_CMD_TEMPLATE:-journalctl -u ${ENDORSER_C_SERVICE:-nitro-endorser-c} --since '@__SINCE__' --no-pager}"
 
 TO_KEEP_DEFAULT="${TO_KEEP:-0x2222222222222222222222222222222222222222}"
 TO_FAIL_DEFAULT="${TO_FAIL:-0x1111111111111111111111111111111111111111}"
@@ -28,18 +45,42 @@ need_cmd() {
 }
 
 need_cmd jq
-need_cmd docker
 need_cmd python3
 need_cmd cast
 need_cmd sed
 need_cmd date
 need_cmd bash
-need_cmd cat
-need_cmd grep
+need_cmd curl
+need_cmd ssh
+need_cmd scp
 
-ensure_services_up() {
-  docker compose up -d sequencer endorser-a endorser-b endorser-c >/dev/null
-  sleep 5
+run_remote_cmd() {
+  local target="$1"
+  local cmd="$2"
+  if [[ -z "$target" ]]; then
+    bash -lc "$cmd"
+  else
+    ssh $SSH_OPTS "$target" "bash -lc $(printf '%q' "$cmd")"
+  fi
+}
+
+render_cmd_template() {
+  local template="$1"
+  local since_ts="$2"
+  echo "${template//__SINCE__/$since_ts}"
+}
+
+collect_log() {
+  local target="$1"
+  local template="$2"
+  local since_ts="$3"
+  local out="$4"
+  local cmd
+
+  cmd="$(render_cmd_template "$template" "$since_ts")"
+  if ! run_remote_cmd "$target" "$cmd" > "$out" 2>&1; then
+    echo "[!] failed to collect logs with template: $template" >> "$out"
+  fi
 }
 
 safe_fault_name() {
@@ -50,10 +91,34 @@ collect_case_logs_since() {
   local since_ts="$1"
   local case_dir="$2"
 
-  docker logs --since "$since_ts" "$SEQ_CONTAINER" > "$case_dir/sequencer.log" 2>&1 || true
-  docker logs --since "$since_ts" "$ENDORSER_A" > "$case_dir/endorser-a.log" 2>&1 || true
-  docker logs --since "$since_ts" "$ENDORSER_B" > "$case_dir/endorser-b.log" 2>&1 || true
-  docker logs --since "$since_ts" "$ENDORSER_C" > "$case_dir/endorser-c.log" 2>&1 || true
+  collect_log "$SEQUENCER_SSH_TARGET" "$SEQUENCER_LOG_CMD_TEMPLATE" "$since_ts" "$case_dir/sequencer.log"
+  collect_log "$ENDORSER_A_SSH_TARGET" "$ENDORSER_A_LOG_CMD_TEMPLATE" "$since_ts" "$case_dir/endorser-a.log"
+  collect_log "$ENDORSER_B_SSH_TARGET" "$ENDORSER_B_LOG_CMD_TEMPLATE" "$since_ts" "$case_dir/endorser-b.log"
+  collect_log "$ENDORSER_C_SSH_TARGET" "$ENDORSER_C_LOG_CMD_TEMPLATE" "$since_ts" "$case_dir/endorser-c.log"
+}
+
+wait_for_http_health() {
+  local url="$1"
+  local timeout_sec="${2:-30}"
+  local start_ts
+
+  start_ts=$(date +%s)
+  while true; do
+    if curl -fsS "$url" >/dev/null 2>&1; then
+      return 0
+    fi
+    if [[ $(( $(date +%s) - start_ts )) -ge "$timeout_sec" ]]; then
+      return 1
+    fi
+    sleep 2
+  done
+}
+
+ensure_services_up() {
+  wait_for_rpc_ready "$L2_RPC_URL" 90
+  wait_for_http_health "${ENDORSER_A_URL%/}/healthz" 30
+  wait_for_http_health "${ENDORSER_B_URL%/}/healthz" 30
+  wait_for_http_health "${ENDORSER_C_URL%/}/healthz" 30
 }
 
 wait_for_rpc_ready() {
@@ -124,7 +189,7 @@ run_case() {
   local case_json="$1"
   local case_file="$CASE_TMP_DIR/case.json"
   local override_json="$CASE_TMP_DIR/override.json"
-  local name mode fault tx_total tps fail_ratio case_dir
+  local name mode fault tx_total tps fail_ratio mix_mode random_seed case_dir
   local case_start_ts fault_key fault_status_file
 
   echo "$case_json" > "$case_file"
@@ -135,6 +200,8 @@ run_case() {
   tx_total=$(jq -r '.tx_total' "$case_file")
   tps=$(jq -r '.tps' "$case_file")
   fail_ratio=$(jq -r '.fail_ratio' "$case_file")
+  mix_mode=$(jq -r '.mix_mode // "clustered_front"' "$case_file")
+  random_seed=$(jq -r '.random_seed // 42' "$case_file")
 
   case_dir="$OUT_DIR/$name"
   mkdir -p "$case_dir"
@@ -174,6 +241,8 @@ run_case() {
     --tx-total "$tx_total" \
     --tps "$tps" \
     --fail-ratio "$fail_ratio" \
+    --mix-mode "$mix_mode" \
+    --random-seed "$random_seed" \
     --out "$case_dir/tx_results.csv" \
     --key-keep "$KEY_KEEP" \
     --key-fail "$KEY_FAIL" \

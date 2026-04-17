@@ -4,6 +4,14 @@ set -euo pipefail
 ACTION="${1:-}"
 FAULT="${2:-none}"
 STATUS_DIR="${3:-./.fault_status}"
+CLUSTER_ENV="${CLUSTER_ENV:-./cluster.env}"
+
+if [[ -f "$CLUSTER_ENV" ]]; then
+  # shellcheck disable=SC1090
+  source "$CLUSTER_ENV"
+fi
+
+SSH_OPTS="${SSH_OPTS:-}"
 
 mkdir -p "$STATUS_DIR"
 
@@ -29,52 +37,107 @@ clear_status() {
   rm -f "$STATUS_FILE"
 }
 
-container_has_tc() {
-  local container="$1"
-  docker exec -u 0 "$container" sh -c "command -v tc >/dev/null 2>&1"
+node_ssh_target() {
+  case "$1" in
+    sequencer) echo "${SEQUENCER_SSH_TARGET:-}" ;;
+    endorser-a) echo "${ENDORSER_A_SSH_TARGET:-}" ;;
+    endorser-b) echo "${ENDORSER_B_SSH_TARGET:-}" ;;
+    endorser-c) echo "${ENDORSER_C_SSH_TARGET:-}" ;;
+    *) return 1 ;;
+  esac
+}
+
+node_service() {
+  case "$1" in
+    sequencer) echo "${SEQUENCER_SERVICE:-nitro-sequencer}" ;;
+    endorser-a) echo "${ENDORSER_A_SERVICE:-nitro-endorser-a}" ;;
+    endorser-b) echo "${ENDORSER_B_SERVICE:-nitro-endorser-b}" ;;
+    endorser-c) echo "${ENDORSER_C_SERVICE:-nitro-endorser-c}" ;;
+    *) return 1 ;;
+  esac
+}
+
+node_iface() {
+  case "$1" in
+    sequencer) echo "${SEQUENCER_NET_IFACE:-eth0}" ;;
+    endorser-a) echo "${ENDORSER_A_NET_IFACE:-eth0}" ;;
+    endorser-b) echo "${ENDORSER_B_NET_IFACE:-eth0}" ;;
+    endorser-c) echo "${ENDORSER_C_NET_IFACE:-eth0}" ;;
+    *) return 1 ;;
+  esac
+}
+
+run_node_cmd() {
+  local node="$1"
+  local cmd="$2"
+  local target
+
+  target="$(node_ssh_target "$node")"
+  if [[ -z "$target" ]]; then
+    bash -lc "$cmd"
+  else
+    ssh $SSH_OPTS "$target" "bash -lc $(printf '%q' "$cmd")"
+  fi
+}
+
+node_has_tc() {
+  local node="$1"
+  run_node_cmd "$node" "command -v tc >/dev/null 2>&1"
 }
 
 apply_delay() {
-  local container="$1"
+  local node="$1"
   local delay="$2"
   local ms="${delay%ms}"
+  local iface
 
-  if ! container_has_tc "$container"; then
-    write_status "failed" "container ${container} does not have tc installed"
-    echo "[!] fault injection failed: container ${container} does not have tc installed" >&2
+  iface="$(node_iface "$node")"
+
+  if ! node_has_tc "$node"; then
+    write_status "failed" "node ${node} does not have tc installed"
+    echo "[!] fault injection failed: node ${node} does not have tc installed" >&2
     return 10
   fi
 
-  docker exec -u 0 "$container" sh -c "tc qdisc del dev eth0 root 2>/dev/null || true"
-  docker exec -u 0 "$container" sh -c "tc qdisc add dev eth0 root netem delay ${ms}ms"
+  run_node_cmd "$node" "tc qdisc del dev '$iface' root 2>/dev/null || true"
+  run_node_cmd "$node" "tc qdisc add dev '$iface' root netem delay ${ms}ms"
 
-  write_status "applied" "delay ${ms}ms applied to ${container}"
-  echo "[*] applied delay fault: ${container} ${ms}ms"
+  write_status "applied" "delay ${ms}ms applied to ${node}"
+  echo "[*] applied delay fault: ${node} ${ms}ms"
 }
 
 clear_delay() {
-  local container="$1"
+  local node="$1"
+  local iface
 
-  if container_has_tc "$container"; then
-    docker exec -u 0 "$container" sh -c "tc qdisc del dev eth0 root 2>/dev/null || true" || true
+  iface="$(node_iface "$node")"
+
+  if node_has_tc "$node"; then
+    run_node_cmd "$node" "tc qdisc del dev '$iface' root 2>/dev/null || true" || true
   fi
 
-  write_status "cleared" "delay cleared for ${container}"
-  echo "[*] cleared delay fault for ${container}"
+  write_status "cleared" "delay cleared for ${node}"
+  echo "[*] cleared delay fault for ${node}"
 }
 
 apply_down() {
-  local container="$1"
-  docker stop "$container" >/dev/null
-  write_status "applied" "container ${container} stopped"
-  echo "[*] applied down fault: stopped ${container}"
+  local node="$1"
+  local service
+
+  service="$(node_service "$node")"
+  run_node_cmd "$node" "systemctl stop '$service'"
+  write_status "applied" "service ${service} stopped on ${node}"
+  echo "[*] applied down fault: stopped ${service} on ${node}"
 }
 
 clear_down() {
-  local container="$1"
-  docker start "$container" >/dev/null || true
-  write_status "cleared" "container ${container} started"
-  echo "[*] cleared down fault for ${container}"
+  local node="$1"
+  local service
+
+  service="$(node_service "$node")"
+  run_node_cmd "$node" "systemctl start '$service'" || true
+  write_status "cleared" "service ${service} started on ${node}"
+  echo "[*] cleared down fault for ${node}"
 }
 
 if [[ "$FAULT" == "none" ]]; then
@@ -92,8 +155,8 @@ if [[ "$ACTION" == "apply" ]]; then
 
   if [[ "$FAULT" =~ ^down:(.+)$ ]]; then
     IFS=',' read -ra ARR <<< "${BASH_REMATCH[1]}"
-    for c in "${ARR[@]}"; do
-      apply_down "$c"
+    for node in "${ARR[@]}"; do
+      apply_down "$node"
     done
     exit 0
   fi
@@ -111,8 +174,8 @@ if [[ "$ACTION" == "clear" ]]; then
 
   if [[ "$FAULT" =~ ^down:(.+)$ ]]; then
     IFS=',' read -ra ARR <<< "${BASH_REMATCH[1]}"
-    for c in "${ARR[@]}"; do
-      clear_down "$c"
+    for node in "${ARR[@]}"; do
+      clear_down "$node"
     done
     exit 0
   fi
